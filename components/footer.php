@@ -1,0 +1,1 @@
+<h1 class="text-yellow-800">I AM THE FOOTER</h1>
