@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./*.php","./components/*.php", "./*.js"],
+  content: ["./*.{css,js,php}", "./assets/**/*.{js,css,php}"],
   theme: {
     container: {
       center: true,

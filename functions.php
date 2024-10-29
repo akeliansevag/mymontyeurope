@@ -2,7 +2,7 @@
 
 if (! defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define('_S_VERSION', '1.0.0');
+	define('_S_VERSION', '1.1.6');
 }
 
 function mymontyeurope_setup()
@@ -56,8 +56,8 @@ function mymontyeurope_scripts()
 add_action('wp_enqueue_scripts', 'mymontyeurope_scripts');
 
 
-function enqueue_custom_scripts() 
+function enqueue_custom_scripts()
 {
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/main.js', [], null, true);
+	wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', [], null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');

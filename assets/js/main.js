@@ -22,4 +22,4 @@ document.getElementById("nav-toggle").addEventListener("click", () => {
 // Toggle location dropdown
 document.getElementById("location-toggle").addEventListener("click", () => {
     document.getElementById("location-dropdown").classList.toggle("hidden");
-});
+}); 

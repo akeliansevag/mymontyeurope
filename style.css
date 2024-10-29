@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 =          TaiwlindCSS Styles         =
 ====================================*/
 
+@import "./assets/css/other.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,64 +36,64 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ====================================*/
 
 /* For screens larger than or equal to 'xl' breakpoint */
-@media (min-width: 1280px){
-    .container{
-        max-width: 1180px !important;
-    }
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1180px !important;
+  }
 }
 /* For screens larger than or equal to '2xl' breakpoint */
-@media (min-width: 1536px){
-    .container{
-        max-width: 1328px !important;
-    }
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1328px !important;
+  }
 }
 
 /* For screens larger than or equal to '3xl' breakpoint */
-@media (min-width: 1792px){
-    .container{
-        max-width: 1440px !important;
-    }
+@media (min-width: 1792px) {
+  .container {
+    max-width: 1440px !important;
+  }
 }
 /* For screens larger than or equal to '4xl' breakpoint */
-@media (min-width: 2048px){
-    .container{
-        max-width: 1770px !important;
-    }
+@media (min-width: 2048px) {
+  .container {
+    max-width: 1770px !important;
+  }
 }
 
 /* For screens larger than or equal to '5xl' breakpoint */
-@media (min-width: 2304px){
-    .container{
-        max-width: 1920px !important;
-    }
+@media (min-width: 2304px) {
+  .container {
+    max-width: 1920px !important;
+  }
 }
 
 /* For screens larger than or equal to '6xl' breakpoint */
-@media (min-width: 2688px){
-    .container{
-        max-width: 2080px !important;
-    }
+@media (min-width: 2688px) {
+  .container {
+    max-width: 2080px !important;
+  }
 }
 
 /* For screens larger than or equal to '7xl' breakpoint */
-@media (min-width: 3072px){
-    .container{
-        max-width: 2240px !important;
-    }
+@media (min-width: 3072px) {
+  .container {
+    max-width: 2240px !important;
+  }
 }
 
 /* For screens larger than or equal to '8xl' breakpoint */
-@media (min-width: 3584px){
-    .container{
-        max-width: 2400px !important;
-    }
+@media (min-width: 3584px) {
+  .container {
+    max-width: 2400px !important;
+  }
 }
 
 /* For screens larger than or equal to '9xl' breakpoint */
-@media (min-width: 4096px){
-    .container{
-        max-width: 2560px !important;
-    }
+@media (min-width: 4096px) {
+  .container {
+    max-width: 2560px !important;
+  }
 }
 
 /*====================================
@@ -100,18 +101,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ====================================*/
 
 body {
-    font: 18px/1.5 'sans-serif';
+  font: 18px/1.5 "sans-serif";
 }
 
 /*====================================
 =            Header Styles           =
 ====================================*/
 
-
 /*====================================
 =            Main Content            =
 ====================================*/
-
 
 /*====================================
 =            Footer Styles           =
