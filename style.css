@@ -22,11 +22,18 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+
 /*====================================
-=          TaiwlindCSS Styles         =
+=            File Imports            =
 ====================================*/
 
-@import "./assets/css/other.css";
+@import "./assets/css/fonts.css";
+
+/*====================================
+=         TaiwlindCSS Styles         =
+====================================*/
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,12 +108,37 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ====================================*/
 
 body {
-  font: 18px/1.5 "sans-serif";
+  @apply font-AeonikRegular text-lg;
 }
 
 /*====================================
 =            Header Styles           =
 ====================================*/
+
+header .pointer:before{
+  clip-path: polygon(48% 55%, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(48% 55%, 0 100%, 100% 100%);
+}
+
+header #nav-toggle.toggled .line1 {
+  @apply -rotate-45 translate-y-[6px]
+}
+
+header #nav-toggle.toggled .line3 {
+  @apply rotate-45 translate-y-[-8px]
+}
+
+header #nav-toggle.toggled .line2 {
+  @apply !w-0
+}
+
+/* header li.active img{
+  @apply -rotate-90
+} */
+
+header li.active ul{
+  @apply max-h-96 mt-2
+}
 
 /*====================================
 =            Main Content            =

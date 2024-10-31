@@ -10,16 +10,22 @@ window.addEventListener("scroll", () => {
     } else {
         header.classList.remove("-translate-y-full");
     }
-    
     lastScrollPosition = currentScrollPosition;
 });
 
 // Toggle mobile navigation
 document.getElementById("nav-toggle").addEventListener("click", () => {
-    document.getElementById("mobile-nav").classList.toggle("hidden");
+    document.getElementById("nav-toggle").classList.toggle("toggled");
+    document.getElementById("mobile-nav").classList.toggle("-translate-x-full");
 });
 
-// Toggle location dropdown
-document.getElementById("location-toggle").addEventListener("click", () => {
-    document.getElementById("location-dropdown").classList.toggle("hidden");
-}); 
+function toggleMultipleClasses(element, classes) {
+    classes.forEach(className => element.parentElement.classList.toggle(className));
+}
+
+// Use the helper function in the event listener
+document.querySelectorAll(".children-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
+        toggleMultipleClasses(toggle.nextElementSibling, ["active"]);
+    });
+});
