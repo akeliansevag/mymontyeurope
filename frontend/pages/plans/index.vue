@@ -1,0 +1,129 @@
+<template>
+    <div>
+        <MainBanner 
+            subTitle="Plans"
+            title="Choose Your Plan"
+            description="We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare plans."
+            buttonLink=""
+            buttonText="Download App"
+            image="choose-your-plans"
+        />
+
+        <section id="section-1" class="my-12 py-12 lg:my-14 lg:py-14">
+            <div class="container">
+                <div class="grid gap-8">
+                    <!-- Loop through each plan -->
+                    <template v-for="(plan, index) in plans" :key="index">
+                        <!-- Full-width layout -->
+                        <div v-if="plan.layout === 'full'" class="col-span-full flex flex-col gap-12 p-8 lg:p-14 bg-[#ECECEE] rounded-[30px]">
+                            <div class="flex flex-col gap-4">
+                                <h2 class="font-AeonikBlack  text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ plan.category }}</h2>
+                                <p class="font-AeonikBlack text-primary text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">{{ plan.price }}</p>
+                                <p class="text-[#D4D4D4] text-xl">{{ plan.description }}</p>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-y-4 gap-x-12">
+                                <div v-for="(feature, index) in plan.features" :key="index" class="flex gap-4 items-baseline">
+                                    <img src="/images/icons/check-box-primary.svg" alt="Check Box" width="" height="">
+                                    <span class="text-xl">{{ feature }}</span>
+                                </div>
+                            </div>
+                            <button class="ml-auto w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ plan.buttonText }}</button>
+                        </div>
+                    </template>
+
+                    <!-- Container for half-width plans -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <template v-for="(plan, index) in plans" :key="index">
+                            <div v-if="plan.layout === 'half'" :class="index % 2 == 0 ? 'text-white bg-black' : 'text-black bg-[#ECECEE]'" class="flex flex-col gap-12 p-8 lg:p-14 rounded-[30px]">
+                                <div class="flex flex-col gap-4">
+                                    <h2 class="font-AeonikBlack  text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ plan.category }}</h2>
+                                    <p class="font-AeonikBlack text-primary text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">{{ plan.price }}</p>
+                                    <p class="text-[#D4D4D4] text-xl">{{ plan.description }}</p>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <div v-for="(feature, index) in plan.features" :key="index" class="flex gap-4 items-baseline">
+                                        <img src="/images/icons/check-box-primary.svg" alt="Check Box" width="" height="">
+                                        <span class="text-xl">{{ feature }}</span>
+                                    </div>
+                                </div>
+                                <button class="ml-auto w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ plan.buttonText }}</button>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script setup>
+	useSeoMeta({
+        title: 'Plans',
+        description: '',
+
+        ogTitle: 'Plans',
+        ogDescription: '',
+        ogImage: '',
+
+        twitterTitle: 'Plans',
+        twitterDescription: '',
+        twitterCard: 'summary_large_image',
+    })
+
+    const plans = ref([
+        {
+            category: "Starter",
+            price: "Free",
+            description: "Enjoy true freedom with low in store fees and a virtual/physical card.",
+            layout: "full",
+            features: [
+                "Dedicated free Euro/GBP IBAN",
+                "0,2 EUR on faster payments",
+                "Free peer to peer transfers",
+                "2 EUR physical card replacement fee.",
+                "No monthly fee",
+                "Free ATM balance enquiry or pin change",
+                "Free MyMonty virtual Mastercard",
+                "2% on currency exchange + a minimum fee of 2 EUR",
+                "5 EUR physical card printing and delivery in Europe & the UK.",
+                "1.5% on card top up, instant top up",
+                "1 EUR inactive fee when wallet is loaded and no transactions made over period of 6 months",
+                "0,15 EUR on SEPA transfer",
+                "1.5% on ATM withdrawal in EUR subject to a minimum fee of 1 EUR"
+            ],
+            buttonText: "Choose Plan",
+        },
+        {
+            category: "plus",
+            price: "All features included in STARTER Plan",
+            description: "If you're looking for a true value plan with zero card fees, zero monthly charges and more.",
+            layout: "half",
+            features: [
+                "Free contactless physical card",
+                "Priority customer support",
+                "1 fee free SEPA transfer",
+                "25 fee free POS transactions",
+                "1 fee free account top up per month",
+            ],
+            buttonText: "Coming Soon",
+        },
+        {
+            category: "Premium",
+            price: "All features included in PLUS Plan",
+            description: "If you're looking for a true value plan with zero card fees, zero monthly charges and more.",
+            layout: "half",
+            features: [
+                "Free contactless physical card",
+                "Priority customer support",
+                "1 fee free SEPA transfer",
+                "25 fee free POS transactions",
+                "1 fee free account top up per month",
+            ],
+            buttonText: "Coming Soon",
+        }
+    ])
+</script>
+
+<style lang="" scoped>
+	
+</style>

@@ -1,0 +1,34 @@
+<template>
+    <section id="download" class="my-12 py-12 lg:my-14 lg:py-14">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-14 py-12 lg:py-24 px-12 lg:px-24 text-white bg-black rounded-[30px]">
+                <div class="lg:col-span-2 flex flex-col justify-center lg:justify-between max-lg:items-center max-lg:text-center gap-14 lg:gap-24">
+                    <div>
+                        <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">Download the app now</h2>
+                        <p class="text-xl mt-4">Sign up and explore our endless benefits</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://play.google.com/store/apps/details?id=com.mymonty.wallet" aria-label="Google Play" target="_blank" rel="noopener noreferrer">
+                            <div class="py-4 px-6 min-w-32 bg-white rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
+                                <img src="/images/icons/google-play.svg" alt="Google Play" width="150" height="40">
+                            </div>
+                        </a>
+                        <a href="https://apps.apple.com/lb/app/mymonty-europe/id6451243007" aria-label="App Store" target="_blank" rel="noopener noreferrer">
+                            <div class="py-4 px-6 min-w-32 bg-white rounded-xl cursor-pointer transition-all duration-300 ease-in-out">
+                                <img src="/images/icons/app-store.svg" alt="App Store" width="150" height="40">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mx-auto lg:ms-auto lg:mx-0 text-right">
+                    <img src="/images/icons/qr-code.svg" alt="QR Code" width="180" height="180">
+                    <p class="text-center text-xl mt-4">Scan the QR to <br /> download the app</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script setup>
+
+</script>

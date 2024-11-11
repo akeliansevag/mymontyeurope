@@ -1,0 +1,49 @@
+{
+	"General": {
+		"Regions": {
+			"United Kingdom": "Reino Unido",
+			"Spain": "España",
+			"Italy": "Italia"
+		},
+
+		"Languages": {
+			"English": "Inglés",
+			"Spanish": "Español",
+			"Italian": "Italiano"
+		},
+		
+		"Links": {
+			"Company": "Compañía",
+			"Why MyMonty": "Por qué MyMonty",
+			"Who We Are": "Quiénes somos",
+			"Careers": "Carreras",
+			"Code of Conduct": "Código de Conducta",
+			"News": "Noticias",
+			"Blogs": "Blogs",
+			"Board of Directors": "Junta Directiva",
+			"FAQ": "Preguntas Frecuentes",
+			"Features": "Características",
+			"Accounts": "Cuentas",
+			"Cards": "Tarjetas",
+			"Transfers": "Transferencias",
+			"Payments": "Pagos",
+			"Plans": "Planes",
+			"Contact Us": "Contáctanos",
+			"Terms & Conditions": "Términos y Condiciones",
+			"Privacy Policy": "Política de Privacidad",
+			"Cookie Policy": "Política de Cookies"
+		},
+
+		"Alt": {
+			"Logo": "Logo de MyMonty",
+			"Chevron Up Gray": "Chevron Up Gray",
+			"Chevron Down Black": "Flecha hacia abajo",
+			"Chevron Right Primary": "Flecha Derecha Principal"
+		},
+
+		"Buttons": {
+			"Download App": "Download App",
+			"Get Started": "Get Started"
+		}
+	}
+}
