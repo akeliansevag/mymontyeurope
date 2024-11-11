@@ -6,7 +6,7 @@
                     <div class="cursor-pointer relative group rounded-full"><!-- hover:bg-[#ECECEE] -->
                         <div class="flex justify-between items-center gap-2 p-2"><!-- p-2 -->
                             <!-- Logo Placeholder -->
-                            <NuxtLinkLocale :to="'/'" class="link">
+                             <NuxtLinkLocale :to="'/'" class="link">
                                 <img src="/images/logo.svg" :alt="$t(`General.Alts.Logo`)" width="133" height="28" />
                             </NuxtLinkLocale>
 
@@ -22,7 +22,7 @@
                             <ul class="absolute top-[calc(100%+1.5rem+1px)] left-0 z-10 w-full rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                 <template v-for="(locale, index) in filteredRegions" :key="locale.index">
                                     <li v-if="locale.native" @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4]', { 'border-b': index !== filteredRegions.length - 1 }]">
-                                        <img v-if="locale.native" :src="`/images/flags/${ locale.icon.toLowerCase() }.svg`" :alt="$t(`General.Regions.${locale.region}`)" width="24" height="24" />
+                                        <img v-if="locale.native" :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" :alt="$t(`General.Regions.${locale.region}`)" width="24" height="24" />
                                         <span class="text-sm font-AeonikRegular">{{ $t(`General.Regions.${locale.region}`) }}</span>
                                     </li>
                                 </template>    
@@ -75,7 +75,7 @@
                     <div :class="['cursor-pointer relative group rounded-full', { 'hover:bg-[#ECECEE]': filteredLocales.length > 0 }]">
                         <div class="flex justify-between items-center gap-2 p-2">
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="28" height="28" /> -->
-                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toLowerCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
+                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
                             <!-- <span>{{currentLocale.split('-')[0]}}</span> -->
                             <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="8" />
 
@@ -151,7 +151,7 @@
                 <div class="absolute bottom-[calc(93px)] flex flex-col gap-4 w-full left-1/2 -translate-x-1/2 z-50 py-4 text-sm bg-white text-center group">
                     <div class="relative w-full bg-white">
                         <div class="flex justify-center items-center gap-2 w-max py-1 px-2 rounded-full mx-auto bg-[#ECECEE]">
-                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toLowerCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="16" height="16" />
+                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="16" height="16" />
 
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="16" height="16" /> -->
                             <!-- <span class="text-sm font-AeonikRegular">English</span> -->
@@ -163,7 +163,7 @@
                         <ul class="languages-mobile absolute bottom-full left-1/2 -translate-x-1/2 z-50 grid grid-cols-2 gap-4 w-1/2 mx-auto py-4 px-2 rounded text-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <template v-for="(locale, index) in filteredLocales" :key="locale.index">
                                 <li @click.prevent.stop="setLocale(locale.code)" class="flex gap-2 justify-start w-max transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]">
-                                    <!-- <img :src="`/images/flags/${ locale.icon.toLowerCase() }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
+                                    <!-- <img :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
                                     <span class="text-sm font-AeonikRegular">{{ $t(`General.Languages.${locale.language}`) }}</span>
                                 </li>
                             </template>
