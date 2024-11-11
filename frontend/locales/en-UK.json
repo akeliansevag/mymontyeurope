@@ -41,13 +41,26 @@
 			"Chevron Down White": "Chevron Down White",
 			"Chevron Right Primary": "Chevron Right Primary",
 			"Apple Store": "Apple Store",
-			"Google Play": "Google Play"
+			"Google Play": "Google Play",
+			"Simple & Hassle-Free Digital Payment": "Simple & Hassle-Free Digital Payment",
+			"See what sets us apart": "See what sets us apart",
+			"One app for all things money": "One app for all things money",
+			"Choose Your Plan": "Choose Your Plan",
+			"What is happening at mymonty": "What's happening at mymonty",
+			"Unlock the best of what we offer": "Unlock the best of what we offer",
+			"Frequently asked questions": "Frequently asked questions",
+			"Got any questions": "Got any questions",
+			"Our code of conduct": "Our code of conduct",
+			"Join our dream team": "Join our dream team",
+			"Leadership team": "Leadership team",
+			"What is happening at mymonty blogs": "What's happening at mymonty blogs"
 		},
 
 		"Buttons": {
 			"Download App": "Download App",
 			"Get Started": "Get Started",
-			"Subscribe": "Subscribe"
+			"Subscribe": "Subscribe",
+			"Contact Us": "Contact Us"
 		},
 
 		"Copyright": "Copyright MyMonty, 2024",
@@ -83,6 +96,103 @@
 		"Newsletter": {
 			"Title": "Subscribe to our newsletter",
 			"Description": "Subscribe to our newsletter"
+		}
+	},
+	
+	"Pages": {
+		"Homepage": {
+			"Banner": {
+				"Title": "Simple &<br />Hassle-Free<br />Digital Payment",
+				"Description": "Empowering you with personalized financial&nbsp;solutions."
+			}
+		},
+		
+		"Why MyMonty": {
+			"Banner": {
+				"Sub Title": "Why MyMonty?",
+				"Title": "See what sets us apart",
+				"Description": "At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees."
+			}
+		},
+
+		"Who We Are": {
+			"Banner": {
+				"Sub Title": "Who We Are",
+				"Title": "One app for all things money",
+				"Description": "Manage your money effortlessly from the comfort of one single intuitive&nbsp;app."
+			}
+		},
+
+		"Plans": {
+			"Banner": {
+				"Sub Title": "Plans",
+				"Title": "Choose Your Plan",
+				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare&nbsp;plans."
+			}
+		},
+
+		"News": {
+			"Banner": {
+				"Sub Title": "News",
+				"Title": "What's happening at mymonty?",
+				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+			}
+		},
+
+		"Features": {
+			"Banner": {
+				"Sub Title": "News",
+				"Title": "Unlock the best of what we offer",
+				"Description": "Enjoy our outstanding features and stand out from the&nbsp;crowd"
+			}
+		},
+
+		"Frequently Asked Questions": {
+			"Banner": {
+				"Sub Title": "FAQ",
+				"Title": "Frequently asked questions",
+				"Description": "Our team is always ready to assist you or answer your inquiries. Fill out this form to reach&nbsp;us."
+			}
+		},
+
+		"Contact Us": {
+			"Banner": {
+				"Sub Title": "Contact Us",
+				"Title": "Got any questions?",
+				"Description": "Our friendly team is here to help. Just fill out the form below, and we'll be in touch with you&nbsp;soon."
+			}
+		},
+
+		"Code of Conduct": {
+			"Banner": {
+				"Sub Title": "MyMonty Values",
+				"Title": "Our code of conduct",
+				"Description": "Learn about the guiding principles at&nbsp;MyMonty."
+			}
+		},
+
+		"Careers": {
+			"Banner": {
+				"Sub Title": "Careers",
+				"Title": "Join our dream team",
+				"Description": "Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a>&nbsp;now."
+			}
+		},
+
+		"Board of Directors": {
+			"Banner": {
+				"Sub Title": "Board of Directors",
+				"Title": "Leadership team",
+				"Description": "We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking&nbsp;experience."
+			}
+		},
+
+		"Blogs": {
+			"Banner": {
+				"Sub Title": "Blogs",
+				"Title": "What's happening at mymonty?",
+				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+			}
 		}
 	}
 }

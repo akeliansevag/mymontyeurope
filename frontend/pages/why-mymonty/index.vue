@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Why MyMonty?"
-            title="See what sets us apart"
-            description="At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="see-what-sets-us-apart"
+            alt="See what sets us apart"
+            page="Why MyMonty"
         />
 
         <section id="section-5" class="my-12 py-12 lg:my-14 lg:py-14">

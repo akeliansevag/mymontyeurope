@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Careers"
-            title="Join our dream team"
-            description="Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a> now."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="join-our-dream-team"
+            alt="Join our dream team"
+            page="Careers"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">

@@ -3,13 +3,13 @@
         <section id="section-1" class="w-screen lg:h-[calc(100vh-93px)] bg-[#ECECEE]">
             <div class="relative container flex flex-col justify-center gap-14 h-full">
                 <div class="flex flex-col justify-center gap-8 lg:w-4/5 max-lg:mt-14">
-                    <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase">Simple &<br />Hassle-Free<br />Digital Payment</h1>
-                    <p class="lg:w-1/2 text-2xl">Empowering you with personalized financial&nbsp;solutions.</p>
-                    <ScrollButton target="download" class="w-max py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">Get Started</ScrollButton>
+                    <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase" v-html="$t(`Pages.Homepage.Banner.Title`)"></h1>
+                    <p class="lg:w-1/2 text-2xl" v-html="$t(`Pages.Homepage.Banner.Description`)"></p>
+                    <ScrollButton target="download" class="w-max py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Get Started`) }}</ScrollButton>
                     <!-- <button @click="scrollToDownload" class="w-max py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">Get Started</button> -->
                 </div>
                 <div class="lg:absolute lg:bottom-0 lg:right-0 lg:w-[55%]">
-                    <img src="/images/main-banner.png" alt="Simple & Hassle-Free Digital Payment" width="1424" height="1664">
+                    <img src="/images/main-banner.png" :alt="$t(`General.Alts.Simple & Hassle-Free Digital Payment`)" width="1424" height="1664">
                 </div>
             </div>
         </section>

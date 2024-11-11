@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Board of Directors"
-            title="Leadership team"
-            description="We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking experience."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Get Started"
             image="leadership-team"
+            alt="Leadership team"
+            page="Board of Directors"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">

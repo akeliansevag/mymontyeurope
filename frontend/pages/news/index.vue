@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="News"
-            title="What's happening at mymonty?"
-            description="Explore our news for the latest updates and offerings."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="what-is-happening-at-mymonty"
+            alt="What is happening at mymonty"
+            page="News"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">

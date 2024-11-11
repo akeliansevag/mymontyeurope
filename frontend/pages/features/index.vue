@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Features"
-            title="Unlock the best of what we offer"
-            description="Enjoy our outstanding features and stand out from the crowd"
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Get Started"
             image="unlock-the-best-of-what-we-offer"
+            alt="Unlock the best of what we offer"
+            page="Features"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">
@@ -74,6 +76,7 @@
 			...feature,
 		}));
 	};
+    
     // Watch the route to update activeTab based on the URL
     watchEffect(() => {
         const currentPath = route.path.split('/').pop();
@@ -88,8 +91,9 @@
             const header = document.getElementById('header');
             const headerHeight = header ? header.clientHeight : 0;
             const targetElement = document.getElementById('features');
+            const currentPath = route.path.split('/').pop();
 
-            if (targetElement) {
+            if (targetElement && currentPath != 'features') {
                 const y = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
 
                 window.scrollTo({

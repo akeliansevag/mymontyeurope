@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Plans"
-            title="Choose Your Plan"
-            description="We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare plans."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="choose-your-plans"
+            alt="One app for all things money"
+            page="Plans"
         />
 
         <section id="section-1" class="my-12 py-12 lg:my-14 lg:py-14">

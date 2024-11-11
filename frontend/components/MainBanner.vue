@@ -2,16 +2,16 @@
     <section id="section-1" class="w-screen lg:h-[calc(100vh-93px)] bg-black">
         <div class="relative container grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-8 py-14 h-full">
             <div class="lg:col-span-2 flex flex-col justify-center gap-8 lg:w-4/5 text-white">
-                <span class="text-2xl text-[#D4D4D4] font-AeonikBold">{{ subTitle }}</span>
-                <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase">{{ title }}</h1>
-                <p class="text-2xl" v-html="description"></p>
+                <span class="text-2xl text-[#D4D4D4] font-AeonikBold">{{ $t(`Pages.${ page }.Banner.${ subTitle }`) }}</span>
+                <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase">{{ $t(`Pages.${ page }.Banner.${ title }`) }}</h1>
+                <p class="text-2xl" v-html="$t(`Pages.${ page }.Banner.${ description }`)"></p>
                 <NuxtLink v-if="buttonLink != ''" :to="`/${ buttonLink }`">
-                    <button class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ buttonText }}</button>
+                    <button class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.${ buttonText }`) }}</button>
                 </NuxtLink>
-                <ScrollButton v-else target="download" class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ buttonText }}</ScrollButton>
+                <ScrollButton v-else target="download" class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.${ buttonText }`) }}</ScrollButton>
             </div>
             <div class="w-full">
-                <img class="w-full" :src="`/images/${ image }.png`" :alt="title"  width="826" height="950">
+                <img class="w-full" :src="`/images/${ image }.png`" :alt="$t(`General.Alts.${ alt }`)" width="826" height="950">
             </div>
         </div>
     </section>
@@ -24,6 +24,8 @@
         description: { type: String, required: true },
         buttonText: { type: String, required: false },
         buttonLink: { type: String, required: false },
-        image: { type: String, required: true }
+        image: { type: String, required: true },
+        alt: { type: String, required: true },
+        page: { type: String, required: true },
     });
 </script>

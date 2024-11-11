@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Contact Us"
-            title="Got any questions?"
-            description="Our friendly team is here to help. Just fill out the form below, and we’ll be in touch with you soon."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="got-any-questions"
+            alt="Got any questions"
+            page="Contact Us"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">

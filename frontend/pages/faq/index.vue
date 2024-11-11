@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="FAQ"
-            title="frequently asked questions"
-            description="Our team is always ready to assist you or answer your inquiries. Fill out this form to reach us."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink="contact-us"
             buttonText="Contact Us"
             image="frequently-asked-questions"
+            alt="Frequently asked questions"
+            page="Frequently Asked Questions"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">

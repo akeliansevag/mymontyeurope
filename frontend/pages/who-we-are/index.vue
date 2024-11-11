@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="Who We Are"
-            title="One app for all things money"
-            description="Manage your money effortlessly from the comfort of one single intuitive&nbsp;app."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="one-app-for-all-things-money"
+            alt="One app for all things money"
+            page="Who We Are"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">

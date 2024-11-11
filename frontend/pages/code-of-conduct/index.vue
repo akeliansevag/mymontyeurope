@@ -1,12 +1,14 @@
 <template>
     <div>
         <MainBanner 
-            subTitle="MyMonty Values"
-            title="Our code of conduct"
-            description="Learn about the guiding principles at MyMonty."
+            subTitle="Sub Title"
+            title="Title"
+            description="Description"
             buttonLink=""
             buttonText="Download App"
             image="our-code-of-conduct"
+            alt="Our code of conduct"
+            page="Code of Conduct"
         />
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">
