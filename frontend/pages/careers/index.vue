@@ -17,7 +17,7 @@
                     <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">Embark on Your career journey with us</h2>
                     <p class="text-xl">Our team is our biggest asset! We are dedicated to recognizing and cultivating talent from within, offering a transparent and well-defined career path for our valuable team members.<br />We heavily invest in employee training programs, workshops, and mentorship initiatives, ensuring our team is not only well-equipped for their current roles but also ready for future challenges.</p>
                 </div>
-                <div class="relative text-white text-center py-20 px-8 bg-[url('/images/embark-on-your-career-journey-with-us.png')] bg-cover bg-top bg-no-repeat rounded-[30px] overflow-hidden">
+                <div class="relative text-white text-center py-20 px-8 bg-[url('/images/embark-on-your-career-journey-with-us.webp')] bg-cover bg-top bg-no-repeat rounded-[30px] overflow-hidden">
                     <div class="flex flex-col justify-center items-center gap-8">
                         <h2 class="font-AeonikBlack text-3xl xl:text-4xl 4xl:text-5xl uppercase">Always there for you</h2>
                         <p class="font-AeonikBold text-2xl 4xl:text-3xl uppercase">Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed</p>

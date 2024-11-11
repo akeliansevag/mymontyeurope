@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="flex flex-col gap-12 p-8 lg:p-14 bg-[#ECECEE] rounded-[30px]">
                     <NuxtLinkLocale :to="`/features/${ currentCategory }`" class="w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">Back to {{ currentCategory }}</NuxtLinkLocale>
-                    <img :src="`/images/${ feature.image }.png`" :alt="feature.title" width="1920" height="812" />
+                    <img :src="`/images/${ feature.image }.webp`" :alt="feature.title" width="1920" height="812" />
                     <h1 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase" v-html="feature.title"></h1>
                     <div class="description flex flex-col gap-8" v-html="feature.description"></div>
                 </div>
@@ -66,7 +66,7 @@
 
                 ogTitle: feature.value.title,
                 ogDescription: feature.value.excerpt || 'Features',
-                ogImage: `/images/${feature.value.image}.png`,
+                ogImage: `/images/${feature.value.image}.webp`,
 
                 twitterTitle: feature.value.title,
                 twitterDescription: feature.value.excerpt || 'Features',

@@ -29,7 +29,7 @@
                     <div v-for="(item, index) in boardOfDirectorsItems" :key="index" @click="setActive(index, 'team1')" id="board-of-directors" :class="{ 'absolute invisible opacity-0': activeTab !== 0 }" class="rounded-[30px] overflow-hidden">
                         <div :class="{ active: activeIndex.team1 === index }" class="inner relative w-full h-full">
                             <div class="front relative transition-all duration-300 ease-in-out cursor-pointer overflow-hidden z-10">
-                                <img class="w-full" :src="`/images/${ item.image }.png`" :alt="item.name" width="680" height="668">
+                                <img class="w-full" :src="`/images/${ item.image }.webp`" :alt="item.name" width="680" height="668">
                                 <div class="flex flex-col justify-center max-lg:items-center gap-2 mx-auto text-center bg-[#ECECEE] p-6">
                                     <h2 class="font-AeonikBlack text-lg md:text-xl xl:text-2xl 4xl:text-3xl uppercase">{{ item.name }}</h2>
                                     <h3 class="text-xl">{{ item.position }}</h3>
@@ -50,7 +50,7 @@
                     <div v-for="(item, index) in leadershipItems" :key="index" @click="setActive(index, 'team2')" id="leadership-team" :class="{ 'absolute invisible opacity-0': activeTab !== 1 }" class="rounded-[30px] overflow-hidden">
                         <div :class="{ active: activeIndex.team2 === index }" class="inner relative w-full h-full">
                             <div class="front relative transition-all duration-300 ease-in-out cursor-pointer overflow-hidden z-10">
-                                <img class="w-full" :src="`/images/${ item.image }.png`" :alt="item.name" width="680" height="668">
+                                <img class="w-full" :src="`/images/${ item.image }.webp`" :alt="item.name" width="680" height="668">
                                 <div class="flex flex-col justify-center max-lg:items-center gap-2 mx-auto text-center bg-[#ECECEE] p-6">
                                     <h2 class="font-AeonikBlack text-lg md:text-xl xl:text-2xl 4xl:text-3xl uppercase">{{ item.name }}</h2>
                                     <h3 class="text-xl">{{ item.position }}</h3>

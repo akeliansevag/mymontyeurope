@@ -11,7 +11,7 @@
                 <ScrollButton v-else target="download" class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.${ buttonText }`) }}</ScrollButton>
             </div>
             <div class="w-full">
-                <img class="w-full" :src="`/images/${ image }.png`" :alt="$t(`General.Alts.${ alt }`)" width="826" height="950">
+                <img class="w-full" :src="`/images/${ image }.webp`" :alt="$t(`General.Alts.${ alt }`)" width="826" height="950">
             </div>
         </div>
     </section>

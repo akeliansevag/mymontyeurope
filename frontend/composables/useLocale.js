@@ -1,6 +1,6 @@
 export const useLocale = () => {
     // Fetch the current locale and available locales
-    const { locale, locales, setLocale } = useI18n();
+    const { locale, locales, setLocale, t } = useI18n();
     const currentLocale = ref('');
 
     // Watch for locale changes and update the currentLocale
@@ -47,6 +47,7 @@ export const useLocale = () => {
         currentLocaleDetails,
         filteredLocales,
         filteredRegions,
-        setLocale
+        setLocale,
+        t
     };
 };

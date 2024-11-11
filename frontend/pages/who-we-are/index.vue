@@ -23,7 +23,7 @@
                         <p class="text-xl">Once a luxury, basic banking and financial services have become a right for everyone, in a world where digital is the new norm.</p>
                     </div>
                     <div class="lg:col-span-2">
-                        <img src="/images/this-is-the-future.png" alt="This Is The Future" width="1300" height="892">
+                        <img src="/images/this-is-the-future.webp" alt="This Is The Future" width="1300" height="892">
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                     <p class="text-xl">At MyMonty, we believe in leveling the playing field. Whether you're a tech enthusiast, an underserved individual, or a starter in financial services, we're here to serve you.</p>
                 </div>
                 <div class="lg:w-3/4 mx-auto mt-8">
-                    <img src="/images/equal-opportunities-for-all.png" alt="Equal Opportunities For All" width="1836" height="920">
+                    <img src="/images/equal-opportunities-for-all.webp" alt="Equal Opportunities For All" width="1836" height="920">
                 </div>
             </div>
         </section>
@@ -49,7 +49,7 @@
                     <img class="max-lg:hidden absolute bottom-0 -left-14 -z-10" src="/images/icons/mm.svg" alt="Digital All The Way" width="249" height="128">
                 </div>
                 <div class="order-2 lg:order-1">
-                    <img src="/images/digital-all-the-way.png" alt="Digital All The Way" width="978" height="947">
+                    <img src="/images/digital-all-the-way.webp" alt="Digital All The Way" width="978" height="947">
                 </div>
             </div>
         </section>
@@ -62,11 +62,11 @@
                 <div class="grid grid-cold-2 lg:grid-cols-3 gap-4 lg:w-3/4 mx-auto justify-start items-start mt-8">
                     <div class="lg:col-span-2 flex flex-col justify-center max-lg:items-center gap-8 mx-auto mx-lg:text-center">
                         <p class="text-xl">Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.</p>
-                        <img class="aspect-[16/12] object-cover object-center rounded-[30px]" src="/images/our-culture-building-on-diversity-1.png" alt="Digital All The Way" width="978" height="947">
+                        <img class="aspect-[16/12] object-cover object-center rounded-[30px]" src="/images/our-culture-building-on-diversity-1.webp" alt="Digital All The Way" width="978" height="947">
                     </div>
                     <div class="max-lg:hidden flex flex-col gap-4 order-2 lg:order-1">
-                        <img src="/images/our-culture-building-on-diversity-2.png" alt="Digital All The Way" width="978" height="947">
-                        <img src="/images/our-culture-building-on-diversity-3.png" alt="Digital All The Way" width="978" height="947">
+                        <img src="/images/our-culture-building-on-diversity-2.webp" alt="Digital All The Way" width="978" height="947">
+                        <img src="/images/our-culture-building-on-diversity-3.webp" alt="Digital All The Way" width="978" height="947">
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     <p class="text-xl">Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.</p>
                 </div>
                 <div class="grid lg:grid-cols-2 gap-4 overflow-hidden text-white">
-                    <div class="relative flex flex-col gap-8 p-8 lg:p-16 bg-[url('/images/uk.png')] bg-cover bg-bottom bg-no-repeat rounded-[30px]">
+                    <div class="relative flex flex-col gap-8 p-8 lg:p-16 bg-[url('/images/uk.webp')] bg-cover bg-bottom bg-no-repeat rounded-[30px]">
                         <button class="w-max ml-auto py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">Contact Us</button>
                         <div class="flex flex-col gap-4">
                             <h2 class="font-AeonikBlack text-2xl md:text-3xl xl:text-4xl 4xl:text-5xl uppercase">United Kingdom</h2>
@@ -93,7 +93,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative flex flex-col gap-8 p-8 lg:p-16 bg-[url('/images/uae.png')] bg-cover bg-bottom bg-no-repeat rounded-[30px]">
+                    <div class="relative flex flex-col gap-8 p-8 lg:p-16 bg-[url('/images/uae.webp')] bg-cover bg-bottom bg-no-repeat rounded-[30px]">
                         <button class="w-max ml-auto py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">Contact Us</button>
                         <div class="flex flex-col gap-4">
                             <h2 class="font-AeonikBlack text-2xl md:text-3xl xl:text-4xl 4xl:text-5xl uppercase">United Arab Emirates</h2>

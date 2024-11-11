@@ -1,197 +1,336 @@
 {
 	"General": {
 		"Regions": {
-			"United Kingdom": "United Kingdom",
-			"Spain": "Spain",
-			"Italy": "Italy"
+			"United Kingdom": "Reino Unido",
+			"Spain": "España",
+			"Italy": "Italia"
 		},
 
 		"Languages": {
-			"English": "English",
-			"Spanish": "Spanish",
-			"Italian": "Italian"
+			"English": "Inglés",
+			"Spanish": "Español",
+			"Italian": "Italiano"
 		},
 
 		"Links": {
-			"Company": "Company",
-			"Why MyMonty": "WhyMyMonty",
-			"Who We Are": "Who We Are",
-			"Careers": "Careers",
-			"Code of Conduct": "Code of Conduct",
-			"News": "News",
+			"Homepage": "Página Principal",
+			"Company": "Empresa",
+			"Why MyMonty": "Por Qué MyMonty",
+			"Who We Are": "Quiénes Somos",
+			"Careers": "Carreras",
+			"Code of Conduct": "Código de Conducta",
+			"News": "Noticias",
 			"Blogs": "Blogs",
-			"Board of Directors": "Board of Directors",
-			"FAQ": "FAQ",
-			"Features": "Features",
-			"Accounts": "Accounts",
-			"Cards": "Cards",
-			"Transfers": "Transfers",
-			"Payments": "Payments",
-			"Plans": "Plans",
-			"Contact Us": "Contact Us",
-			"Terms & Conditions": "Terms & Conditions",
-			"Privacy Policy": "Privacy Policy",
-			"Cookie Policy": "Cookie Policy"
+			"Board of Directors": "Consejo de Administración",
+			"FAQ": "Preguntas Frecuentes",
+			"Features": "Características",
+			"Accounts": "Cuentas",
+			"Cards": "Tarjetas",
+			"Transfers": "Transferencias",
+			"Payments": "Pagos",
+			"Plans": "Planes",
+			"Contact Us": "Contáctanos",
+			"Terms & Conditions": "Términos y Condiciones",
+			"Privacy Policy": "Política de Privacidad",
+			"Cookie Policy": "Política de Cookies"
 		},
 
 		"Alts": {
-			"Logo": "MyMonty Logo",
-			"Chevron Up Gray": "Chevron Up Gray",
-			"Chevron Down Black": "Chevron Down Black",
-			"Chevron Down White": "Chevron Down White",
-			"Chevron Right Primary": "Chevron Right Primary",
+			"Logo": "Logo de MyMonty",
+			"Chevron Up Gray": "Flecha hacia Arriba Gris",
+			"Chevron Down Black": "Flecha hacia Abajo Negra",
+			"Chevron Down White": "Flecha hacia Abajo Blanca",
+			"Chevron Right Primary": "Flecha Derecha Primaria",
+			"Check Box White": "Casilla de Verificación Blanca",
+			"Check Box Black": "Casilla de Verificación Negra",
+			"Receipt Check Box Primary": "Casilla de Verificación de Recibo Primaria",
+			"Chat Box Primary": "Caja de Chat Primaria",
 			"Apple Store": "Apple Store",
 			"Google Play": "Google Play",
-			"Simple & Hassle-Free Digital Payment": "Simple & Hassle-Free Digital Payment",
-			"See what sets us apart": "See what sets us apart",
-			"One app for all things money": "One app for all things money",
-			"Choose Your Plan": "Choose Your Plan",
-			"What is happening at mymonty": "What's happening at mymonty",
-			"Unlock the best of what we offer": "Unlock the best of what we offer",
-			"Frequently asked questions": "Frequently asked questions",
-			"Got any questions": "Got any questions",
-			"Our code of conduct": "Our code of conduct",
-			"Join our dream team": "Join our dream team",
-			"Leadership team": "Leadership team",
-			"What is happening at mymonty blogs": "What's happening at mymonty blogs"
+			"Simple & Hassle-Free Digital Payment": "Pago Digital Simple y Sin Complicaciones",
+			"See what sets us apart": "Mira lo que nos hace diferentes",
+			"One app for all things money": "Una aplicación para todo lo relacionado con dinero",
+			"Choose Your Plan": "Elige Tu Plan",
+			"What is happening at mymonty": "Qué está pasando en MyMonty",
+			"Unlock the best of what we offer": "Desbloquea lo mejor de lo que ofrecemos",
+			"Frequently asked questions": "Preguntas Frecuentes",
+			"Got any questions": "¿Tienes preguntas?",
+			"Our code of conduct": "Nuestro código de conducta",
+			"Join our dream team": "Únete a nuestro equipo de ensueño",
+			"Leadership team": "Equipo de liderazgo",
+			"What is happening at mymonty blogs": "Lo que está pasando en los blogs de MyMonty"
 		},
 
 		"Buttons": {
-			"Download App": "Download App",
-			"Get Started": "Get Started",
-			"Subscribe": "Subscribe",
-			"Contact Us": "Contact Us"
+			"Download App": "Descargar la Aplicación",
+			"Get Started": "Empezar",
+			"Subscribe": "Suscribirse",
+			"Contact Us": "Contáctanos",
+			"Payments": "Pagos",
+			"View All Features": "Ver Todas las Características",
+			"View all plans": "Ver todos los planes"
 		},
 
-		"Copyright": "Copyright MyMonty, 2024",
+		"Copyright": "Derechos de autor MyMonty, 2024",
 
 		"Placeholders": {
-			"Email": "Enter Your Email"
+			"Email": "Introduce tu correo electrónico"
 		},
 
 		"Messages": {
-            "Errors": {
+			"Errors": {
 				"Required": {
-					"Email": "Please enter your email address"
+					"Email": "Por favor, ingresa tu dirección de correo electrónico"
 				},
-
-				"Safe": "Your input has invalid value", 
-				"Valid Email": "This email address is already subscribed.",
-				"Unique Email": "This email address is already subscribed."
+				
+				"Safe": "Tu entrada tiene un valor no válido",
+				"Valid Email": "Esta dirección de correo electrónico ya está suscrita.",
+				"Unique Email": "Esta dirección de correo electrónico ya está suscrita."
 			},
-
+			
 			"Success": {
-				"Newsletter": "Thank you for subscribing."
+				"Newsletter": "Gracias por suscribirte."
 			}
 		},
 
 		"Download": {
-			"Title": "Download the app now",
-			"Description": "Sign up and explore our endless benefits",
-			"Scan Qr": "Scan the QR to <br /> download the app"
+			"Title": "Descarga la aplicación ahora",
+			"Description": "Regístrate y explora nuestros beneficios ilimitados",
+			"Scan Qr": "Escanea el QR para <br /> descargar la aplicación"
 		}
 	},
 
 	"Footer": {
 		"Newsletter": {
-			"Title": "Subscribe to our newsletter",
-			"Description": "Subscribe to our newsletter"
+			"Title": "Suscríbete a nuestro boletín",
+			"Description": "Suscríbete a nuestro boletín"
 		}
 	},
-	
+
 	"Pages": {
 		"Homepage": {
 			"Banner": {
-				"Title": "Simple &<br />Hassle-Free<br />Digital Payment",
-				"Description": "Empowering you with personalized financial&nbsp;solutions."
+				"Title": "Pago Digital<br />Simple y<br />Sin Complicaciones",
+				"Description": "Empoderándote con soluciones financieras personalizadas."
+			},
+
+			"Section 2": {
+				"Title": "Únete a nosotros",
+				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque.",
+			},
+
+			"Section 3": {
+				"Title": "Te cubrimos en todo el mundo",
+				"Description": "Envía, recibe y solicita dinero cuando y donde quieras.",
+				"Image Alt": "Únete a nosotros"
+			},
+
+			"Section 4": {
+				"Image Alt": "Gestiona Tu Dinero",
+				"Title": "Gestiona tu dinero",
+				"List Items": {
+					"Item 1": "Guarda y controla tus pagos",
+					"Item 2": "Transferencias bancarias dentro de la región SEPA",
+					"Item 3": "Transferencias Globales P2P"
+				}
+			},
+			
+			"Section 5": {
+				"Title": "Solicita dinero con facilidad",
+				"Description": "Nada de complicaciones, solo envía un enlace y recibe el pago rápidamente y sin esfuerzo desde cualquier persona, en cualquier parte del mundo.",
+				"Image Alt": "Solicita dinero con facilidad"
+			},
+
+			"Section 6": {
+				"Title": "Mantente protegido",
+				"List Items": {
+					"Item 1": "Protección biométrica",
+					"Item 2": "Cuenta protegida contra hackers",
+					"Item 3": "Sin necesidad de contraseñas"
+				},
+				"Image Alt": "Mantente protegido"
+			},
+
+			"Section 7": {
+				"Title": "Es hora de digitalizarse",
+				"Description": "Gestiona tus finanzas fácilmente con nuestra intuitiva aplicación móvil. Desde la gestión de cuentas hasta transferencias de fondos y el seguimiento de presupuestos futuros, MyMonty ofrece una interfaz fácil de usar adaptada a tus necesidades. Elige entre EUR o GBP para realizar transacciones en tu moneda preferida.",
+				"Image Alt": "Es hora de digitalizarse"
+			},
+
+			"Section 8": {
+				"Title": "Descubre nuestras características revolucionarias",
+				"Features": [
+					{
+						"Title": "Pagos sin contacto simplificados",
+						"Description": "Disfruta de la comodidad de los pagos sin contacto con la integración de MyMonty EEA/UK con Google Pay. Realiza compras en tiendas, en línea y en terminales de pago con facilidad y rapidez.",
+						"Image Alt": "Pagos Sin Contacto Simplificados"
+					},
+					{
+						"Title": "Soporte disponible todo el tiempo",
+						"Description": "Cuenta con MyMonty para obtener soporte al cliente confiable. Nuestro equipo dedicado está disponible durante el horario comercial, respaldado por un bot dentro de la aplicación para asistencia 24/7. Si tienes preguntas o necesitas ayuda, estamos aquí para asegurarnos de que tu experiencia sea fluida y agradable.",
+						"Image Alt": "Soporte Todo el Tiempo"
+					}
+				]
+			},
+
+			"Section 9": {
+				"Title": "Elige tu plan",
+				"Description": "Te tenemos cubierto con planes adaptados a tus necesidades. Solo elige el que mejor te convenga o compara planes.",
+				"Plans": [
+					{
+						"Title": "Inicio",
+						"Description": "¿Buscas comenzar tu camino hacia la libertad financiera? <br/> Obtén nuestro plan de inicio y disfruta de la verdadera libertad con tarifas bajas en tiendas y una tarjeta virtual/física.",
+						"Button Label": "Gratis"
+					},
+					{
+						"Title": "Plus",
+						"Description": "Si buscas verdadero valor, prueba nuestro plan Classic con cero tarifas de tarjeta, cero cargos mensuales y más.",
+						"Status": "No disponible aún",
+						"Button Label": "PRÓXIMAMENTE"
+					},
+					{
+						"Title": "Premium",
+						"Description": "Da el siguiente paso a un nivel verdaderamente global. Disfruta de características multi-divisa y valor agregado como inversión, salud y mucho más.",
+						"Status": "No disponible aún",
+						"Button Label": "PRÓXIMAMENTE"
+					}
+				]
+			},
+
+			"Seo": {
+				"Title": "Página de inicio",
+				"Description": "Bienvenido a la página de inicio de nuestro sitio web.",
+				"Og Title": "Página de inicio",
+				"Og Description": "Bienvenido a la página de inicio de nuestro sitio web.",
+				"Twitter Title": "Página de inicio",
+				"Twitter Description": "Bienvenido a la página de inicio de nuestro sitio web."
 			}
 		},
-		
+
 		"Why MyMonty": {
 			"Banner": {
-				"Sub Title": "Why MyMonty?",
-				"Title": "See what sets us apart",
-				"Description": "At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees."
+				"Sub Title": "¿Por qué MyMonty?",
+				"Title": "Descubre qué nos diferencia",
+				"Description": "En MyMonty, nos comprometemos a hacer de los servicios bancarios básicos un derecho universal. Te empoderamos para enviar, recibir o solicitar dinero sin esfuerzo, con precios transparentes y sin cargos ocultos."
+			},
+
+			"Section 2": {
+				"Cards": [
+					{
+						"Title": "Registro sin complicaciones",
+						"Description": "¡Unirte a nosotros es lo más sencillo posible! Nuestro proceso de registro optimizado te proporciona rápidamente un Número de Cuenta Bancaria Internacional (IBAN) después de nuestro proceso de verificación fácil de usar.",
+						"Image Alt": "Registro sin complicaciones"
+					},
+					{
+						"Title": "Pagos recurrentes",
+						"Description": "Ya no tendrás que preocuparte por los pagos recurrentes. Puedes configurarlos automáticamente. Relájate mientras nos encargamos de tus facturas de servicios a tiempo, asegurando que nunca te pierdas una fecha límite.",
+						"Image Alt": "Pagos recurrentes"
+					},
+					{
+						"Title": "Sin sorpresas en los cargos",
+						"Description": "Envía, recibe y solicita pagos globalmente sin cargos ocultos, solo transparencia.",
+						"Image Alt": "Sin sorpresas en los cargos"
+					},
+					{
+						"Title": "Estamos aquí para ti",
+						"Description": "Nuestro equipo de atención al cliente está disponible de lunes a viernes, de 9:00 am a 5:00 pm (EEST).",
+						"Image Alt": "Estamos aquí para ti"
+					},
+					{
+						"Title": "Seguridad de alto nivel",
+						"Description": "No necesitas recordar contraseñas. Utiliza protección biométrica para salvaguardar tu cuenta contra los piratas informáticos. Solo usa tu rostro para proteger tus transacciones de forma segura.",
+						"Image Alt": "Seguridad de alto nivel"
+					}
+				]
+			},
+
+			"Seo": {
+				"Title": "Por qué MyMonty",
+				"Description": "",
+				"Og Title": "Por qué MyMonty",
+				"Og Description": "",
+				"Twitter Title": "Por qué MyMonty",
+				"Twitter Description": ""
 			}
 		},
 
 		"Who We Are": {
 			"Banner": {
-				"Sub Title": "Who We Are",
-				"Title": "One app for all things money",
-				"Description": "Manage your money effortlessly from the comfort of one single intuitive&nbsp;app."
+				"Sub Title": "Quiénes somos",
+				"Title": "Una aplicación para todo lo relacionado con el dinero",
+				"Description": "Administra tu dinero sin esfuerzo desde la comodidad de una sola aplicación intuitiva."
 			}
 		},
 
 		"Plans": {
 			"Banner": {
-				"Sub Title": "Plans",
-				"Title": "Choose Your Plan",
-				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare&nbsp;plans."
+				"Sub Title": "Planes",
+				"Title": "Elige tu plan",
+				"Description": "Te tenemos cubierto con planes adaptados a tus necesidades. Solo elige el que más te convenga o compara planes."
 			}
 		},
 
 		"News": {
 			"Banner": {
-				"Sub Title": "News",
-				"Title": "What's happening at mymonty?",
-				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+				"Sub Title": "Noticias",
+				"Title": "¿Qué está pasando en MyMonty?",
+				"Description": "Explora nuestras noticias para conocer las últimas actualizaciones y ofertas."
 			}
 		},
 
 		"Features": {
 			"Banner": {
-				"Sub Title": "News",
-				"Title": "Unlock the best of what we offer",
-				"Description": "Enjoy our outstanding features and stand out from the&nbsp;crowd"
+				"Sub Title": "Características",
+				"Title": "Desbloquea lo mejor de lo que ofrecemos",
+				"Description": "Disfruta de nuestras características destacadas y destaca entre la multitud."
 			}
 		},
 
 		"Frequently Asked Questions": {
 			"Banner": {
 				"Sub Title": "FAQ",
-				"Title": "Frequently asked questions",
-				"Description": "Our team is always ready to assist you or answer your inquiries. Fill out this form to reach&nbsp;us."
+				"Title": "Preguntas frecuentes",
+				"Description": "Nuestro equipo está siempre listo para asistirte o responder tus consultas. Rellena este formulario para ponerte en contacto con nosotros."
 			}
 		},
 
 		"Contact Us": {
 			"Banner": {
-				"Sub Title": "Contact Us",
-				"Title": "Got any questions?",
-				"Description": "Our friendly team is here to help. Just fill out the form below, and we'll be in touch with you&nbsp;soon."
+				"Sub Title": "Contáctanos",
+				"Title": "¿Tienes alguna pregunta?",
+				"Description": "Nuestro amigable equipo está aquí para ayudarte. Solo llena el formulario a continuación y nos pondremos en contacto contigo pronto."
 			}
 		},
 
 		"Code of Conduct": {
 			"Banner": {
-				"Sub Title": "MyMonty Values",
-				"Title": "Our code of conduct",
-				"Description": "Learn about the guiding principles at&nbsp;MyMonty."
+				"Sub Title": "Valores MyMonty",
+				"Title": "Nuestro código de conducta",
+				"Description": "Conoce los principios que guían a MyMonty."
 			}
 		},
 
 		"Careers": {
 			"Banner": {
-				"Sub Title": "Careers",
-				"Title": "Join our dream team",
-				"Description": "Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a>&nbsp;now."
+				"Sub Title": "Carreras",
+				"Title": "Únete a nuestro equipo soñado",
+				"Description": "¡No te pierdas la oportunidad! Consulta nuestras vacantes en <a href='' target='_blank' class='text-primary'>LinkedIn</a> ahora."
 			}
 		},
 
 		"Board of Directors": {
 			"Banner": {
-				"Sub Title": "Board of Directors",
-				"Title": "Leadership team",
-				"Description": "We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking&nbsp;experience."
+				"Sub Title": "Junta Directiva",
+				"Title": "Equipo de liderazgo",
+				"Description": "Creemos en nuestra gente. Al apoyar y elevar continuamente sus habilidades, establecemos un alto estándar y seguimos llevándolo más alto. Estamos comprometidos con entrenar y empoderar a nuestro equipo para redefinir la experiencia bancaria digital."
 			}
 		},
 
 		"Blogs": {
 			"Banner": {
 				"Sub Title": "Blogs",
-				"Title": "What's happening at mymonty?",
-				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+				"Title": "¿Qué está pasando en MyMonty?",
+				"Description": "Explora nuestras noticias para conocer las últimas actualizaciones y ofertas."
 			}
 		}
 	}

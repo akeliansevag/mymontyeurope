@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <p class="py-6 sm:py-12 text-center text-base text-[#D4D4D4]">{{ $t(`General.Copyright`) }}</p>
+            <p class="py-6 sm:py-12 text-center text-base text-[#D4D4D4]" v-html="$t(`General.Copyright`)"></p>
 
         </div>
     </footer>

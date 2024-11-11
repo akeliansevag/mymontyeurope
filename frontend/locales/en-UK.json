@@ -13,6 +13,7 @@
 		},
 
 		"Links": {
+			"Homepage": "Homepage",
 			"Company": "Company",
 			"Why MyMonty": "WhyMyMonty",
 			"Who We Are": "Who We Are",
@@ -40,6 +41,10 @@
 			"Chevron Down Black": "Chevron Down Black",
 			"Chevron Down White": "Chevron Down White",
 			"Chevron Right Primary": "Chevron Right Primary",
+			"Check Box White": "Check Box White",
+			"Check Box Black": "Check Box Black",
+			"Receipt Check Box Primary": "Receipt Check Box Primary",
+			"Chat Box Primary": "Chat Box Primary",
 			"Apple Store": "Apple Store",
 			"Google Play": "Google Play",
 			"Simple & Hassle-Free Digital Payment": "Simple & Hassle-Free Digital Payment",
@@ -60,7 +65,10 @@
 			"Download App": "Download App",
 			"Get Started": "Get Started",
 			"Subscribe": "Subscribe",
-			"Contact Us": "Contact Us"
+			"Contact Us": "Contact Us",
+			"Payments": "Payments",
+			"View All Features": "View All Features",
+			"View all plans": "View all plans"
 		},
 
 		"Copyright": "Copyright MyMonty, 2024",
@@ -104,7 +112,100 @@
 			"Banner": {
 				"Title": "Simple &<br />Hassle-Free<br />Digital Payment",
 				"Description": "Empowering you with personalized financial&nbsp;solutions."
+			},
+
+			"Section 2": {
+				"Title": "Get on board with us",
+				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque.",
+			},
+
+			"Section 3": {
+				"Title": "We've got you covered worldwide",
+				"Description": "Send, receive and request money whenever and wherever you are.",
+				"Image Alt": "Get on Board With Us"
+			},
+
+			"Section 4": {
+				"Image Alt": "Manage Your Money",
+				"Title": "Manage your Money",
+				"List Items": {
+                    "Item 1": "Save & control your payments",
+                    "Item 2": "Wire Transfers within the SEPA region",
+                    "Item 3": "Global P2P Money Transfers"
+                }
+			},
+
+			"Section 5": {
+				"Title": "Request money with ease",
+				"Description": "No more fuss-just send a link, and get paid quickly and effortlessly from anyone, anywhere in the world.",
+				"Image Alt": "Request Money With Ease"
+			},
+
+			"Section 6": {
+				"Title": "Stay protected",
+				"List Items": {
+                    "Item 1": "Biometric protection",
+                    "Item 2": "Account safeguarded from hackers",
+                    "Item 3": "No password needed"
+                },
+				"Image Alt": "Stay Protected"
+			},
+
+			"Section 7": {
+				"Title": "Time to go digital",
+				"Description": "Manage your finances effortlessly with our intuitive mobile app. From account management to fund transfers and upcoming budget tracking, MyMonty offers a user-friendly interface tailored to your needs. Choose between EUR or GBP for seamless transactions in your preferred currency.",
+				"Image Alt": "Time to go digital"
+			},
+
+			"Section 8": {
+                "Title": "Get a look at our revolutionary features",
+                "Features": [
+                    {
+                        "Title": "Streamlined contactless payments",
+                        "Description": "Enjoy the convenience of contactless payments with MyMonty EEA/UK's integration with Google Pay. Securely make purchases in-store, online, and at payment terminals with ease and speed.",
+                        "Image Alt": "Streamlined Contactless Payments"
+                    },
+                    {
+                        "Title": "Support around the clock",
+                        "Description": "Count on MyMonty for reliable customer support. Our dedicated team is available during business hours, backed by an in-app bot for 24/7 assistance. Whether you have questions or need help, we're here to ensure your experience is smooth and enjoyable.",
+                        "Image Alt": "Support Around the Clock"
+                    }
+                ]
+            },
+
+			"Section 9": {
+                "Title": "Choose your plan",
+                "Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare plans.",
+                "Plans": [
+                    {
+                        "Title": "Starter",
+                        "Description": "Looking to start that journey to financial freedom? <br/> Get our Starter plan and enjoy true freedom with low in-store fees and a virtual/physical card.",
+                        "Button Label": "Free"
+                    },
+                    {
+                        "Title": "Plus",
+                        "Description": "If you're looking for true value, try our Classic plan with zero card fees, zero monthly charges and more.",
+                        "Status": "Not Available Yet",
+                        "Button Label": "COMING SOON"
+                    },
+                    {
+                        "Title": "Premium",
+                        "Description": "Step up to a truly global level. Enjoy multi-currency features and added value such as investment, health and much more.",
+                        "Status": "Not Available Yet",
+                        "Button Label": "COMING SOON"
+                    }
+                ]
+            },
+
+			"Seo": {
+				"Title": "Homepage",
+				"Description": "Welcome to the homepage of our website.",
+				"Og Title": "Homepage",
+				"Og Description": "Welcome to the homepage of our website.",
+				"Twitter Title": "Homepage",
+				"Twitter Description": "Welcome to the homepage of our website."
 			}
+			
 		},
 		
 		"Why MyMonty": {
@@ -112,6 +213,45 @@
 				"Sub Title": "Why MyMonty?",
 				"Title": "See what sets us apart",
 				"Description": "At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees."
+			},
+
+			"Section 2": {
+				"Cards": [
+					{
+						"Title": "Effortless onboarding",
+						"Description": "Joining us is as smooth as it gets! Our streamlined registration process swiftly provides you with an International Bank Account Number (IBAN) after our user-friendly vetting process.",
+						"Image Alt": "Effortless Onboarding"
+					},
+					{
+						"Title": "Recurring payments",
+						"Description": "No more stressing over recurring payments when you can set them up automatically. Sit back and relax while we handle your utility bills promptly, ensuring you never miss a deadline.",
+						"Image Alt": "Recurring Payments"
+					},
+					{
+						"Title": "No surprise fees",
+						"Description": "Send, receive and request payments globally with no hidden fees, only transparency.",
+						"Image Alt": "No Surprise Fees"
+					},
+					{
+						"Title": "Here for you",
+						"Description": "Our friendly customer service team is available Monday to Friday, from 9:00 am to 5:00 pm (EEST).",
+						"Image Alt": "Here For You"
+					},
+					{
+						"Title": "High-end security",
+						"Description": "No need to remember passwords. Utilize biometric protection to safeguard your account against hackers. Just use your face to lock down your transactions securely.",
+						"Image Alt": "High-End Security"
+					}
+				]
+			},
+
+			"Seo": {
+				"Title": "Why MyMonty",
+				"Description": "",
+				"Og Title": "Why MyMonty",
+				"Og Description": "",
+				"Twitter Title": "Why MyMonty",
+				"Twitter Description": ""
 			}
 		},
 

@@ -121,7 +121,7 @@
         </section>
 
         <!-- need to be replaced -->
-        <section id="section-3" class="relative my-12 py-12 lg:my-14 lg:py-36 bg-[url('/images/always-there-for-you-bg.png')] bg-no-repeat bg-cover bg-center">
+        <section id="section-3" class="relative my-12 py-12 lg:my-14 lg:py-36 bg-[url('/images/always-there-for-you-bg.webp')] bg-no-repeat bg-cover bg-center">
             <div class="container">
                 <div class="grid lg:grid-cols-2 gap-16">
                     <div class="flex flex-col justify-start items-start gap-8 text-white">

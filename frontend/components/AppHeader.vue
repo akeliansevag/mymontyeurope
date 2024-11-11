@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Download App`) }}</button>
+                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
 
                 <!-- Mobile Menu Toggle Icon -->
@@ -170,7 +170,7 @@
                         </ul>
                     </template>
                         
-                    <button class="py-2 px-4 text-base text-white bg-primary mx-auto  rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Download App`) }}</button>
+                    <ScrollButton target="download" @click="closeNav" class="py-2 px-4 text-base text-white bg-primary mx-auto  rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
             </div>
         </nav>
@@ -180,7 +180,7 @@
 <script setup>
     import { useLocale } from '~/composables/useLocale';
 
-    const { currentLocale, currentRegion, currentLanguage, currentLocaleDetails, filteredLocales, filteredRegions, setLocale } = useLocale();
+    const { currentLocale, currentRegion, currentLanguage, currentLocaleDetails, filteredLocales, filteredRegions, setLocale, t } = useLocale();
 
     useHead(() => ({
         meta: [
@@ -244,6 +244,7 @@
 
     const closeNav = () => {
         isNavOpen.value = false
+        document.body.classList.toggle("overflow-y-hidden", isNavOpen.value);
     };
 
     const checkScrollPosition = () => {
