@@ -34,16 +34,47 @@
 			"Cookie Policy": "Cookie Policy"
 		},
 
-		"Alt": {
+		"Alts": {
 			"Logo": "MyMonty Logo",
 			"Chevron Up Gray": "Chevron Up Gray",
 			"Chevron Down Black": "Chevron Down Black",
+			"Chevron Down White": "Chevron Down White",
 			"Chevron Right Primary": "Chevron Right Primary"
 		},
 
 		"Buttons": {
 			"Download App": "Download App",
-			"Get Started": "Get Started"
+			"Get Started": "Get Started",
+			"Subscribe": "Subscribe"
+		},
+
+		"Copyright": "Copyright MyMonty, 2024",
+
+		"Placeholders": {
+			"Email": "Enter Your Email"
+		},
+
+		"Messages": {
+            "Errors": {
+				"Required": {
+					"Email": "Please enter your email address"
+				},
+
+				"Safe": "Your input has invalid value", 
+				"Valid Email": "This email address is already subscribed.",
+				"Unique Email": "This email address is already subscribed."
+			},
+
+			"Success": {
+				"Newsletter": "Thank you for subscribing."
+			}
+		}
+	},
+
+	"Footer": {
+		"Newsletter": {
+			"Title": "Subscribe to our newsletter",
+			"Description": "Subscribe to our newsletter"
 		}
 	}
 }

@@ -34,16 +34,55 @@
 			"Cookie Policy": "Cookie Policy"
 		},
 
-		"Alt": {
+		"Alts": {
 			"Logo": "MyMonty Logo",
 			"Chevron Up Gray": "Chevron Up Gray",
 			"Chevron Down Black": "Chevron Down Black",
-			"Chevron Right Primary": "Chevron Right Primary"
+			"Chevron Down White": "Chevron Down White",
+			"Chevron Right Primary": "Chevron Right Primary",
+			"Apple Store": "Apple Store",
+			"Google Play": "Google Play"
 		},
 
 		"Buttons": {
 			"Download App": "Download App",
-			"Get Started": "Get Started"
+			"Get Started": "Get Started",
+			"Subscribe": "Subscribe"
+		},
+
+		"Copyright": "Copyright MyMonty, 2024",
+
+		"Placeholders": {
+			"Email": "Enter Your Email"
+		},
+
+		"Messages": {
+            "Errors": {
+				"Required": {
+					"Email": "Please enter your email address"
+				},
+
+				"Safe": "Your input has invalid value", 
+				"Valid Email": "This email address is already subscribed.",
+				"Unique Email": "This email address is already subscribed."
+			},
+
+			"Success": {
+				"Newsletter": "Thank you for subscribing."
+			}
+		},
+
+		"Download": {
+			"Title": "Download the app now",
+			"Description": "Sign up and explore our endless benefits",
+			"Scan Qr": "Scan the QR to <br /> download the app"
+		}
+	},
+
+	"Footer": {
+		"Newsletter": {
+			"Title": "Subscribe to our newsletter",
+			"Description": "Subscribe to our newsletter"
 		}
 	}
 }

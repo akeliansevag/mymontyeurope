@@ -1,49 +1,80 @@
 {
 	"General": {
 		"Regions": {
-			"United Kingdom": "Reino Unido",
-			"Spain": "España",
-			"Italy": "Italia"
+			"United Kingdom": "United Kingdom",
+			"Spain": "Spain",
+			"Italy": "Italy"
 		},
 
 		"Languages": {
-			"English": "Inglés",
-			"Spanish": "Español",
-			"Italian": "Italiano"
-		},
-		
-		"Links": {
-			"Company": "Compañía",
-			"Why MyMonty": "Por qué MyMonty",
-			"Who We Are": "Quiénes somos",
-			"Careers": "Carreras",
-			"Code of Conduct": "Código de Conducta",
-			"News": "Noticias",
-			"Blogs": "Blogs",
-			"Board of Directors": "Junta Directiva",
-			"FAQ": "Preguntas Frecuentes",
-			"Features": "Características",
-			"Accounts": "Cuentas",
-			"Cards": "Tarjetas",
-			"Transfers": "Transferencias",
-			"Payments": "Pagos",
-			"Plans": "Planes",
-			"Contact Us": "Contáctanos",
-			"Terms & Conditions": "Términos y Condiciones",
-			"Privacy Policy": "Política de Privacidad",
-			"Cookie Policy": "Política de Cookies"
+			"English": "English",
+			"Spanish": "Spanish",
+			"Italian": "Italian"
 		},
 
-		"Alt": {
-			"Logo": "Logo de MyMonty",
+		"Links": {
+			"Company": "Company",
+			"Why MyMonty": "WhyMyMonty",
+			"Who We Are": "Who We Are",
+			"Careers": "Careers",
+			"Code of Conduct": "Code of Conduct",
+			"News": "News",
+			"Blogs": "Blogs",
+			"Board of Directors": "Board of Directors",
+			"FAQ": "FAQ",
+			"Features": "Features",
+			"Accounts": "Accounts",
+			"Cards": "Cards",
+			"Transfers": "Transfers",
+			"Payments": "Payments",
+			"Plans": "Plans",
+			"Contact Us": "Contact Us",
+			"Terms & Conditions": "Terms & Conditions",
+			"Privacy Policy": "Privacy Policy",
+			"Cookie Policy": "Cookie Policy"
+		},
+
+		"Alts": {
+			"Logo": "MyMonty Logo",
 			"Chevron Up Gray": "Chevron Up Gray",
-			"Chevron Down Black": "Flecha hacia abajo",
-			"Chevron Right Primary": "Flecha Derecha Principal"
+			"Chevron Down Black": "Chevron Down Black",
+			"Chevron Down White": "Chevron Down White",
+			"Chevron Right Primary": "Chevron Right Primary"
 		},
 
 		"Buttons": {
 			"Download App": "Download App",
-			"Get Started": "Get Started"
+			"Get Started": "Get Started",
+			"Subscribe": "Subscribe"
+		},
+
+		"Copyright": "Copyright MyMonty, 2024",
+
+		"Placeholders": {
+			"Email": "Enter Your Email"
+		},
+
+		"Messages": {
+            "Errors": {
+				"Required": {
+					"Email": "Please enter your email address"
+				},
+
+				"Safe": "Your input has invalid value", 
+				"Valid Email": "This email address is already subscribed.",
+				"Unique Email": "This email address is already subscribed."
+			},
+
+			"Success": {
+				"Newsletter": "Thank you for subscribing."
+			}
+		}
+	},
+
+	"Footer": {
+		"Newsletter": {
+			"Title": "Subscribe to our newsletter",
+			"Description": "Subscribe to our newsletter"
 		}
 	}
 }

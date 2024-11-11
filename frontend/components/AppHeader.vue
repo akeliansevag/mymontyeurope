@@ -7,12 +7,12 @@
                         <div class="flex justify-between items-center gap-2 p-2"><!-- p-2 -->
                             <!-- Logo Placeholder -->
                             <NuxtLinkLocale :to="'/'" class="link">
-                                <img src="/images/logo.svg" :alt="$t(`General.Alt.Logo`)" width="133" height="28" />
+                                <img src="/images/logo.svg" :alt="$t(`General.Alts.Logo`)" width="133" height="28" />
                             </NuxtLinkLocale>
 
                             <!-- Location Dropdown Icon -->
                             <span id="location-toggle" class="text-xl text-black cursor-pointer">
-                                <img src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alt.Chevron Down Black`)" width="14" height="8" />
+                                <img src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="14" height="8" />
                             </span>
 
                             <!-- Invisible hover buffer (1.5padding, 1px border bottom) -->
@@ -61,7 +61,7 @@
                                         <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col w-full text-black cursor-pointer hover:text-primary transition-all duration-300 ease-in-out">
                                             <NuxtLinkLocale :to="`/${subItem.path}`" class="link flex items-center gap-2 group/item">
                                                 <span class="text-sm font-AeonikRegular">{{ $t(`General.Links.${subItem.title}`) }}</span>
-                                                <img class="-translate-x-5 -rotate-90 invisible opacity-0 group-hover/item:visible group-hover/item:translate-x-0 group-hover/item:opacity-100 transition-all duration-300 ease-in-out" src="/images/icons/chevron-right-primary.svg" :alt="$t(`General.Alt.Chevron Right Primary`)" width="8" height="8" />
+                                                <img class="-translate-x-5 -rotate-90 invisible opacity-0 group-hover/item:visible group-hover/item:translate-x-0 group-hover/item:opacity-100 transition-all duration-300 ease-in-out" src="/images/icons/chevron-right-primary.svg" :alt="$t(`General.Alts.Chevron Right Primary`)" width="8" height="8" />
                                             </NuxtLinkLocale>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="28" height="28" /> -->
                             <img :src="`/images/flags/${ currentLocale.split('-')[1].toLowerCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
                             <!-- <span>{{currentLocale.split('-')[0]}}</span> -->
-                            <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="$t(`General.Alt.Chevron Down Black`)" width="10" height="8" />
+                            <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="8" />
 
                             <!-- Invisible hover buffer (1.5padding, 1px border bottom) -->
                             <div class="absolute top-full left-0 h-[calc(1.5rem+1px)] w-full group-hover:block hidden"></div>
@@ -120,14 +120,14 @@
                                 <NuxtLinkLocale :to="`/${item.path}`" class="link font-AeonikMedium">{{ $t(`General.Links.${item.title}`) }}</NuxtLinkLocale>
                                 
                                 <!-- Dropdown icon if children exist -->
-                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alt.Chevron Down Black`)" width="10" height="6" />
+                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="6" />
                             </template>
 
                             <!-- Render as text if not clickable -->
                             <template v-else>
                                 <span class="font-AeonikMedium">{{ $t(`General.Links.${item.title}`) }}</span>
                                 <!-- Dropdown icon if children exist -->
-                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alt.Chevron Down Black`)" width="10" height="6" />
+                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="6" />
                             </template>
                         </div>
 
@@ -155,7 +155,7 @@
 
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="16" height="16" /> -->
                             <!-- <span class="text-sm font-AeonikRegular">English</span> -->
-                            <img v-if="filteredLocales.length > 0" class="rotate-0 group-hover:rotate-180 transition-all duration-300 ease-in-out" src="/images/icons/chevron-up-gray.svg" :alt="$t(`General.Alt.Chevron Up Gray`)" width="8" height="6" />
+                            <img v-if="filteredLocales.length > 0" class="rotate-0 group-hover:rotate-180 transition-all duration-300 ease-in-out" src="/images/icons/chevron-up-gray.svg" :alt="$t(`General.Alts.Chevron Up Gray`)" width="8" height="6" />
                         </div>
                     </div>
 

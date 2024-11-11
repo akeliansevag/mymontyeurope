@@ -3,33 +3,33 @@
         <div class="container">
             <div class="grid lg:grid-cols-3 lg:justify-between gap-16 sm:gap-20 w-full py-6 sm:py-12">
                 <div class="flex flex-col justify-start items-start gap-4">
-                    <h3 class="font-AeonikBlack text-white text-xl uppercase">Subscribe to our newsletter</h3>
-                    <p class="text-[#D4D4D4] text-base">Receive the latest news from us.</p>
-                    <input v-model="form.newsletter_email" type="text" class="w-full py-4 px-6 bg-white rounded-full leading-none outline-none" placeholder="Enter your email" />
-                    <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
-                    <div v-if="submissionMessage" class="text-xs text-gray-500">{{ submissionMessage }}</div>
-                    <button @click.prevent="handleSubmit" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">Subscribe</button>
+                    <h3 class="font-AeonikBlack text-white text-xl uppercase">{{ $t(`Footer.Newsletter.Title`) }}</h3>
+                    <p class="text-[#D4D4D4] text-base">{{ $t(`Footer.Newsletter.Description`) }}</p>
+                    <input v-model="form.newsletter_email" type="text" class="w-full py-4 px-6 bg-white rounded-full leading-none outline-none" :placeholder="$t(`General.Placeholders.Email`)" />
+                    <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ $t(`${errors.newsletter_email}`) }}</div>
+                    <div v-if="submissionMessage" class="text-xs text-gray-500">{{ $t(`${submissionMessage}`) }}</div>
+                    <button @click.prevent="handleSubmit" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Subscribe`) }}</button>
                 </div>
                 <ul class="lg:col-span-2 grid sm:grid-cols-4 sm:justify-between gap-6 sm:gap-3">
                     <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
                         <template v-if="item.clickable">
                             <NuxtLinkLocale :to="`/${item.path}`" class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white text-xl">
-                                <span>{{ item.title }}</span>
-                                <img v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
+                                <span>{{ $t(`General.Links.${item.title}`) }}</span>
+                                <img v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="$t(`General.Alts.Chevron Down White`)" width="14" height="8" />
                             </NuxtLinkLocale>
                         </template>
 
                         <!-- Render as text if not clickable -->
                         <template v-else>
                             <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white text-xl">
-                                <span>{{ item.title }}</span>
-                                <img v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" alt="Chevron Down White" width="14" height="8" />
+                                <span>{{ $t(`General.Links.${item.title}`) }}</span>
+                                <img v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="$t(`General.Alts.Chevron Down White`)" width="14" height="8" />
                             </div>
                         </template>
 
                         <ul v-if="item.links && item.links.length > 0" class="children-menu flex flex-col gap-2 max-sm:max-h-0 max-sm:ml-4 text-base text-[#D4D4D4] overflow-hidden transition-all duration-300 ease-in-out">
-                            <li v-for="(link, linkIndex) in item.links" :key="linkIndex">
-                                <NuxtLinkLocale :to="`/${link.path}`">{{ link.title }}</NuxtLinkLocale>
+                            <li v-for="(subItem, linkIndex) in item.links" :key="linkIndex">
+                                <NuxtLinkLocale :to="`/${subItem.path}`">{{ $t(`General.Links.${subItem.title}`) }}</NuxtLinkLocale>
                             </li>
                         </ul>
                     </li>
@@ -41,7 +41,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-8 md:gap-4 py-6 md:py-12 max-md:text-center">
                 <div class="flex max-md:justify-center items-center gap-8">
                     <a to="" target="_blank" rel="noopener noreferrer" aria-title="Facebook">
-                        <img src="/images/icons/facebook.svg" alt="Facebook Logo" width="24" height="24" />
+                        <img src="/images/icons/facebook.svg" alt="Facebook" width="24" height="24" />
                     </a>
                     <a to="" target="_blank" rel="noopener noreferrer" aria-title="X">
                         <img src="/images/icons/x.svg" alt="X" width="24" height="24" />
@@ -58,13 +58,13 @@
                 </div>
 
                 <div class="flex max-md:justify-center items-center gap-6 md:ml-auto text-[#D4D4D4]">
-                    <NuxtLinkLocale :to="''" class="text-sm underline underline-offset-4">Terms & Conditions</NuxtLinkLocale>
-                    <NuxtLinkLocale :to="''" class="text-sm underline underline-offset-4">Privacy Policy</NuxtLinkLocale>
-                    <NuxtLinkLocale :to="''" class="text-sm underline underline-offset-4">Cookie Policy</NuxtLinkLocale>
+                    <NuxtLinkLocale :to="''" class="text-sm underline underline-offset-4">{{ $t(`General.Links.Terms & Conditions`) }}</NuxtLinkLocale>
+                    <NuxtLinkLocale :to="''" class="text-sm underline underline-offset-4">{{ $t(`General.Links.Privacy Policy`) }}</NuxtLinkLocale>
+                    <NuxtLinkLocale :to="''" class="text-sm underline underline-offset-4">{{ $t(`General.Links.Cookie Policy`) }}</NuxtLinkLocale>
                 </div>
             </div>
 
-            <p class="py-6 sm:py-12 text-center text-base text-[#D4D4D4]">Copyright @MyMonty, 2024</p>
+            <p class="py-6 sm:py-12 text-center text-base text-[#D4D4D4]">{{ $t(`General.Copyright`) }}</p>
 
         </div>
     </footer>
@@ -155,9 +155,9 @@
 
     const validationRules = {
 		newsletter_email: {
-            required: 'Please enter your email address',
-            email: 'Please enter a valid email address',
-            safe: 'Your input has invalid value'
+            required: 'General.Messages.Errors.Required.Email',
+            email: 'General.Messages.Errors.Valid Email',
+            safe: 'General.Messages.Errors.Safe'
         },
     };
 
@@ -175,7 +175,7 @@
             isSubmitting.value = false; // Re-enable the button
             return; // Stop submission if form or file validation fails
         }
-        
+        console.log(errors.newsletter_email);
         try {
             // Check this route in the plugins of the backend (Check Email plugin)
             // Add the form ID to the request
@@ -188,7 +188,7 @@
             const emailCheckData = await emailCheckResponse.json();
 
             if (emailCheckData.exists) {
-                errors.value.newsletter_email = 'This email address is already subscribed.';
+                errors.value.newsletter_email = 'General.Messages.Errors.Unique Email';
                 isSubmitting.value = false; // Re-enable the button
                 return;
             }
@@ -223,7 +223,7 @@
                 throw new Error('Validation Error');
             }
 
-            submissionMessage.value = "Thank you for subscribing."
+            submissionMessage.value = "General.Messages.Success.Newsletter"
             
             // Clear success message after 2 seconds
             setTimeout(() => {
