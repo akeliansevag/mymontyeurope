@@ -1,5 +1,5 @@
 <template lang="">
-    <header id="header" class="fixed top-0 left-0 w-full z-50 min-h-[93px] transition-all duration-300 ease-in-out bg-white" :class="{ '-translate-y-full': isScrolledDown, 'translate-y-0': isNavOpen }">
+    <header id="header" class="fixed top-0 left-0 w-full z-50 min-h-[93px] transition-transform duration-300 ease-in-out bg-white" :class="{ '-translate-y-full': isScrolledDown, 'translate-y-0': isNavOpen }">
         <div class="w-full py-6 border-b border-[#D4D4D422] z-[3]">
             <div class="container flex justify-between items-center">
                 <div class="flex justify-between items-center gap-4">
@@ -7,12 +7,12 @@
                         <div class="flex justify-between items-center gap-2 p-2"><!-- p-2 -->
                             <!-- Logo Placeholder -->
                              <NuxtLinkLocale :to="'/'" class="link">
-                                <img src="/images/logo.svg" :alt="$t(`General.Alts.Logo`)" width="133" height="28" />
+                                <img src="/images/logo.svg" :alt="t(`General.Alts.Logo`)" width="133" height="28" />
                             </NuxtLinkLocale>
 
                             <!-- Location Dropdown Icon -->
                             <span id="location-toggle" class="text-xl text-black cursor-pointer">
-                                <img src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="14" height="8" />
+                                <img src="/images/icons/chevron-down-black.svg" :alt="t(`General.Alts.Chevron Down Black`)" width="14" height="8" />
                             </span>
 
                             <!-- Invisible hover buffer (1.5padding, 1px border bottom) -->
@@ -22,8 +22,8 @@
                             <ul class="absolute top-[calc(100%+1.5rem+1px)] left-0 z-10 w-full rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                 <template v-for="(locale, index) in filteredRegions" :key="locale.index">
                                     <li v-if="locale.native" @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4]', { 'border-b': index !== filteredRegions.length - 1 }]">
-                                        <img v-if="locale.native" :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" :alt="$t(`General.Regions.${locale.region}`)" width="24" height="24" />
-                                        <span class="text-sm font-AeonikRegular">{{ $t(`General.Regions.${locale.region}`) }}</span>
+                                        <img v-if="locale.native" :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" :alt="t(`General.Regions.${locale.region}`)" width="24" height="24" />
+                                        <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.${locale.region}`) }}</span>
                                     </li>
                                 </template>    
                             </ul>
@@ -40,14 +40,14 @@
                                 <!-- Link if clickable -->
                                 <template v-if="item.clickable">
                                     <NuxtLinkLocale :to="`/${item.path}`" class="link transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
-                                        {{ $t(`General.Links.${item.title}`) }}
+                                        {{ t(`General.Links.${item.title}`) }}
                                     </NuxtLinkLocale>
                                 </template>
                                 
                                 <!-- title if not clickable -->
                                 <template v-else>
                                     <span class="transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
-                                        {{ $t(`General.Links.${item.title}`) }}
+                                        {{ t(`General.Links.${item.title}`) }}
                                     </span>
                                 </template>
 
@@ -60,8 +60,8 @@
                                     <div class="nav absolute top-[calc(100%+1.5rem+1px)] left-1/2 -translate-x-1/2 z-10 flex flex-col gap-4 w-max p-8 rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                         <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col w-full text-black cursor-pointer hover:text-primary transition-all duration-300 ease-in-out">
                                             <NuxtLinkLocale :to="`/${subItem.path}`" class="link flex items-center gap-2 group/item">
-                                                <span class="text-sm font-AeonikRegular">{{ $t(`General.Links.${subItem.title}`) }}</span>
-                                                <img class="-translate-x-5 -rotate-90 invisible opacity-0 group-hover/item:visible group-hover/item:translate-x-0 group-hover/item:opacity-100 transition-all duration-300 ease-in-out" src="/images/icons/chevron-right-primary.svg" :alt="$t(`General.Alts.Chevron Right Primary`)" width="8" height="8" />
+                                                <span class="text-sm font-AeonikRegular">{{ t(`General.Links.${subItem.title}`) }}</span>
+                                                <img class="-translate-x-5 -rotate-90 invisible opacity-0 group-hover/item:visible group-hover/item:translate-x-0 group-hover/item:opacity-100 transition-all duration-300 ease-in-out" src="/images/icons/chevron-right-primary.svg" :alt="t(`General.Alts.Chevron Right Primary`)" width="8" height="8" />
                                             </NuxtLinkLocale>
                                         </div>
                                     </div>
@@ -75,9 +75,9 @@
                     <div :class="['cursor-pointer relative group rounded-full', { 'hover:bg-[#ECECEE]': filteredLocales.length > 0 }]">
                         <div class="flex justify-between items-center gap-2 p-2">
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="28" height="28" /> -->
-                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
+                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
                             <!-- <span>{{currentLocale.split('-')[0]}}</span> -->
-                            <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="8" />
+                            <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="t(`General.Alts.Chevron Down Black`)" width="10" height="8" />
 
                             <!-- Invisible hover buffer (1.5padding, 1px border bottom) -->
                             <div class="absolute top-full left-0 h-[calc(1.5rem+1px)] w-full group-hover:block hidden"></div>
@@ -89,7 +89,7 @@
                                         <template v-for="(locale, index) in filteredLocales" :key="locale.index">
                                             <li @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 py-3 px-4 transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]', { 'border-b': index !== filteredLocales.length - 1 }]">
                                                 <!-- <img :src="`/images/flags/${ locale.icon }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
-                                                <span class="text-sm font-AeonikRegular">{{ $t(`General.Languages.${locale.language}`) }}</span>
+                                                <span class="text-sm font-AeonikRegular">{{ t(`General.Languages.${locale.language}`) }}</span>
                                             </li>
                                         </template>
                                     </template>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Download App`) }}</ScrollButton>
+                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
 
                 <!-- Mobile Menu Toggle Icon -->
@@ -117,17 +117,17 @@
                         <div class="children-toggle flex justify-between items-center">
                             <!-- Render as link if clickable -->
                             <template v-if="item.clickable">
-                                <NuxtLinkLocale :to="`/${item.path}`" class="link font-AeonikMedium">{{ $t(`General.Links.${item.title}`) }}</NuxtLinkLocale>
+                                <NuxtLinkLocale :to="`/${item.path}`" class="link font-AeonikMedium">{{ t(`General.Links.${item.title}`) }}</NuxtLinkLocale>
                                 
                                 <!-- Dropdown icon if children exist -->
-                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="6" />
+                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="t(`General.Alts.Chevron Down Black`)" width="10" height="6" />
                             </template>
 
                             <!-- Render as text if not clickable -->
                             <template v-else>
-                                <span class="font-AeonikMedium">{{ $t(`General.Links.${item.title}`) }}</span>
+                                <span class="font-AeonikMedium">{{ t(`General.Links.${item.title}`) }}</span>
                                 <!-- Dropdown icon if children exist -->
-                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="$t(`General.Alts.Chevron Down Black`)" width="10" height="6" />
+                                <img v-if="item.links && item.links.length" class="transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-black.svg" :alt="t(`General.Alts.Chevron Down Black`)" width="10" height="6" />
                             </template>
                         </div>
 
@@ -141,7 +141,7 @@
                                     'mb-4': subItemIndex === item.links.length - 1
                                 }"
                             >
-                                <NuxtLinkLocale :to="`/${subItem.path}`" class="link flex items-center gap-2 cursor-pointer font-AeonikRegular text-sm">{{ $t(`General.Links.${subItem.title}`) }}</NuxtLinkLocale>
+                                <NuxtLinkLocale :to="`/${subItem.path}`" class="link flex items-center gap-2 cursor-pointer font-AeonikRegular text-sm">{{ t(`General.Links.${subItem.title}`) }}</NuxtLinkLocale>
                             </li>
                         </ul>
                     </li>
@@ -151,11 +151,11 @@
                 <div class="absolute bottom-[calc(93px)] flex flex-col gap-4 w-full left-1/2 -translate-x-1/2 z-50 py-4 text-sm bg-white text-center group">
                     <div class="relative w-full bg-white">
                         <div class="flex justify-center items-center gap-2 w-max py-1 px-2 rounded-full mx-auto bg-[#ECECEE]">
-                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="$t(`General.Languages.${currentLocaleDetails.language}`)" width="16" height="16" />
+                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="t(`General.Languages.${currentLocaleDetails.language}`)" width="16" height="16" />
 
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="16" height="16" /> -->
                             <!-- <span class="text-sm font-AeonikRegular">English</span> -->
-                            <img v-if="filteredLocales.length > 0" class="rotate-0 group-hover:rotate-180 transition-all duration-300 ease-in-out" src="/images/icons/chevron-up-gray.svg" :alt="$t(`General.Alts.Chevron Up Gray`)" width="8" height="6" />
+                            <img v-if="filteredLocales.length > 0" class="rotate-0 group-hover:rotate-180 transition-all duration-300 ease-in-out" src="/images/icons/chevron-up-gray.svg" :alt="t(`General.Alts.Chevron Up Gray`)" width="8" height="6" />
                         </div>
                     </div>
 
@@ -164,13 +164,13 @@
                             <template v-for="(locale, index) in filteredLocales" :key="locale.index">
                                 <li @click.prevent.stop="setLocale(locale.code)" class="flex gap-2 justify-start w-max transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]">
                                     <!-- <img :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
-                                    <span class="text-sm font-AeonikRegular">{{ $t(`General.Languages.${locale.language}`) }}</span>
+                                    <span class="text-sm font-AeonikRegular">{{ t(`General.Languages.${locale.language}`) }}</span>
                                 </li>
                             </template>
                         </ul>
                     </template>
                         
-                    <ScrollButton target="download" @click="closeNav" class="py-2 px-4 text-base text-white bg-primary mx-auto  rounded-[30px] select-none font-AeonikMedium">{{ $t(`General.Buttons.Download App`) }}</ScrollButton>
+                    <ScrollButton target="download" @click="closeNav" class="py-2 px-4 text-base text-white bg-primary mx-auto  rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
             </div>
         </nav>
@@ -178,8 +178,6 @@
 </template>
 
 <script setup>
-    import { useLocale } from '~/composables/useLocale';
-
     const { currentLocale, currentRegion, currentLanguage, currentLocaleDetails, filteredLocales, filteredRegions, setLocale, t } = useLocale();
 
     useHead(() => ({
@@ -211,7 +209,7 @@
                 { title: "News", path: "news" },
                 { title: "Blogs", path: "blogs" },
                 { title: "Board of Directors", path: "board-of-directors" },
-                { title: "FAQ", path: "faq" }
+                { title: "FAQs", path: "faqs" }
             ]
         },
         {

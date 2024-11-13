@@ -14,6 +14,7 @@
 
 <script setup>
     import he from 'he';
+	const { t } = useLocale(); 
 
     const route = useRoute();
     const slug = route.params.slug;    

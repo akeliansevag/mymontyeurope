@@ -22,7 +22,7 @@
 			"News": "News",
 			"Blogs": "Blogs",
 			"Board of Directors": "Board of Directors",
-			"FAQ": "FAQ",
+			"FAQs": "FAQs",
 			"Features": "Features",
 			"Accounts": "Accounts",
 			"Cards": "Cards",
@@ -45,6 +45,14 @@
 			"Check Box Black": "Check Box Black",
 			"Receipt Check Box Primary": "Receipt Check Box Primary",
 			"Chat Box Primary": "Chat Box Primary",
+			"Telephone White": "Telephone White",
+			"Marker Pin White": "Marker Pin White",
+			"Monty Mobile Gray": "Monty Mobile Gray",
+			"Telephone Box Blue": "Telephone Box Blue",
+			"Close Red": "Close Red",
+			"Chevron Right Box Black": "Chevron Right Box Black",
+			"Chevron Left Box Gray": "Chevron Left Box Gray",
+			"Phone Box Blue": "Phone Box Blue",
 			"Apple Store": "Apple Store",
 			"Google Play": "Google Play",
 			"Simple & Hassle-Free Digital Payment": "Simple & Hassle-Free Digital Payment",
@@ -68,28 +76,88 @@
 			"Contact Us": "Contact Us",
 			"Payments": "Payments",
 			"View All Features": "View All Features",
-			"View all plans": "View all plans"
+			"View all plans": "View all plans",
+			"Submit": "Submit",
+			"Choose Plan": "Choose Plan",
+			"Coming Soon": "Coming Soon"
 		},
 
 		"Copyright": "Copyright MyMonty, 2024",
 
+		"Labels": {
+			"Full Name": "Full Name",
+			"Email Address": "Email Address",
+			"Company Name": "Company Name",
+			"Position": "Position",
+			"Profession": "Profession",
+			"Mobile Number": "Mobile Number",
+			"Subject": "Subject",
+			"Message": "Your Message",
+			"Country": "Country",
+			"Upload your CV": "Upload your CV",
+			"Click to Upload": "Click to Upload",
+			"Files Accepted": "Files Accepted",
+			"Maximum file size": "Maximum file size",
+			"Uploaded File": "Uploaded File",
+			"File Size": "Uploaded File",
+			"Acknowlegment": {
+				"Part 1": "By checking this box, you confirm that you've read and accepted our",
+				"Part 2": "for our website"
+			},
+			"Select": "Select",
+			"Optional": "Optional"
+		},
+		
 		"Placeholders": {
-			"Email": "Enter Your Email"
+			"Email": "Enter Your Email",
+			"Full Name": "Full Name",
+			"Email Address": "Email Address",
+			"Company Name": "Company Name",
+			"Position": "Position",
+			"Profession": "Profession",
+			"Mobile Number": "Mobile Number",
+			"Subject": "Subject",
+			"Message": "Your Message",
+			"Search": "Search"
 		},
 
 		"Messages": {
             "Errors": {
 				"Required": {
-					"Email": "Please enter your email address"
+					"Full Name": "Please enter your full name",
+					"Email": "Please enter your email address",
+					"Position": "Please choose your position",
+					"Code": "Please choose your country code",
+					"Mobile Number": "Please enter your mobile number",
+					"Country": "Please choose your country",
+					"Profession": "Please enter your profession",
+					"Subject": "Please enter your subject",
+					"Message": "Please enter your message",
+					"File": "Please upload at least one valid file"
 				},
 
 				"Safe": "Your input has invalid value", 
-				"Valid Email": "This email address is already subscribed.",
-				"Unique Email": "This email address is already subscribed."
+				"Valid Email": "Please enter a valid email address",
+				"Valid Code": "Please enter a valid country code",
+				"Unique Email": "This email address is already subscribed.",
+				"Numeric": "Please enter a valid numeric phone number",
+				"Length": "Please enter a valid phone number between 5 and 12 characters",
+				"File Type": "Invalid file type. Allowed types: pdf, doc, docx, jpg, jpeg, png",
+				"File Max Size": "File size exceeds the limit of 5MB",
+				"Upload Up To": "You can only upload up to",
+				"Files": "files",
+				"You can only upload": "You can only upload",
+				"More Files": "more files",
+				"Confirm Policies": "Please confirm that you've read and accepted our Privacy Policy, Cookie Policy, and Terms & Conditions",
+				"Upload Valid File": "Please upload at least one valid file.",
+				"Validation Failed": "Please ensure all required fields are correctly filled and try submitting again.",
+				"Api Response Validation Failed": "Error in submitting your message. Please try again later",
+				"Api Failed": "Error in submitting your message. Please try again later"
 			},
 
 			"Success": {
-				"Newsletter": "Thank you for subscribing."
+				"Newsletter": "Thank you for subscribing.",
+                "Career": "Thank you for your message, our team will be in touch with you the soonest."
 			}
 		},
 
@@ -97,16 +165,11 @@
 			"Title": "Download the app now",
 			"Description": "Sign up and explore our endless benefits",
 			"Scan Qr": "Scan the QR to <br /> download the app"
-		}
+		},
+		
+		"And": "and"
 	},
 
-	"Footer": {
-		"Newsletter": {
-			"Title": "Subscribe to our newsletter",
-			"Description": "Subscribe to our newsletter"
-		}
-	},
-	
 	"Pages": {
 		"Homepage": {
 			"Banner": {
@@ -205,7 +268,6 @@
 				"Twitter Title": "Homepage",
 				"Twitter Description": "Welcome to the homepage of our website."
 			}
-			
 		},
 		
 		"Why MyMonty": {
@@ -260,6 +322,61 @@
 				"Sub Title": "Who We Are",
 				"Title": "One app for all things money",
 				"Description": "Manage your money effortlessly from the comfort of one single intuitive&nbsp;app."
+			},
+
+			"Section 2": {
+				"Title": "One app for all things money",
+				"Description": "At MyMonty EEA/UK, we're all about simplifying financial processes. Our digital platform offers innovative, user-friendly financial services to individuals across the EEA and UK. We're all about making banking easy, secure, and accessible for everyone, especially the unbanked, underbanked, and youth, so they can enjoy personalized financial solutions.",
+
+				"Cards": [
+					{
+						"Title": "This is the future",
+						"Description": "Once a luxury, basic banking and financial services have become a right for everyone, in a world where digital is the new norm.",
+						"Image Alt": "This Is The Future"
+					}
+				]
+			},
+
+			"Section 3": {
+				"Title": "Equal opportunities for all",
+				"Description": "At MyMonty, we believe in leveling the playing field. Whether you're a tech enthusiast, an underserved individual, or a starter in financial services, we're here to serve you.",
+				"Image Alt": "Equal Opportunities For All"
+			},
+
+			"Section 4": {
+				"Title": "Digital all the way",
+				"Description": "Digital is at the heart of our operations. With MyMonty, you can effortlessly send, receive, and request funds with a single tap. Experience the ease of contactless transactions and embrace a seamless digital future with us!",
+				"Image Alt": "Digital All The Way"
+			},
+
+			"Section 5": {
+				"Title": "Our culture: building on diversity",
+				"Description": "Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.",
+				"Image Alt": "Digital All The Way"
+			},
+
+			"Section 6": {
+                "Title": "Our offices",
+                "Description": "Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.",
+                "Cards": [
+                    {
+                        "Location": "United Kingdom",
+                        "Address": "Beaumont Bridge House, 181 Queen Victoria Street, London EC4V 4EG"
+                    },
+                    {
+                        "Location": "United Arab Emirates",
+                        "Address": "Unit 30, floor 20, Central Park Tower DIFC 74777 Dubai"
+                    }
+                ]
+            },
+
+			"Seo": {
+				"Title": "Who We Are",
+				"Description": "",
+				"Og Title": "Who We Are",
+				"Og Description": "",
+				"Twitter Title": "Who We Are",
+				"Twitter Description": ""
 			}
 		},
 
@@ -268,6 +385,62 @@
 				"Sub Title": "Plans",
 				"Title": "Choose Your Plan",
 				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare&nbsp;plans."
+			},
+
+			"Section 2": [
+				{
+					"Category": "Starter",
+					"Price": "Free",
+					"Description": "Enjoy true freedom with low in store fees and a virtual/physical card.",
+					"Features": [
+						"Dedicated free Euro/GBP IBAN",
+						"0,2 EUR on faster payments",
+						"Free peer to peer transfers",
+						"2 EUR physical card replacement fee.",
+						"No monthly fee",
+						"Free ATM balance enquiry or pin change",
+						"Free MyMonty virtual Mastercard",
+						"2% on currency exchange + a minimum fee of 2 EUR",
+						"5 EUR physical card printing and delivery in Europe & the UK.",
+						"1.5% on card top up, instant top up",
+						"1 EUR inactive fee when wallet is loaded and no transactions made over period of 6 months",
+						"0,15 EUR on SEPA transfer",
+						"1.5% on ATM withdrawal in EUR subject to a minimum fee of 1 EUR"
+					]
+				},
+				{
+					"Category": "Plus",
+					"Price": "All features included in STARTER Plan",
+					"Description": "If you're looking for a true value plan with zero card fees, zero monthly charges and more.",
+					"Features": [
+						"Free contactless physical card",
+						"Priority customer support",
+						"1 fee free SEPA transfer",
+						"25 fee free POS transactions",
+						"1 fee free account top up per month"
+					]
+				},
+				{
+					"Category": "Premium",
+					"Price": "All features included in PLUS Plan",
+					"Description": "If you're looking for a true value plan with zero card fees, zero monthly charges and more.",
+					"Features": [
+						"Free contactless physical card",
+						"Priority customer support",
+						"1 fee free SEPA transfer",
+						"25 fee free POS transactions",
+						"1 fee free account top up per month"
+					]
+				}
+			],
+
+			"Seo": {
+				"Title": "Plans",
+				"Description": "",
+				"Og Title": "Plans",
+				"Og Description": "",
+				"Twitter Title": "Plans",
+				"Twitter Description": ""
 			}
 		},
 
@@ -276,14 +449,100 @@
 				"Sub Title": "News",
 				"Title": "What's happening at mymonty?",
 				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+			},
+
+			"Seo": {
+				"Title": "News",
+				"Description": "",
+				"Og Title": "News",
+				"Og Description": "",
+				"Twitter Title": "News",
+				"Twitter Description": ""
 			}
 		},
 
 		"Features": {
 			"Banner": {
-				"Sub Title": "News",
+				"Sub Title":"Features",
 				"Title": "Unlock the best of what we offer",
 				"Description": "Enjoy our outstanding features and stand out from the&nbsp;crowd"
+			},
+
+			"Section 2": {
+				"Title": "Features",
+				"Description": "Experience the convenience of features tailored just for you"
+			},
+
+			"Section 3": [
+				{
+					"Category": "Accounts",
+					"Cards": [
+						{
+							"Title": "Wallet Account",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Experience Seamless Banking with MyMonty Europe's Digital Wallet Account</span>Discover a new era of banking convenience with MyMonty Europe's user-friendly mobile app. Our intuitive platform offers a comprehensive suite of banking services, from account management and fund transfers",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Experience seamless banking with MyMonty Europe's digital Wallet Account</h3></div><p>Discover a new era of banking convenience with MyMonty Europe's user-friendly mobile app. Our intuitive platform offers a comprehensive suite of banking services, from account management and fund transfers, all accessible on-the-go.<br>Enjoy the flexibility of our single-currency wallet account, available in EUR or GBP, and make quick, secure transactions with our contactless payment solutions through Google/Apple Pay.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Top-up by card</h3></div><p>Easily top-up your MyMonty wallet by securely saving your Mastercard or Visa cards. Enjoy instant access to your funds with every top-up. Fees for this service can be configured based on your personalized pricing plan, ensuring flexibility and convenience tailored to your needs.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Top up by P2P request</h3></div><p>Easily request funds from friends or family and instantly top up your balance with just a few taps.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Top up by SEPA transfer</h3></div><p>Conveniently add funds to your account via a secure and straightforward SEPA bank transfer.</div>"
+						}
+					]
+				},
+				{
+					"Category": "Cards",
+					"Cards": [
+						{
+							"Title": "Virtual Cards",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Effortless Control with MyMonty Virtual Cards</span>With MyMonty's Issuing type wallet, you can effortlessly manage your finances by issuing virtual cards directly from our user interface. Simply navigate to the Cards tab and select the option to issue a Virtual card, which will be instantly available for use",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><h3>Effortless control with MyMonty Virtual Cards</h3></div><p>With MyMonty's Issuing type wallet, you can effortlessly manage your finances by issuing virtual cards directly from our user interface. Simply navigate to the Cards tab and select the option to issue a Virtual card, which will be instantly available for use.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><p class=text-primary>Once issued, you can</div><ul class='flex flex-col gap-4'><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>View card details by clicking the See details button and authenticating yourself</h4><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>Freeze the card</h4><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>Destroy the card (only after it has been frozen)</h4><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>Add the card to Apple or Google Pay</h4></ul></div><div class='flex flex-col gap-4'><p>If a virtual card is destroyed, you can request a new one at any time. To ensure you never miss an expiry date, you'll receive a push notification reminding you when your card's validity is about to end, allowing you to renew it easily by navigating to the card and clicking the Renew button.<p>Embrace the convenience and security of MyMonty virtual cards, designed to give you full control over your digital transactions.</div>"
+						},
+						{
+							"Title": "Physical Cards",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Effortless Issuance and Management of Physical Cards</span>For the Issuing type wallet, physical cards can be requested easily, similar to virtual cards. Navigate to the Physical Card screen in the Cards tab, ensure you are KYC-verified and have a non-zero balance, then click “Order card”",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><h3>Effortless issuance and management of Physical Cards</h3></div><p>For the Issuing type wallet, physical cards can be requested easily, similar to virtual cards. Navigate to the Physical Card screen in the Cards tab, ensure you are KYC-verified and have a non-zero balance, then click “Order card”. Enter your delivery details and set your PIN in a few quick steps.<p>Users are limited to one physical and one virtual card at a time. Once confirmed, your card will be on its way. Activate it upon receipt via the app.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><p class=text-primary>With an activated physical card, you can:</div><ul class='flex flex-col gap-4'><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>View card details by clicking the See details button and authenticating yourself</h4><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>Freeze the card</h4><li class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h4>Add the card to Apple or Google Pay.</h4></ul></div><div class='flex flex-col gap-4'><p>Destroyed physical cards can be reordered, with fees deducted immediately. Cards are sent via RoyalMail without tracking. As expiration nears, you'll receive a push notification, and can reissue the card by following the same process as a new order. Delivery fees apply.</div>"
+						}
+					]
+				},
+				{
+					"Category": "Transfers",
+					"Cards": [
+						{
+							"Title": "Wire Transfers: SEPA",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Receive Wire Transfers with Ease</span>Register now and get your own unique IBAN, allowing you to start receiving wire transfers effortlessly. MyMonty supports EUR SEPA transfers (Single Euro Payment Area) and BGN BISERA inbound transfers, ensuring a smooth and secure transfer experience",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Receive wire transfers with ease</h3></div><p>Register now and get your own unique IBAN, allowing you to start receiving wire transfers effortlessly. MyMonty supports EUR SEPA transfers (Single Euro Payment Area) and BGN BISERA inbound transfers, ensuring a smooth and secure transfer experience.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Send wire transfers</h3></div><p>Easily send outbound wire transfers to recipients matching your currency. Customize fees for IBAN transfers based on your selected plan. Save recipient details like names, IBANs, and aliases for quick future transfers. MyMonty supports EUR SEPA, BGN BISERA outbound transfers, and GBP Faster Payments for efficient transactions.</div>"
+						},
+						{
+							"Title": "Peer to Peer Transfers",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Instant P2P Transfers</span>Easily transfer funds to other users within your MyMonty wallet instantly. If the recipient is not yet registered, they will receive an SMS invitation. Once they register and complete KYC verification, the transfer will be processed and credited to their account",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Instant P2P transfers</h3></div><p>Easily transfer funds to other users within your MyMonty wallet instantly. If the recipient is not yet registered, they will receive an SMS invitation. Once they register and complete KYC verification, the transfer will be processed and credited to their account. P2P transfers expire after three days if not completed.<br>Additionally, P2P transfers can be configured to work between MyMonty and other Paynetics partners, such as Phyre, A1 Wallet, Pay by Vivacom, and BACB Pay.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Send money instantly</h3></div><p>Easily send money to friends and family within the MyMonty wallet. If the recipient isn't registered, they'll receive an SMS invitation to join. Transfers are instant once they complete registration and KYC verification.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Receive funds effortless</h3></div><p>Start receiving funds immediately with your unique IBAN. MyMonty supports EUR SEPA and BGN BISERA transfers, ensuring a smooth and secure experience. Funds are credited instantly to your account.</div><div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><img alt='Box Empty'height=18 src=/images/icons/box-empty.svg width=18><h3>Request money conveniently</h3></div><p>Request money from any contact with MyMonty's app. Non-users receive an SMS invite to join. Once they register and complete KYC, they can send you the requested amount instantly. Requests expire after three days if not processed.</div>"
+						}
+					]
+				},
+				{
+					"Category": "Payments",
+					"Cards": [
+						{
+							"Title": "Google and Apple Pay",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Streamlined Mobile Payments</span>Experience seamless transactions with MyMonty through Google Pay. Effortlessly make secure payments in-store, online, and on-the-go",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><h3>Streamlined mobile payments</h3></div><p>Experience seamless transactions with MyMonty through Google Pay. Effortlessly make secure payments in-store, online, and on-the-go.</div>"
+						},
+						{
+							"Title": "Qr P2P Payments",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Instant Transactions, Just Scan and Pay</span>Unlock the power of QR Payments for quick, hassle-free peer-to-peer transactions. Simply scan, enter the amount, and authorize the transaction in seconds",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><h3>Instant transactions, just scan and pay</h3></div><p>Unlock the power of QR Payments for quick, hassle-free peer-to-peer transactions. Simply scan, enter the amount, and authorize the transaction in seconds.</div>"
+						},
+						{
+							"Title": "Payment Link",
+							"Excerpt": "<span class='block font-AeonikMedium mb-2'>Effortless Transactions at Your Fingertips</span>Request or accept payments with ease using MyMonty's Payment Link feature. Share personalized payment links for fast and convenient transactions anytime, anywhere",
+							"Description": "<div class='flex flex-col gap-4'><div class='flex gap-2 items-baseline'><h3>Effortless transactions at your fingertips</h3></div><p>Request or accept payments with ease using MyMonty's Payment Link feature. Share personalized payment links for fast and convenient transactions anytime, anywhere.</div>"
+						}
+					]
+				}
+			],
+
+			"Seo": {
+				"Title": "Features",
+				"Description": "",
+				"Og Title": "Features",
+				"Og Description": "",
+				"Twitter Title": "Features",
+				"Twitter Description": ""
 			}
 		},
 
@@ -292,6 +551,15 @@
 				"Sub Title": "FAQ",
 				"Title": "Frequently asked questions",
 				"Description": "Our team is always ready to assist you or answer your inquiries. Fill out this form to reach&nbsp;us."
+			},
+
+			"Seo": {
+				"Title": "Frequently Asked Questions",
+				"Description": "",
+				"Og Title": "Frequently Asked Questions",
+				"Og Description": "",
+				"Twitter Title": "Frequently Asked Questions",
+				"Twitter Description": ""
 			}
 		},
 
@@ -300,14 +568,92 @@
 				"Sub Title": "Contact Us",
 				"Title": "Got any questions?",
 				"Description": "Our friendly team is here to help. Just fill out the form below, and we'll be in touch with you&nbsp;soon."
+			},
+
+			"Section 2": {
+				"Title": "Fill out this form to reach us"
+			},
+
+			"Section 3": {
+				"Title": "Always there for you",
+				"Description 1": "Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed",
+				"Description 2": "Have a complaint or need any assistance?<br/>Reach out to us <a href='mailto:' class='text-primary'>here</a>"
+			},
+
+			"Seo": {
+				"Title": "Contact Us",
+				"Description": "",
+				"Og Title": "Contact Us",
+				"Og Description": "",
+				"Twitter Title": "Contact Us",
+				"Twitter Description": ""
 			}
 		},
 
-		"Code of Conduct": {
+		"Code Of Conduct": {
 			"Banner": {
 				"Sub Title": "MyMonty Values",
 				"Title": "Our code of conduct",
 				"Description": "Learn about the guiding principles at&nbsp;MyMonty."
+			},
+
+			"Section 2": {
+				"Cards": [
+				{
+					"Title": "Equality",
+					"Description": "We believe in providing equal opportunities and rights to everyone, ensuring fairness and inclusivity in all our endeavors.",
+					"Image Alt": "Equality"
+				},
+				{
+					"Title": "Inclusivity",
+					"Description": "No one is left behind. We strive to include and empower individuals from all walks of life, regardless of their background or circumstances.",
+					"Image Alt": "Inclusivity"
+				},
+				{
+					"Title": "Integrity",
+					"Description": "Our actions are guided by honesty, transparency, and loyalty. We uphold the highest ethical standards in all our interactions.",
+					"Image Alt": "Integrity"
+				},
+				{
+					"Title": "Excellence",
+					"Description": "We are dedicated to delivering exceptional quality in everything we offer, striving for excellence in service and innovation.",
+					"Image Alt": "Excellence"
+				},
+				{
+					"Title": "Commitment",
+					"Description": "True to our core values, we are unwavering in our dedication to serving our customers, partners, and communities with passion and integrity.",
+					"Image Alt": "Commitment"
+				},
+				{
+					"Title": "Professionalism",
+					"Description": "Operating with efficiency and responsibility, we uphold professional standards to ensure the trust and confidence of all those we serve.",
+					"Image Alt": "Professionalism"
+				},
+				{
+					"Title": "Compliance & Legal Responsibility",
+					"Description": "We adhere strictly to all applicable laws, regulations, and industry standards. Compliance is non-negotiable in our commitment to responsible banking practices.",
+					"Image Alt": "Compliance & Legal Responsibility"
+				},
+				{
+					"Title": "Confidentiality & Data Protection",
+					"Description": "We safeguard customer information with the utmost care and confidentiality. Data protection and privacy are fundamental principles in our operations.",
+					"Image Alt": "Confidentiality & Data Protection"
+				},
+				{
+					"Title": "Customer Focus",
+					"Description": "We prioritize the needs and interests of our customers, striving to deliver exceptional service and innovative solutions that enhance their financial well-being.",
+					"Image Alt": "Customer Focus"
+				}
+				]
+			},
+
+			"Seo": {
+				"Title": "Code Of Conduct",
+				"Description": "",
+				"Og Title": "Code Of Conduct",
+				"Og Description": "",
+				"Twitter Title": "Code Of Conduct",
+				"Twitter Description": ""
 			}
 		},
 
@@ -316,14 +662,85 @@
 				"Sub Title": "Careers",
 				"Title": "Join our dream team",
 				"Description": "Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a>&nbsp;now."
+			},
+
+			"Section 2": {
+				"Title": "Embark on Your career journey with us",
+				"Description": "Our team is our biggest asset! We are dedicated to recognizing and cultivating talent from within, offering a transparent and well-defined career path for our valuable team members.<br />We heavily invest in employee training programs, workshops, and mentorship initiatives, ensuring our team is not only well-equipped for their current roles but also ready for future challenges.",
+
+				"Cards": [
+					{
+						"Title": "Always there for you",
+						"Description 1": "Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed",
+						"Description 2": "Have a complaint or need any assistance?<br />Reach out to us <a href='' class='text-primary'>here</a>",
+						"Image Alt": "This Is The Future"
+					}
+				]
+			},
+
+			"Section 3": {
+				"Title": "Fill out this form to reach us"
+			},
+
+			"Seo": {
+				"Title": "Careers",
+				"Description": "",
+				"Og Title": "Careers",
+				"Og Description": "",
+				"Twitter Title": "Careers",
+				"Twitter Description": ""
 			}
 		},
 
-		"Board of Directors": {
+		"Board Of Directors": {
 			"Banner": {
 				"Sub Title": "Board of Directors",
 				"Title": "Leadership team",
 				"Description": "We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking&nbsp;experience."
+			},
+
+			"Section 2": {
+				"Cards": [
+					{
+						"Name": "Mountasser Hachem",
+						"Position": "Chairman & Founder",
+						"Bio": "With over two decades of leadership in managing a group of holdings, Mr. Hachem is driven by a relentless pursuit to positively impact lives, even through risk-taking and exploring new sectors. Ambitious and bold, he founded Monty Group and its subsidiaries, delving into the telecommunications industry, where he has built a thriving career. His visionary approach has transformed the company into an international powerhouse with multiple branches worldwide."
+					},
+					{
+						"Name": "Randa Naboulsi",
+						"Position": "Group Chief Financial Officer",
+						"Bio": "Randa Naboulsi, an ambitious and results-oriented Chief Financial Officer, earned her BBA from the University of Balamand in Lebanon in 1995, followed by an MBA from the Lebanese American University of Beirut in 2008. With extensive hands-on experience in Corporate Finance, Treasury, Budgeting & Forecasting, she excels in cultivating strong investor relationships."
+					},
+					{
+						"Name": "Susanne Hannestad",
+						"Position": "Board Member",
+						"Bio": "With over 30 years of experience in Banking, Insurance, and Financial sectors, Mrs. Hannestad boasts a track record of successfully scaling and launching companies in global markets. Her extensive expertise provides a unique edge in fintech growth and development. Currently serving as a board member of Monty Mobile and MyMonty within Monty Group, she contributes valuable insights to the strategic development of both companies."
+					},
+					{
+						"Name": "Arvinder Gujral",
+						"Position": "Board Member",
+						"Bio": "Armed with an MBA in Business Management, Mr. Gujral was the first Twitter employee in India to rise to the role of Managing Director for Southeast Asia and Senior Business Development for APAC. With over 22 years of experience spanning Technology, Telecom, and Advertising, he has collaborated with major international players. Currently serving as a board member of MyMonty, the latest Fintech venture under Monty Group, he plays a pivotal role in expanding its digital footprint and market reach."
+					},
+					{
+						"Name": "Sarah Alateeqi",
+						"Position": "Board Member",
+						"Bio": "Mrs. Alateeqi serves as the Vice Chairman and Acting CEO of AlMal Investment Company in Kuwait, bringing extensive expertise as a business leader. Passionate about finance and investments, she has a diverse background that spans investment banking, private equity, and innovation consulting. Holding an MBA from the University of Chicago Booth, she has also worked in Kuwait and London, UK. As a board member of MyMonty, she plays a crucial role in advancing the company's growth strategy and financial innovation."
+					},
+					{
+						"Name": "Mike Quintanilla",
+						"Position": "Board Member",
+						"Bio": "Mr. Quintanilla currently serves as the Chief Innovation Officer at GenuBank in Reno, Nevada, USA, leveraging extensive expertise in cryptocurrency and data analytics. With over 15 years in Finance and Fintech, he is recognized as an expert in Fintech strategy and blockchain implementation, having developed and supervised systems across various companies. Recently joining MyMonty as a board member within Monty Group, Mr. Quintanilla brings valuable insights to drive business growth by applying his years of accumulated expertise."
+					}
+				]
+			},
+
+			"Seo": {
+				"Title": "Board of Directors",
+				"Description": "",
+				"Og Title": "Board of Directors",
+				"Og Description": "",
+				"Twitter Title": "Board of Directors",
+				"Twitter Description": ""
 			}
 		},
 
@@ -332,7 +749,23 @@
 				"Sub Title": "Blogs",
 				"Title": "What's happening at mymonty?",
 				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+			},
+
+			"Seo": {
+				"Title": "Blogs",
+				"Description": "",
+				"Og Title": "Blogs",
+				"Og Description": "",
+				"Twitter Title": "Blogs",
+				"Twitter Description": ""
 			}
+		}
+	},
+
+	"Footer": {
+		"Newsletter": {
+			"Title": "Subscribe to our newsletter",
+			"Description": "Subscribe to our newsletter"
 		}
 	}
 }

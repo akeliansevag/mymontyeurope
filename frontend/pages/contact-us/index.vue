@@ -14,45 +14,40 @@
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">
             <div class="container">
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-center">
-                    <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">Fill out this form to reach us</h2>
+                    <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ t(`Pages.Careers.Section 2.Title`) }}</h2>
                 </div>
 
                 <div class="p-8 lg:p-14 bg-[#ECECEE] rounded-[30px] mt-12">
                     <div class="flex flex-col gap-4 lg:gap-8">
                         <div class="flex max-lg:flex-col gap-4 justify-between items-start">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="full-name" class="text-base">Full Name</label>
-                                <input v-model="form.full_name" type="text" placeholder="Full Name" id="full-name" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none" />
+                                <label for="full-name" class="text-base">{{ t(`General.Labels.Full Name`) }}</label>
+                                <input v-model="form.full_name" type="text" :placeholder="t(`General.Placeholders.Full Name`)" id="full-name" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none" />
                                 <div v-if="errors.full_name" class="text-xs text-red-500">{{ errors.full_name }}</div>
                             </div>
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="email-address" class="text-base">Email Address</label>
-                                <input v-model="form.email" type="text" placeholder="Email Address" id="email-address" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none" />
+                                <label for="email-address" class="text-base">{{ t(`General.Labels.Email Address`) }}</label>
+                                <input v-model="form.email" type="text" :placeholder="t(`General.Placeholders.Email Address`)" id="email-address" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none" />
                                 <div v-if="errors.email" class="text-xs text-red-500">{{ errors.email }}</div>
                             </div>
                         </div>
 
                         <div class="flex max-lg:flex-col gap-4 justify-between items-start">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="company-name" class="text-base">Company Name <span class="text-[#9CA3AF]">(Optional)</span></label>
-                                <input v-model="form.company" type="text" placeholder="Company Name" id="company-name" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
+                                <label for="company-name" class="text-base">{{ t(`General.Labels.Company Name`) }} <span class="text-[#9CA3AF]">({{ t(`General.Labels.Optional`) }})</span></label>
+                                <input v-model="form.company" type="text" :placeholder="t(`General.Placeholders.Company Name`)" id="full-name" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
                                 <div v-if="errors.company" class="text-xs text-red-500">{{ errors.company }}</div>
                             </div>
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="position" class="text-base">Position <span class="text-[#9CA3AF]">(Optional)</span></label>
-                                <select v-model="form.position" name="position" id="position" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
-                                    <option value="" disabled class="text-[#ECECEE]">Select</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">2</option>
-                                </select>
-                                <div v-if="errors.position" class="text-xs text-red-500">{{ errors.position }}</div>
+                                <label for="profession" class="text-base">{{ t(`General.Labels.Profession`) }} <span class="text-[#9CA3AF]">({{ t(`General.Labels.Optional`) }})</span></label>
+                                <input v-model="form.profession" type="text" :placeholder="t(`General.Placeholders.Profession`)" id="full-name" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
+                                <div v-if="errors.profession" class="text-xs text-red-500">{{ errors.profession }}</div>
                             </div>
                         </div>
 
                         <div class="flex max-lg:flex-col gap-4 justify-between items-start">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="mobile-number" class="text-base">Mobile Number</label>
+                                <label for="mobile-number" class="text-base">{{ t(`General.Labels.Mobile Number`) }}</label>
                                 <div class="relative flex flex-row items-start gap-1">
                                     <div class="flex flex-col gap-1 w-[160px]">
                                         <div @click="toggleDropdown" class="custom-dropdown w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none cursor-pointer">
@@ -66,7 +61,7 @@
                                     </div>
 
                                     <ul v-if="showDropdown" ref="dropdownContainer" @scroll="handleScroll" class="dropdown-container shadow-black/20 shadow-md absolute top-full left-0 w-full max-h-[200px] text-sm rounded-xl bg-white text-black mt-2 overflow-auto z-50">
-                                        <input v-model="searchQuery" type="text" id="search" placeholder="Search" class="sticky top-0 left-0 w-full bg-white px-4 py-2 border-b border-b-[#D4D4D4] outline-0 z-10">
+                                        <input v-model="searchQuery" type="text" id="search" :placeholder="t(`General.Placeholders.Search`)" class="sticky top-0 left-0 w-full bg-white px-4 py-2 border-b border-b-[#D4D4D4] outline-0 z-10">
                                         <template v-for="country in filteredCountries">
                                             <li v-if="country.status == 1" :key="country.id" @click="selectCountry(country)" class="flex gap-2 text-black p-2 hover:bg-[#D4D4D4] cursor-pointer">
                                                 <img :src="`/images/flags/${country.iso2}.svg`" :alt="country.name" width="20" height="20" />
@@ -77,7 +72,7 @@
                                     </ul>
 
                                     <div class="flex flex-col gap-1 w-full">
-                                        <input v-model="form.mobile" type="text" id="mobile" placeholder="Phone Number" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
+                                        <input v-model="form.mobile" type="text" id="mobile" :placeholder="t(`General.Placeholders.Mobile Number`)" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
                                         <div v-if="errors.mobile" class="text-xs text-red-500">{{ errors.mobile }}</div>
                                     </div>
                                 </div>
@@ -85,8 +80,8 @@
                             </div>
                             <div class="flex flex-col gap-1 w-full h-full">
                                 <div class="flex flex-col gap-1 w-full">
-                                    <label for="subject" class="text-base">Subject</label>
-                                    <input v-model="form.subject" type="text" placeholder="Subject" id="subject" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
+                                    <label for="subject" class="text-base">{{ t(`General.Labels.Subject`) }}</label>
+                                    <input v-model="form.subject" type="text" :placeholder="t(`General.Placeholders.Subject`)" id="full-name" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none">
                                     <div v-if="errors.subject" class="text-xs text-red-500">{{ errors.subject }}</div>
                                 </div>
                             </div>
@@ -94,8 +89,8 @@
 
                         <div class="flex max-lg:flex-col gap-4 justify-between items-start">
                             <div class="flex flex-col gap-1 w-full">
-                                <label for="message" class="text-base">Your Message</label>
-                                <textarea v-model="form.message" rows="10" plaveholder="Message" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none"></textarea>
+                                <label for="message" class="text-base">{{ t(`General.Labels.Message`) }}</label>
+                                <textarea v-model="form.message" rows="10" Lplaveholder="{{ t(`General.Placeholders.Subject`) }}" class="w-full h-full min-h-14 py-3 px-3 bg-white border border-[#D4D4D4] rounded-lg outline-none"></textarea>
                                 <div v-if="errors.message" class="text-xs text-red-500">{{ errors.message }}</div>
                             </div>
                         </div>
@@ -105,10 +100,11 @@
                                 <div class="flex flex-col gap-1 w-full">
                                     <div class="flex justify-between items-baseline gap-2">
                                         <input v-model="isAcknowledged" type="checkbox" class="inline cursor-pointer">
-                                        <p class="inline">By checking this box, you confirm that you've read and accepted our <NuxtLinkLocale :to="''" class="text-primary">Privacy Policy</NuxtLinkLocale>, <NuxtLinkLocale :to="''" class="text-primary">Cookie Policy</NuxtLinkLocale>, and <NuxtLinkLocale :to="''" class="text-primary">Terms & Conditions</NuxtLinkLocale> for our website.</p>
+                                        <p class="inline">{{ t(`General.Labels.Acknowlegment.Part 1`) }}<NuxtLinkLocale :to="''" class="text-primary">{{ t(`General.Links.Privacy Policy`) }}</NuxtLinkLocale>, <NuxtLinkLocale :to="''" class="text-primary">{{ t(`General.Links.Cookie Policy`) }}</NuxtLinkLocale>, {{ t(`General.And`) }} <NuxtLinkLocale :to="''" class="text-primary">{{ t(`General.Links.Terms & Conditions`) }}</NuxtLinkLocale> {{ t(`General.Labels.Acknowlegment.Part 2`) }}.</p>
+
                                     </div>
                                 </div>
-                                <button :disabled="!isAcknowledged" @click.prevent="handleSubmit" class="w-max py-4 px-14 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium disabled:bg-[#D4D4D4]">Submit</button>
+                                <button :disabled="!isAcknowledged" @click.prevent="handleSubmit" class="w-max py-4 px-14 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium disabled:bg-[#D4D4D4]">{{ t(`General.Buttons.Submit`) }}</button>
                                 <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                             </div>
                             <!-- <div class="lg:text-right">
@@ -125,12 +121,12 @@
             <div class="container">
                 <div class="grid lg:grid-cols-2 gap-16">
                     <div class="flex flex-col justify-start items-start gap-8 text-white">
-                        <h3 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">Always there for you</h3>
-                        <p class="text-xl">Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed</p>
+                        <h3 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ t(`Pages.Contact Us.Section 3.Title`) }}</h3>
+                        <p class="text-xl" v-html="t(`Pages.Contact Us.Section 3.Description 1`)"></p>
                     </div>
                     <div class="flex flex-col justify-start items-start gap-8 text-white">
-                        <img class="" src="/images/icons/phone-box-primary.svg" alt="Phone Box Blue" width="78" height="78">
-                        <p class="text-xl">Have a complaint or need any assistance?<br/>Reach out to us <a href="mailto:" class="text-primary">here</a></p>
+                        <img class="" src="/images/icons/phone-box-primary.svg" :alt="t(`General.Alts.Phone Box Blue`)" width="78" height="78">
+                        <p class="text-xl" v-html="t(`Pages.Contact Us.Section 3.Description 2`)"> </p>
                     </div>
                 </div>
             </div>
@@ -141,16 +137,18 @@
 <script setup>
 	import { useCountry } from '~/composables/useCountry';
 
+    const { t } = useLocale(); 
+
     useSeoMeta({
-        title: 'Contact Us',
+        title: t('Pages.Contact Us.Seo.Title'),
         description: '',
 
-        ogTitle: 'Contact Us',
-        ogDescription: '',
+        ogTitle: t('Pages.Contact Us.Seo.Og Title'),
+        ogDescription: t('Pages.Contact Us.Seo.Og Description'),
         ogImage: '',
 
-        twitterTitle: 'Contact Us',
-        twitterDescription: '',
+        twitterTitle: t('Pages.Contact Us.Seo.Twitter Title'),
+        twitterDescription: t('Pages.Contact Us.Seo.Twitter Description'),
         twitterCard: 'summary_large_image',
     })
 
@@ -195,7 +193,7 @@
         full_name: '',
         email: '',
         company: '',
-        position: '',
+        profession: '',
         code: '',
         mobile: '',
         subject: '',
@@ -206,7 +204,7 @@
         full_name: '',
         email: '',
         company: '',
-        position: '',
+        profession: '',
         code: '',
         mobile: '',
         subject: '',
@@ -215,46 +213,47 @@
 
     const validationRules = {
         full_name: {
-            required: 'Please enter your first name',
-            safe: 'Your input has invalid value'
+            required: t(`General.Messages.Errors.Required.Full Name`),
+            safe: t(`General.Messages.Errors.Safe`)
         },
         email: {
-            required: 'Please enter your email address',
-            email: 'Please enter a valid email address',
-            safe: 'Your input has invalid value'
+            required: t(`General.Messages.Errors.Required.Email`),
+            email: t(`General.Messages.Errors.Valid Email`),
+            safe: t(`General.Messages.Errors.Safe`)
         },
         company: {
-            safe: 'Your input has invalid value'
+            safe: t(`General.Messages.Errors.Safe`)
         },
-        position: {
-            safe: 'Your input has invalid value'
+        profession: {
+            safe: t(`General.Messages.Errors.Safe`)
         },
         code: {
-            required: 'Please choose your country code',
-            code: 'Please enter a valid country code',
-            safe: 'Your input has invalid value'
+            required: t(`General.Messages.Errors.Required.Code`),
+            code: t(`General.Messages.Errors.Valid Code`),
+            safe: t(`General.Messages.Errors.Safe`)
         },
         mobile: {
-            required: 'Please enter your mobile number',
-            numeric: 'Please enter a valid numeric phone number',
-            length: 'Please enter a valid phone number',
-            safe: 'Your input has invalid value'
+            required: t(`General.Messages.Errors.Required.Mobile Number`),
+            numeric: t(`General.Messages.Errors.Numeric`),
+            length: t(`General.Messages.Errors.Length`),
+            safe: t(`General.Messages.Errors.Safe`)
         },
         subject: {
-            required: 'Please enter your subject',
-            safe: 'Your input has invalid value'
+            required: t(`General.Messages.Errors.Required.Subject`),
+            safe: t(`General.Messages.Errors.Safe`)
         },
         message: {
-            required: 'Please enter your message',
-            safe: 'Your input has invalid value'
+            required: t(`General.Messages.Errors.Required.Message`),
+            safe: t(`General.Messages.Errors.Safe`)
         },
     };
 
     // Submitting the form
     const handleSubmit = async () => {
+
         if(!isAcknowledged) {
             isSubmitting.value = false; // Re-enable the button
-            submissionMessage.value = 'ddddPlease confirm that you\'ve read and accepted our Privacy Policy, Cookie Policy, and Terms & Conditions'; // Re-enable the butto
+            submissionMessage.value = t('General.Messages.Errors.Confirm Policies'); // Re-enable the button
             isError.value = true;
             return
         }
@@ -303,7 +302,7 @@
             // console.log("Form submitted successfully:", data);
 
             if(data.status == 'validation_failed'){
-                submissionMessage.value = "Error in submitting your message. Please try again later";
+                submissionMessage.value = t('General.Messages.Errors.Api Response Validation Failed');
                 isError.value = true;
 
                 // Clear error message after 2 seconds
@@ -313,7 +312,7 @@
                 throw new Error('Validation Error');
             }
 
-            submissionMessage.value = "Thank you for your message."
+            submissionMessage.value = t('General.Messages.Success.Career');
             isError.value = false;
             // Clear success message after 2 seconds
             setTimeout(() => {
@@ -325,7 +324,7 @@
         } catch (error) {
             // console.error("Form submission error:", error);
             // Set error message
-            submissionMessage.value = "Error in submitting your message. Please try again later";
+            submissionMessage.value = t('General.Messages.Errors.Api Failed');
             isError.value = true;
 
             // Clear error message after 2 seconds
@@ -344,7 +343,7 @@
             full_name: '',
             email: '',
             company: '',
-            position: '',
+            profession: '',
             code: selectedCountry.value ? selectedCountry.value.code : initialCode.value,
             mobile: '',
             subject: '',
@@ -354,7 +353,7 @@
             full_name: '',
             email: '',
             company: '',
-            position: '',
+            profession: '',
             code: '',
             mobile: '',
             subject: '',

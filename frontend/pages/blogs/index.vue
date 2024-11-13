@@ -56,6 +56,7 @@
 <script setup>
     // import { usePosts } from './composables/loadPosts.js'; // Adjust the path
     // const { posts, loadMorePosts, totalPages, currentPage } = usePosts();
+	const { t } = useLocale(); 
 	
     useSeoMeta({
         title: 'Blogs',
