@@ -36,17 +36,17 @@
                     <!--  44px to match the height of the other 2 dropdown -->
                     <ul class="flex items-center gap-1 text-black h-[44px]">
                         <li v-for="(item, index) in menuItems" :key="index" class="relative flex justify-center items-center text-black cursor-pointer group h-full hover:bg-[#ECECEE] rounded-full">
-                            <div class="flex justify-between items-center gap-2 py-2 px-8 rounded-full">
+                            <div class="flex justify-between items-center gap-2">
                                 <!-- Link if clickable -->
                                 <template v-if="item.clickable">
-                                    <NuxtLinkLocale :to="`/${item.path}`" class="link transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
+                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-8 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
                                         {{ t(`General.Links.${item.title}`) }}
                                     </NuxtLinkLocale>
                                 </template>
                                 
                                 <!-- title if not clickable -->
                                 <template v-else>
-                                    <span class="transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
+                                    <span class="py-2 px-8 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
                                         {{ t(`General.Links.${item.title}`) }}
                                     </span>
                                 </template>
