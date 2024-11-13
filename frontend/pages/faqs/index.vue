@@ -19,14 +19,14 @@
                     <img v-else @click="searchQuery = ''" src="/images/icons/close-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2 cursor-pointer" alt="Search Gray" width="16" height="16">
                 </div>
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-center mt-8">
-                    <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ faqs[selectedCategoryIndex]?.topic || 'No Category Selected' }}</h2>
+                    <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ faqsItems[selectedCategoryIndex]?.topic || 'No Category Selected' }}</h2>
                 </div>
 
                 <div class="grid md:grid-cols-3 lg:grid-cols-5 items-start gap-14 md:gap-8 lg:gap-14">
                     <div class="md:col-span-1 lg:col-span-1">
                         <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">Topics</h2>
                         <div class="flex flex-col gap-4 lg:gap-12 mt-8">
-                            <div v-for="(item, index) in faqs" :key="index" @click="selectCategory(index)" :class="['max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
+                            <div v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
                                 <h3 class="text-xl font-AeonikMedium">{{ item.topic }}</h3>
                             </div>
                         </div>
@@ -50,8 +50,8 @@
 
                         <!-- If a question is selected, display its answer -->
                         <div v-if="selectedFaqIndex !== null" class="p-4 lg:p-8 bg-[#ECECEE] rounded-2xl">
-                            <h4 class="font-AeonikBold text-2xl">{{ faqs[selectedCategoryIndex].faqs[selectedFaqIndex].question }}</h4>
-                            <p class="mt-4">{{ faqs[selectedCategoryIndex].faqs[selectedFaqIndex].answer }}</p>
+                            <h4 class="font-AeonikBold text-2xl">{{ faqsItems[selectedCategoryIndex].faqsItems[selectedFaqIndex].question }}</h4>
+                            <p class="mt-4">{{ faqsItems[selectedCategoryIndex].faqsItems[selectedFaqIndex].answer }}</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
         twitterCard: 'summary_large_image',
     })
 
-	const faqs = useState('faqs', () => faqsData());
+	const faqsItems = useState('faqsItems', () => faqsData());
 
     const selectedCategoryIndex = ref(0); // Default to first category
     const selectedFaqIndex = ref(null);
@@ -106,9 +106,9 @@
     // Filter FAQs based on the search query
     const filteredFaqs = computed(() => {
         if (!searchQuery.value) {
-            return faqs.value[selectedCategoryIndex.value]?.faqs || [];
+            return faqsItems.value[selectedCategoryIndex.value]?.faqsItems || [];
         }
-        return faqs.value[selectedCategoryIndex.value]?.faqs.filter(faq =>
+        return faqsItems.value[selectedCategoryIndex.value]?.faqsItems.filter(faq =>
             faq.question.toLowerCase().includes(searchQuery.value.toLowerCase())
         ) || [];
     });

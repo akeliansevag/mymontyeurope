@@ -24,7 +24,7 @@
                                 <p class="text-[#D4D4D4] text-xl">{{ plan.description }}</p>
                             </div>
                             <div class="grid lg:grid-cols-2 gap-y-4 gap-x-12">
-                                <div v-for="(feature, index) in plan.features" :key="index" class="flex gap-4 items-baseline">
+                                <div v-for="(feature, index) in plan.plansItems" :key="index" class="flex gap-4 items-baseline">
                                     <img src="/images/icons/check-box-primary.svg" alt="Check Box" width="" height="">
                                     <span class="text-xl">{{ feature }}</span>
                                 </div>
@@ -43,7 +43,7 @@
                                     <p class="text-[#D4D4D4] text-xl">{{ plan.description }}</p>
                                 </div>
                                 <div class="flex flex-col gap-4">
-                                    <div v-for="(feature, index) in plan.features" :key="index" class="flex gap-4 items-baseline">
+                                    <div v-for="(feature, index) in plan.plansItems" :key="index" class="flex gap-4 items-baseline">
                                         <img src="/images/icons/check-box-primary.svg" alt="Check Box" width="" height="">
                                         <span class="text-xl">{{ feature }}</span>
                                     </div>
@@ -75,7 +75,7 @@
         twitterCard: 'summary_large_image',
     })
 
-	const plansItems = useState('features', () =>  plansData(t));
+	const plansItems = useState('plansItems', () =>  plansData(t));
 </script>
 
 <style lang="" scoped>

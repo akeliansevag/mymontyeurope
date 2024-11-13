@@ -2,7 +2,7 @@ export const featuresData = (t) => [
     {
         category: t(`Pages.Features.Section 3[0].Category`),
         path: "accounts",
-        features: [
+        featuresItems: [
             {
                 title: t(`Pages.Features.Section 3[0].Cards[0].Title`),
                 excerpt: t(`Pages.Features.Section 3[0].Cards[0].Excerpt`),
@@ -15,7 +15,7 @@ export const featuresData = (t) => [
     {
         category: t(`Pages.Features.Section 3[1].Category`),
         path: "cards",
-        features: [
+        featuresItems: [
             {
                 title: t(`Pages.Features.Section 3[1].Cards[0].Title`),
                 excerpt: t(`Pages.Features.Section 3[1].Cards[0].Excerpt`),
@@ -35,7 +35,7 @@ export const featuresData = (t) => [
     {
         category: t(`Pages.Features.Section 3[2].Category`),
         path: "transfers",
-        features: [
+        featuresItems: [
             {
                 title: t(`Pages.Features.Section 3[2].Cards[0].Title`),
                 excerpt: t(`Pages.Features.Section 3[2].Cards[0].Excerpt`),
@@ -55,7 +55,7 @@ export const featuresData = (t) => [
     {
         category: t(`Pages.Features.Section 3[3].Category`),
         path: "payments",
-        features: [
+        featuresItems: [
             {
                 title: t(`Pages.Features.Section 3[3].Cards[0].Title`),
                 excerpt: t(`Pages.Features.Section 3[3].Cards[0].Excerpt`),

@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="grid lg:grid-cols-2 gap-4 mt-12">
                     <template v-for="(category, index) in featuresItems" :key="index">
-                        <template v-for="(item, featureIndex) in category.features" :key="featureIndex">
+                        <template v-for="(item, featureIndex) in category.featuresItems" :key="featureIndex">
                             <div :class="{ 'absolute invisible opacity-0': activeTab !== index }" class="flex flex-col justify-between gap-8 p-8 lg:p-14 bg-[#ECECEE] rounded-[30px]">
                                 <div class="flex flex-col gap-8">
                                     <img :src="`/images/icons/${ item.icon }.svg`" :alt="item.title" width="130" height="130">
@@ -76,7 +76,7 @@
         activeTab.value = index;
     };
 
-	const featuresItems = useState('features', () => featuresData(t));
+	const featuresItems = useState('featuresItems', () => featuresData(t));
     
     // Watch the route to update activeTab based on the URL
     watchEffect(() => {
