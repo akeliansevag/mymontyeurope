@@ -22,7 +22,7 @@
                             @click="show(index)"
                             :class="activeTab === index ? 'text-white bg-primary border-primary' : 'text-black bg-transparent border-black'"
                             target="tabs"
-                            class="w-max py-2 px-6 text-base border rounded-[30px] select-none font-AeonikMedium"
+                            class="w-max py-2 px-6 text-base border rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out"
                         >
                             {{ team.title }}
                         </ScrollButton>

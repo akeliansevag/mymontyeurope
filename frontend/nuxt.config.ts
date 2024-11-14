@@ -5,14 +5,17 @@ export default defineNuxtConfig({
 	// ssr: true,
 	css: ["~/assets/sass/app.sass"],
 	pages: true,
-	modules: [
-		'@nuxtjs/tailwindcss',
-		'nuxt-gtag',
-		'@nuxtjs/sitemap',
-		'nuxt-aos',
-		"@vueuse/nuxt",
-		"@nuxtjs/i18n",
-	],
+	modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-aos', "@vueuse/nuxt", "@nuxtjs/i18n", "@nuxt/scripts"],
+	site: {
+		url: 'https://mymonty.com',
+	},
+	sitemap: {
+		// exclude all URLs that start with /secret
+		// exclude: ['/team/**']
+	},
+	gtag: {
+		id: 'G-S79FRGY3FC'
+	},
 	app: {
 		head: {
 			charset: "utf-8",
@@ -94,8 +97,37 @@ export default defineNuxtConfig({
 							"https://apps.apple.com/us/app/revolut-send-spend-and-save/id932493382"
 						]
 					})
-				}
-			]
+				},
+				{
+					id: 'usercentrics-cmp',
+					src: 'https://app.usercentrics.eu/browser-ui/latest/loader.js',
+					'data-settings-id': 'tW29tCoGG_Dyes',
+					async: true,
+				},
+				{
+					type: 'text/javascript',
+					innerHTML: `
+					  	var Tawk_API = Tawk_API || {},
+							Tawk_LoadStart = new Date();
+						(function() {
+							setTimeout(function() {
+								var s1 = document.createElement("script"),
+									s0 = document.getElementsByTagName("script")[0];
+								s1.async = true;
+								s1.src = 'https://embed.tawk.to/62b30582b0d10b6f3e78c152/1g65kr25b';
+								s1.charset = 'UTF-8';
+								s1.setAttribute('crossorigin', '*');
+								s0.parentNode.insertBefore(s1, s0);
+							}, 20000);
+						})();
+					`,
+					// This ensures that Nuxt does not escape the script's content
+					body: true, // If you prefer it to be in the body, otherwise remove this line
+				},
+			],
+			__dangerouslyDisableSanitizersByTagID: {
+			  'tawk-to-script': ['innerHTML'],
+			},
 		},
 		//pageTransition: { name: 'page', mode: 'out-in' }
 	},
@@ -188,7 +220,7 @@ export default defineNuxtConfig({
 			alwaysRedirect: true, // Always redirect to the user's browser language if not set
 			fallbackLocale: 'en-UK'
 		},
-		compilation: { 
+		compilation: {
 			strictMessage: false,
 			// escapeHtml: true,
 		},

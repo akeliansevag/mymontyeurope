@@ -104,7 +104,7 @@
 
                                     </div>
                                 </div>
-                                <button :disabled="!isAcknowledged" @click.prevent="handleSubmit" class="w-max py-4 px-14 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium disabled:bg-[#D4D4D4]">{{ t(`General.Buttons.Submit`) }}</button>
+                                <button :disabled="!isAcknowledged" @click.prevent="handleSubmit" class="w-max py-4 px-14 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out disabled:bg-[#D4D4D4]">{{ t(`General.Buttons.Submit`) }}</button>
                                 <div v-if="submissionMessage" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                             </div>
                             <!-- <div class="lg:text-right">

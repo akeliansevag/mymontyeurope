@@ -29,7 +29,7 @@
                                     <span class="text-xl">{{ feature }}</span>
                                 </div>
                             </div>
-                            <button class="ml-auto w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ plan.buttonText }}</button>
+                            <button class="ml-auto w-max py-2 px-6 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ plan.buttonText }}</button>
                         </div>
                     </template>
 
@@ -48,7 +48,7 @@
                                         <span class="text-xl">{{ feature }}</span>
                                     </div>
                                 </div>
-                                <button class="ml-auto w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ plan.buttonText }}</button>
+                                <button class="ml-auto w-max py-2 px-6 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ plan.buttonText }}</button>
                             </div>
                         </template>
                     </div>

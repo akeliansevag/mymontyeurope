@@ -1,18 +1,18 @@
 <template>
     <div>
-        <section v-if="feature" id="section-1" class="my-12 py-12 lg:my-14 lg:py-14">
+        <section id="section-1" class="my-12 py-12 lg:my-14 lg:py-14">
             <div class="container">
-                <div class="flex flex-col gap-12 p-8 lg:p-14 bg-[#ECECEE] rounded-[30px]">
-                    <NuxtLinkLocale :to="`/features/${ currentCategorySlug }`" class="w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">Back to {{ currentCategory }}</NuxtLinkLocale>
+                <div v-if="feature" class="flex flex-col gap-12 p-8 lg:p-14 bg-[#ECECEE] rounded-[30px]">
+                    <NuxtLinkLocale :to="`/features/${ currentCategorySlug }`" class="w-max py-2 px-6 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">Back to {{ currentCategory }}</NuxtLinkLocale>
                     <img :src="`/images/${ feature.image }.webp`" :alt="feature.title" width="960" height="406" />
                     <h1 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase" v-html="feature.title"></h1>
                     <div class="description flex flex-col gap-8" v-html="feature.description"></div>
                 </div>
+                <template v-else>
+                    <PreloaderFeatures />
+                </template>
             </div>
         </section>
-        <template v-else>
-            <PreloaderFeatures />
-        </template>
     </div>
 </template>
 
@@ -30,10 +30,10 @@
     
     const currentCategory = computed(() => {
         const allFeatures = featuresData(t);
-        const flatFeatures = allFeatures.map(category => category.features).flat();
+        const flatFeatures = allFeatures.map(category => category.featuresItems).flat();
 
         const feature = flatFeatures.find(feature => slugify(feature.title) === currentSubCategorySlug.value);
-        return feature ? allFeatures.find(category => category.features.includes(feature))?.category : null;
+        return feature ? allFeatures.find(category => category.featuresItems.includes(feature))?.category : null;
     });
 
     const feature = ref(null);
@@ -41,7 +41,7 @@
     // Fetch feature based on the subcategory slug
     const fetchFeature = async (subcategory) => {
         const feature = featuresData(t)
-            .map(category => category.features)
+            .map(category => category.featuresItems)
             .flat()
             .find(feature => slugify(feature.title) === subcategory); 
 
@@ -77,7 +77,7 @@
 </script>
 
 <style lang="sass" scoped>
-    ::v-deep .description
+    :deep(.descriptionl)
         p
             @apply text-xl
 

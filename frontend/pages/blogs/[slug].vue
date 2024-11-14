@@ -2,7 +2,7 @@
      <section id="section-1" class="my-12 py-12 lg:my-14 lg:py-14">
         <div class="container">
             <div class="flex flex-col gap-12 p-8 lg:p-14 bg-[#ECECEE] rounded-[30px]">
-                <NuxtLinkLocale :to="'/news'" class="w-max py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">Back to news</NuxtLinkLocale>
+                <NuxtLinkLocale :to="'/blogs'" class="w-max py-2 px-6 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Button.Back To Blogs`) }}</NuxtLinkLocale>
                 <img :src="post[0].acf.inner_image.sizes['banner-image']" class="w-full rounded-xl overflow-hidden" :alt="post[0].title.rendered" width="" height="" />
                 <span>{{ new Date(post[0].date).toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }) }}</span>
                 <h1 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase" v-html="post[0].title.rendered"></h1>

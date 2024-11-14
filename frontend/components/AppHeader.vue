@@ -6,7 +6,7 @@
                     <div class="cursor-pointer relative group rounded-full"><!-- hover:bg-[#ECECEE] -->
                         <div class="flex justify-between items-center gap-2 p-2"><!-- p-2 -->
                             <!-- Logo Placeholder -->
-                             <NuxtLinkLocale :to="'/'" class="link">
+                            <NuxtLinkLocale :to="'/'" class="link">
                                 <img src="/images/logo.svg" :alt="t(`General.Alts.Logo`)" width="133" height="28" />
                             </NuxtLinkLocale>
 
@@ -35,11 +35,11 @@
                 <nav class="hidden lg:block">
                     <!--  44px to match the height of the other 2 dropdown -->
                     <ul class="flex items-center gap-1 text-black h-[44px]">
-                        <li v-for="(item, index) in menuItems" :key="index" class="relative flex justify-center items-center text-black cursor-pointer group h-full hover:bg-[#ECECEE] rounded-full">
+                        <li v-for="(item, index) in menuItems" :key="index" class="relative flex justify-center items-center text-black cursor-pointer group h-full hover:bg-[#ECECEE] rounded-full transition-all duration-300 ease-in-out">
                             <div class="flex justify-between items-center gap-2">
                                 <!-- Link if clickable -->
                                 <template v-if="item.clickable">
-                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-8 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black cursor-pointer select-none">
+                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-8 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black hover:text-primary cursor-pointer select-none">
                                         {{ t(`General.Links.${item.title}`) }}
                                     </NuxtLinkLocale>
                                 </template>
@@ -76,9 +76,9 @@
                         <div class="flex justify-between items-center gap-2 p-2">
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="28" height="28" /> -->
                             <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
+                            <span class="text-xs font-AeonikMedium">{{ currentLocale.split('-')[0].toUpperCase() }}</span>
                             <!-- <span>{{currentLocale.split('-')[0]}}</span> -->
                             <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="t(`General.Alts.Chevron Down Black`)" width="10" height="8" />
-
                             <!-- Invisible hover buffer (1.5padding, 1px border bottom) -->
                             <div class="absolute top-full left-0 h-[calc(1.5rem+1px)] w-full group-hover:block hidden"></div>
                             
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
+                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
 
                 <!-- Mobile Menu Toggle Icon -->
@@ -152,6 +152,7 @@
                     <div class="relative w-full bg-white">
                         <div class="flex justify-center items-center gap-2 w-max py-1 px-2 rounded-full mx-auto bg-[#ECECEE]">
                             <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="t(`General.Languages.${currentLocaleDetails.language}`)" width="16" height="16" />
+                            <span class="text-xs font-AeonikMedium">{{ currentLocale.split('-')[0].toUpperCase() }}</span>
 
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="16" height="16" /> -->
                             <!-- <span class="text-sm font-AeonikRegular">English</span> -->
@@ -170,7 +171,7 @@
                         </ul>
                     </template>
                         
-                    <ScrollButton target="download" @click="closeNav" class="py-2 px-4 text-base text-white bg-primary mx-auto  rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
+                    <ScrollButton target="download" @click="closeNav" class="py-2 px-4 text-base text-white bg-primary mx-auto rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
             </div>
         </nav>

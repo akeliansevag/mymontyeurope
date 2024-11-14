@@ -6,9 +6,9 @@
                 <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase">{{ t(`Pages.${ page }.Banner.${ title }`) }}</h1>
                 <p class="text-2xl" v-html="t(`Pages.${ page }.Banner.${ description }`)"></p>
                 <NuxtLink v-if="buttonLink != ''" :to="`/${ buttonLink }`">
-                    <button class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.${ buttonText }`) }}</button>
+                    <button class="w-max py-2 px-6 text-base text-black hover:text-white bg-white hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.${ buttonText }`) }}</button>
                 </NuxtLink>
-                <ScrollButton v-else target="download" class="w-max py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.${ buttonText }`) }}</ScrollButton>
+                <ScrollButton v-else target="download" class="w-max py-2 px-6 text-base text-black hover:text-white bg-white hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.${ buttonText }`) }}</ScrollButton>
             </div>
             <div class="w-full">
                 <img class="w-full" :src="`/images/${ image }.webp`" :alt="t(`General.Alts.${ alt }`)" width="826" height="950">

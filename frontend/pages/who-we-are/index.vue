@@ -80,7 +80,7 @@
                 </div>
                 <div class="grid lg:grid-cols-2 gap-4 overflow-hidden text-white">
                     <div class="relative flex flex-col gap-8 p-8 lg:p-16 bg-[url('/images/uk.webp')] bg-cover bg-bottom bg-no-repeat rounded-[30px]">
-                        <button class="w-max ml-auto py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Contact Us`) }}</button>
+                        <button class="w-max ml-auto py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Contact Us`) }}</button>
                         <div class="flex flex-col gap-4">
                             <h2 class="font-AeonikBlack text-2xl md:text-3xl xl:text-4xl 4xl:text-5xl uppercase">{{ t(`Pages.Who We Are.Section 6.Cards[0].Location`) }}</h2>
                             <a href="tel:+441174090583" class="flex items-start gap-2 text-xl underline underline-offset-4">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="relative flex flex-col gap-8 p-8 lg:p-16 bg-[url('/images/uae.webp')] bg-cover bg-bottom bg-no-repeat rounded-[30px]">
-                        <button class="w-max ml-auto py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Contact Us`) }}</button>
+                        <button class="w-max ml-auto py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Contact Us`) }}</button>
                         <div class="flex flex-col gap-4">
                             <h2 class="font-AeonikBlack text-2xl md:text-3xl xl:text-4xl 4xl:text-5xl uppercase">{{ t(`Pages.Who We Are.Section 6.Cards[1].Location`) }}</h2>
                             <a href="tel:+97145657743" class="flex items-start gap-2 text-xl underline underline-offset-4">

@@ -13,20 +13,13 @@
 
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">
             <div class="container">
-                <div v-if="pending">
+                <template v-if="pending">
                     <div class="flex flex-col gap-8">
-                        <div v-for="number in perPage" class="grid lg:grid-cols-2 justify-start items-center max-h-96 bg-[#ECECEE] rounded-[30px]">             
-                            <div class="flex flex-col justify-start items-start gap-8 py-6 px-8 lg:p-12 xl:p-24">
-                                <div class="rounded-[30px] w-1/3 h-[25px] bg-[#f2f2f2]"></div>
-                                <div class="rounded-[30px] w-1/2 h-[30px] bg-[#f2f2f2]"></div>
-                                <div class="rounded-[30px] w-3/4 h-[28px] bg-[#f2f2f2]"></div>
-                            </div>
-                            <div class="w-full h-full rounded-b-[30px] lg:rounded-r-[30px] lg:rounded-l-none overflow-hidden">
-                                <div class="rounded-[30px] h-full w-full bg-[#f2f2f2]"></div>
-                            </div>
+                        <div v-for="number in perPage/2" class="grid grid-cols-1 lg:grid-cols-2 justify-start items-center bg-[#ECECEE] rounded-[30px]">             
+                            <PreloaderNews />
                         </div>
                     </div>
-                </div>
+                </template>
                 <div v-else>
                     <div class="flex flex-col gap-8">
                         <!-- <pre>{{ posts }}</pre> -->
@@ -45,7 +38,7 @@
                     </div>
 
                     <div class="text-center mx-auto mt-12">
-                        <button v-if="currentPage < totalPages" @click="loadMorePosts" class="w-max py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">View More</button>
+                        <button v-if="currentPage < totalPages" @click="loadMorePosts" class="w-max py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.View More`) }}</button>
                     </div>
                 </div>
             </div>
@@ -60,18 +53,17 @@
     const { t } = useLocale(); 
 	
     useSeoMeta({
-        title: 'News',
+        title: t(`Pages.News.Seo.Title`),
         description: '',
 
-        ogTitle: 'News',
-        ogDescription: '',
+        ogTitle: t(`Pages.News.Seo.Og Title`),
+        ogDescription: t(`Pages.News.Seo.Og Description`),
         ogImage: '',
 
-        twitterTitle: 'News',
-        twitterDescription: '',
+        twitterTitle: t(`Pages.News.Seo.Twitter Title`),
+        twitterDescription: t(`Pages.News.Seo.Twitter Description`),
         twitterCard: 'summary_large_image',
     })
-
 
     const totalPages = ref(0);
     const currentPage = ref(1);

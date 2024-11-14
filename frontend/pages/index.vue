@@ -5,8 +5,8 @@
                 <div class="flex flex-col justify-center gap-8 lg:w-4/5 max-lg:mt-14">
                     <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase" v-html="t(`Pages.Homepage.Banner.Title`)"></h1>
                     <p class="lg:w-1/2 text-2xl" v-html="t(`Pages.Homepage.Banner.Description`)"></p>
-                    <ScrollButton target="download" class="w-max py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Get Started`) }}</ScrollButton>
-                    <!-- <button @click="scrollToDownload" class="w-max py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">Get Started</button> -->
+                    <ScrollButton target="download" class="w-max py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Get Started`) }}</ScrollButton>
+                    <!-- <button @click="scrollToDownload" class="w-max py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">Get Started</button> -->
                 </div>
                 <div class="lg:absolute lg:bottom-0 lg:right-0 lg:w-[55%]">
                     <img src="/images/main-banner.webp" :alt="t(`General.Alts.Simple & Hassle-Free Digital Payment`)" width="1424" height="1664">
@@ -19,7 +19,7 @@
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-center">
                     <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ t(`Pages.Homepage.Section 2.Title`) }}</h2>
                     <p class="text-xl" v-html="t(`Pages.Homepage.Section 2.Description`)"></p>
-                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
+                    <ScrollButton target="download" class="py-2 px-4 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Download App`) }}</ScrollButton>
                 </div>
             </div>
         </section>
@@ -30,7 +30,7 @@
                     <div class="flex flex-col justify-start items-start gap-8">
                         <h3 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ t(`Pages.Homepage.Section 3.Title`) }}</h3>
                         <p class="text-left text-xl" v-html="t(`Pages.Homepage.Section 3.Description`)"></p>
-                        <button class="py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Get Started`) }}</button>
+                        <button class="py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Get Started`) }}</button>
                     </div>
                     <img src="/images/get-on-board-with-us.webp" :alt="t(`Pages.Homepage.Section 3.Image Alt`)" width="1096" height="892">
                 </div>
@@ -58,7 +58,7 @@
                                 <p class="text-xl">{{ t(`Pages.Homepage.Section 4.List Items.Item 3`) }}</p>
                             </li>
                         </ul>
-                        <button class="py-2 px-6 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Payments`) }}</button>
+                        <button class="py-2 px-6 text-base text-black hover:text-white bg-white hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Payments`) }}</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                                 <p class="text-xl">{{ t(`Pages.Homepage.Section 6.List Items.Item 3`) }}</p>
                             </li>
                         </ul>
-                        <button class="py-2 px-6 text-base text-white bg-black rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.Payments`) }}</button>
+                        <button class="py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Payments`) }}</button>
                     </div>
                     <img class="order-2 lg:order-1" src="/images/stay-protected.webp" :alt="t(`Pages.Homepage.Section 6.Image Alt`)" width="1120" height="892">
                 </div>
@@ -115,7 +115,7 @@
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-center">
                     <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ t(`Pages.Homepage.Section 8.Title`) }}</h2>
                     <NuxtLinkLocale :to="'/features'">
-                        <button class="py-2 px-4 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.View All Features`) }}</button>
+                        <button class="py-2 px-4 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.View All Features`) }}</button>
                     </NuxtLinkLocale>
                 </div>
 
@@ -152,7 +152,7 @@
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-white text-center">
                     <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ t(`Pages.Homepage.Section 9.Title`) }}</h2>
                     <p class="text-xl" v-html="t(`Pages.Homepage.Section 9.Description`)"></p>
-                    <button class="py-2 px-4 text-base text-black bg-white rounded-[30px] select-none font-AeonikMedium">{{ t(`General.Buttons.View all plans`) }}</button>
+                    <button class="py-2 px-4 text-base text-black hover:text-white bg-white hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.View all plans`) }}</button>
                 </div>
 
                 <div class="grid lg:grid-cols-3 justify-start gap-8 xl:w-3/4 mx-auto text-white text-center mt-14">

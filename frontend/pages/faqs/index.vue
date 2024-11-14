@@ -14,8 +14,8 @@
         <section id="section-2" class="my-12 py-12 lg:my-14 lg:py-14">
             <div class="container flex flex-col gap-8">
                 <div class="relative">
-                    <input v-model="searchQuery" type="text" class="relative w-full py-4 px-12 bg-[#ECECEE] rounded-full leading-none outline-none" placeholder="Search" />
-                    <img v-if="!searchQuery" src="/images/icons/search-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2" alt="Search Gray" width="20" height="20">
+                    <input v-model="searchQuery" type="text" class="relative w-full py-4 px-12 bg-[#ECECEE] rounded-full leading-none outline-none" :placeholder="t(`General.Placeholders.Search`)" />
+                    <img v-if="!searchQuery" src="/images/icons/search-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2" :alt="t(`General.Alts.Search Gray`)" width="20" height="20">
                     <img v-else @click="searchQuery = ''" src="/images/icons/close-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2 cursor-pointer" alt="Search Gray" width="16" height="16">
                 </div>
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-center mt-8">
@@ -26,8 +26,10 @@
                     <div class="md:col-span-1 lg:col-span-1">
                         <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">Topics</h2>
                         <div class="flex flex-col gap-4 lg:gap-12 mt-8">
-                            <div v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
+                            <div v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['relative max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
                                 <h3 class="text-xl font-AeonikMedium">{{ item.topic }}</h3>
+                                <!-- Check if any FAQ question matches the search query -->
+                                <div v-if="searchQuery && hasMatchingFaqs(item.faqsItems)" class="absolute top-3 right-3 w-2 h-2 bg-red-400 rounded-full"></div>
                             </div>
                         </div>
                     </div>
@@ -51,7 +53,7 @@
                         <!-- If a question is selected, display its answer -->
                         <div v-if="selectedFaqIndex !== null" class="p-4 lg:p-8 bg-[#ECECEE] rounded-2xl">
                             <h4 class="font-AeonikBold text-2xl">{{ faqsItems[selectedCategoryIndex].faqsItems[selectedFaqIndex].question }}</h4>
-                            <p class="mt-4">{{ faqsItems[selectedCategoryIndex].faqsItems[selectedFaqIndex].answer }}</p>
+                            <p class="mt-4" v-html="faqsItems[selectedCategoryIndex].faqsItems[selectedFaqIndex].answer"></p>
                         </div>
                     </div>
                 </div>
@@ -77,33 +79,31 @@
         twitterCard: 'summary_large_image',
     })
 
-	const faqsItems = useState('faqsItems', () => faqsData());
+	const faqsItems = useState('faqsItems', () => faqsData(t));
 
-    const selectedCategoryIndex = ref(0); // Default to first category
+    const selectedCategoryIndex = ref(0);
     const selectedFaqIndex = ref(null);
-    const showQuestions = ref(true); // Flag to toggle questions visibility
-    const searchQuery = ref(''); // Search query reactive variable
+    const showQuestions = ref(true);
+    const searchQuery = ref('');
 
-    // Select a category
     const selectCategory = (index) => {
         selectedCategoryIndex.value = index;
-        selectedFaqIndex.value = null; // Reset the selected FAQ when changing categories
-        showQuestions.value = true; // Ensure that questions are displayed when switching categories
+        selectedFaqIndex.value = null; 
+        showQuestions.value = true; 
     };
 
     // Select a specific FAQ question
     const selectQuestion = (faqIndex) => {
-        selectedFaqIndex.value = faqIndex;
+        const filteredFaqIndex = filteredFaqs.value[faqIndex]; // Get the FAQ object from filteredFaqs
+        selectedFaqIndex.value = faqsItems.value[selectedCategoryIndex.value].faqsItems.indexOf(filteredFaqIndex); // Find its original index in the full FAQ list
         showQuestions.value = false; // Hide questions and show the selected answer
     };
 
-    // Reset selection and go back to the list of questions
-    const resetSelection = () => {
-        showQuestions.value = true; // Show questions again
-        selectedFaqIndex.value = null; // Reset selected FAQ
+    // Method to check if any FAQ in the category matches the search query
+    const hasMatchingFaqs = (faqs) => {
+        return faqs.some((faq) => faq.question.toLowerCase().includes(searchQuery.value.toLowerCase()));
     };
 
-    // Filter FAQs based on the search query
     const filteredFaqs = computed(() => {
         if (!searchQuery.value) {
             return faqsItems.value[selectedCategoryIndex.value]?.faqsItems || [];
@@ -113,17 +113,16 @@
         ) || [];
     });
 
-    // Check if a question matches the search query
     function faqMatch(question) {
-        // Only check if the search query is not empty
         if (searchQuery.value.trim() === "") {
-            return false; // Don't highlight any questions if there's no search query
+            return false;
         }
-        // Check if the question contains the search query (case insensitive)
         return question.toLowerCase().includes(searchQuery.value.toLowerCase());
     }
 </script>
 
-<style lang="" scoped>
-	
+<style lang="sass" scoped>
+    :deep(ul)
+        list-style-type: disc
+        list-style-position: inside
 </style>

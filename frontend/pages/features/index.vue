@@ -18,7 +18,7 @@
                     <p class="text-xl" v-html="t(`Pages.Features.Section 2.Description`)"></p>
                     <div id="tabs" class="grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-8 w-max">
                         <template v-for="(item, index) in featuresItems" :key="index">
-                            <ScrollButton @click="show(index)" :class="activeTab === index ? 'text-white bg-primary border-primary' : 'text-black bg-transparent border-black'" target="tabs" class="w-max min-w-32 py-2 px-6 text-base border rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ item.category }}</ScrollButton>
+                            <ScrollButton @click="show(index)" :class="activeTab === index ? 'text-white bg-primary border-primary' : 'text-black bg-transparent border-black'" target="tabs" class="w-max min-w-32 py-2 px-6 text-base border rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out transition-all duration-300 ease-in-out">{{ item.category }}</ScrollButton>
                         </template>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                                     <p class="text-xl" v-html="`${item.excerpt}...`"></p>
                                 </div>
                                 <NuxtLinkLocale :to="`/features/${ category.path }/${ slugify(item.title) }`">
-                                    <button class="w-max ml-auto py-2 px-6 text-base text-white bg-primary rounded-[30px] select-none font-AeonikMedium">Read More</button>
+                                    <button class="w-max ml-auto py-2 px-6 text-base text-white bg-primary hover:bg-black rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Read More`) }}</button>
                                 </NuxtLinkLocale>
                             </div>
                         </template>
