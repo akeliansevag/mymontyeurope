@@ -3,19 +3,21 @@
 		"Regions": {
 			"United Kingdom": "United Kingdom",
 			"Spain": "Spain",
-			"Italy": "Italy"
+			"Italy": "Italy",
+			"France": "France"
 		},
 
 		"Languages": {
 			"English": "English",
 			"Spanish": "Spanish",
-			"Italian": "Italian"
+			"Italian": "Italian",
+			"French": "French"
 		},
 
 		"Links": {
 			"Homepage": "Homepage",
 			"Company": "Company",
-			"Why MyMonty": "WhyMyMonty",
+			"Why MyMonty": "Why MyMonty",
 			"Who We Are": "Who We Are",
 			"Careers": "Careers",
 			"Code of Conduct": "Code of Conduct",
@@ -85,7 +87,8 @@
 			"Read More": "Read More",
 			"View More": "View More",
 			"Back To News": "Back to news",
-			"Back To Blogs": "Back to blogs"
+			"Back To Blogs": "Back to blogs",
+			"Visit The Homepage": "Visit the homepage"
 		},
 
 		"Copyright": "Copyright MyMonty, 2024",
@@ -105,7 +108,7 @@
 			"Files Accepted": "Files Accepted",
 			"Maximum file size": "Maximum file size",
 			"Uploaded File": "Uploaded File",
-			"File Size": "Uploaded File",
+			"File Size": "File Size",
 			"Acknowlegment": {
 				"Part 1": "By checking this box, you confirm that you've read and accepted our",
 				"Part 2": "for our website"
@@ -185,7 +188,7 @@
 
 			"Section 2": {
 				"Title": "Get on board with us",
-				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque.",
+				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque."
 			},
 
 			"Section 3": {
@@ -331,7 +334,7 @@
 			},
 
 			"Section 2": {
-				"Title": "One app for all things money",
+				"Title": "Who We Are",
 				"Description": "At MyMonty EEA/UK, we're all about simplifying financial processes. Our digital platform offers innovative, user-friendly financial services to individuals across the EEA and UK. We're all about making banking easy, secure, and accessible for everyone, especially the unbanked, underbanked, and youth, so they can enjoy personalized financial solutions.",
 
 				"Cards": [
@@ -436,11 +439,11 @@
 					"Description": "If you're looking for a true value plan with zero card fees, zero monthly charges and more.",
 					"Layout": "half",
 					"Features": [
-						"Free contactless physical card",
-						"Priority customer support",
-						"1 fee free SEPA transfer",
-						"25 fee free POS transactions",
-						"1 fee free account top up per month"
+						"Multicurrency accounts",
+						"Contactless metal debit card",
+						"Investment accounts",
+						"Health insurance",
+						"Joint accounts"
 					],
 					"Button Text": "Coming Soon"
 				}
@@ -933,7 +936,7 @@
 						"Title": "Always there for you",
 						"Description 1": "Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed",
 						"Description 2": "Have a complaint or need any assistance?<br />Reach out to us <a href='' class='text-primary'>here</a>",
-						"Image Alt": "This Is The Future"
+						"Image Alt": "Always There For You"
 					}
 				]
 			},
@@ -1068,6 +1071,23 @@
 				"Og Title": "Cookie Policy",
 				"Og Description": "",
 				"Twitter Title": "Cookie Policy",
+				"Twitter Description": ""
+			}
+		},
+		
+		"Error 404": {
+			"Section 1": {
+				"Image Alt": "Error 404",
+				"Title": "We can't find that one",
+				"Description": "We update our website regularly, so this page may have been moved, removed, or the URL wasn't quite right.<br /><br />Explore the latest from MyMonty this way..."
+			},
+
+			"Seo": {
+				"Title": "Page Not Found",
+				"Description": "",
+				"Og Title": "Page Not Found",
+				"Og Description": "",
+				"Twitter Title": "Page Not Found",
 				"Twitter Description": ""
 			}
 		}
