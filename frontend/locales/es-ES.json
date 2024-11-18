@@ -1052,12 +1052,12 @@
 			},
 			"Seo": {
 				"Title": "Error {code}",
-				"Description": "An error occurred: {message}",
-				"Og Title": "Error {code} Occurred",
-				"Og Description": "An error occurred on our website: {message}",
-				"Twitter Title": "Error {code} Occurred",
-				"Twitter Description": "An error occurred on our website: {message}",
-				"Default Message": "An unknown error occurred"
+				"Description": "Ocurrió un error: {message}",
+				"Og Title": "Ocurrió un error {code}",
+				"Og Description": "Ocurrió un error en nuestro sitio web: {message}",
+				"Twitter Title": "Ocurrió un error {code}",
+				"Twitter Description": "Ocurrió un error en nuestro sitio web: {message}",
+				"Default Message": "Ocurrió un error desconocido"
 			}
 		}
 	},
