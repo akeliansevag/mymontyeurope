@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 lg:grid-cols-5 items-start gap-14 md:gap-8 lg:gap-14">
-                    <div class="md:col-span-1 lg:col-span-1">
+                    <div class="lg:sticky lg:top-[93px] md:col-span-1 lg:col-span-1">
                         <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">{{ t('Pages.Frequently Asked Questions.Section 2.Topic Heading') }}</h2>
                         <div class="flex flex-col gap-4 lg:gap-12 mt-8">
                             <ScrollButton target="questions-answers" v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['relative max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
