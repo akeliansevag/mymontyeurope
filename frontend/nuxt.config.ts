@@ -5,9 +5,6 @@ export default defineNuxtConfig({
 	// ssr: true,
 	css: ["~/assets/sass/app.sass"],
 	pages: true,
-	generate: {
-		fallback: true
-	},
 	modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-aos', "@vueuse/nuxt", "@nuxtjs/i18n", "@nuxt/scripts"],
 	site: {
 		url: 'https://mymonty.com',
