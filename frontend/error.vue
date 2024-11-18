@@ -29,16 +29,9 @@
 	const { t } = useLocale(); 
 
 	useSeoMeta({
-		title: t('Pages.Error 404.Seo.Title'),
-		description: '',
-
-		ogTitle: t('Pages.Error 404.Seo.Og Title'),
-		ogDescription: t('Pages.Error 404.Seo.Og Description'),
-		ogImage: '',
-
-		twitterTitle: t('Pages.Error 404.Seo.Twitter Title'),
-		twitterDescription: t('Pages.Error 404.Seo.Twitter Description'),
-		twitterCard: 'summary_large_image',
+		title: '404',
+		ogTitle: '404',
+		twitterTitle: '404',
 	})
 
 	useHead({
