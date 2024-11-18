@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="our-code-of-conduct"
-            alt="Our code of conduct"
+            alt="Image Alt"
             page="Code Of Conduct"
         />
 

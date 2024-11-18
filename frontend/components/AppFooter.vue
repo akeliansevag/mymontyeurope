@@ -13,10 +13,10 @@
                 <ul class="lg:col-span-2 grid sm:grid-cols-4 sm:justify-between gap-6 sm:gap-3">
                     <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
                         <template v-if="item.clickable">
-                            <NuxtLinkLocale :to="`/${item.path}`" class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white hover:text-primary text-xl transition-all duration-300 ease-in-out">
-                                <span>{{ t(`General.Links.${item.title}`) }}</span>
+                            <div class="children-toggle max-sm:flex max-sm:justify-between max-sm:gap-4 font-AeonikBold text-white hover:text-primary text-xl transition-all duration-300 ease-in-out">
+                                <NuxtLinkLocale :to="`/${item.path}`">{{ t(`General.Links.${item.title}`) }}</NuxtLinkLocale>
                                 <img v-if="item.links && item.links.length > 0" class="block sm:hidden transition-all duration-300 ease-in-out" src="/images/icons/chevron-down-white.svg" :alt="t(`General.Alts.Chevron Down White`)" width="14" height="8" />
-                            </NuxtLinkLocale>
+                            </div>
                         </template>
 
                         <!-- Render as text if not clickable -->
@@ -57,13 +57,19 @@
                     </a>
                 </div>
 
-                <div class="flex max-md:justify-center items-center gap-6 md:ml-auto text-[#D4D4D4]">
-                    <NuxtLinkLocale :to="'/terms-and-conditions'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Terms & Conditions`) }}</NuxtLinkLocale>
-                    <NuxtLinkLocale :to="'/privacy-policy'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Privacy Policy`) }}</NuxtLinkLocale>
-                    <NuxtLinkLocale :to="'/cookie-policy'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Cookie Policy`) }}</NuxtLinkLocale>
-                    <a @click="showCookieSettings" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out cursor-pointer">
-                        {{ t(`General.Links.Cookie Settings`) }}
-                    </a>
+                <div class="flex flex-col gap-2 md:ml-auto text-[#D4D4D4]">
+                    <div class="flex max-md:justify-center items-center gap-6 md:ml-auto text-[#D4D4D4]">
+                        <NuxtLinkLocale :to="'/terms-and-conditions'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Terms & Conditions`) }}</NuxtLinkLocale>
+                        <NuxtLinkLocale :to="'/privacy-policy'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Privacy Policy`) }}</NuxtLinkLocale>
+                        <NuxtLinkLocale :to="'/cookie-policy'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Cookie Policy`) }}</NuxtLinkLocale>
+                        <a @click="showCookieSettings" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out cursor-pointer">
+                            {{ t(`General.Links.Cookie Settings`) }}
+                        </a>
+                    </div>
+                    <div class="flex max-md:justify-center items-center gap-6 text-[#D4D4D4]">
+                        <NuxtLinkLocale :to="'/paynetics-terms-and-conditions'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Paynetics Terms & Conditions`) }}</NuxtLinkLocale>
+                        <NuxtLinkLocale :to="'/paynetics-privacy-policy'" class="text-sm underline underline-offset-4 hover:text-primary transition-all duration-300 ease-in-out">{{ t(`General.Links.Paynetics Privacy Policy`) }}</NuxtLinkLocale>
+                    </div>
                 </div>
             </div>
 

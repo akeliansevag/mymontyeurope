@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="join-our-dream-team"
-            alt="Join our dream team"
+            alt="Image Alt"
             page="Careers"
         />
 

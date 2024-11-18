@@ -9,7 +9,7 @@
                     <!-- <button @click="scrollToDownload" class="w-max py-2 px-6 text-base text-white bg-black hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">Get Started</button> -->
                 </div>
                 <div class="lg:absolute lg:bottom-0 lg:right-0 lg:w-[55%]">
-                    <img src="/images/main-banner.webp" :alt="t(`General.Alts.Simple & Hassle-Free Digital Payment`)" width="1424" height="1664">
+                    <img src="/images/main-banner.webp" :alt="t(`Pages.Homepage.Banner.Image Alt`)" width="1424" height="1664">
                 </div>
             </div>
         </section>

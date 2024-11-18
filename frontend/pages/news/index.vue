@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="what-is-happening-at-mymonty"
-            alt="What is happening at mymonty"
+            alt="Image Alt"
             page="News"
         />
 

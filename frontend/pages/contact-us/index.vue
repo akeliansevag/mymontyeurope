@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="got-any-questions"
-            alt="Got any questions"
+            alt="Image Alt"
             page="Contact Us"
         />
 

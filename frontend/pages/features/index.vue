@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Get Started"
             image="unlock-the-best-of-what-we-offer"
-            alt="Unlock the best of what we offer"
+            alt="Image Alt"
             page="Features"
         />
 

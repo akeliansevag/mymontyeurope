@@ -3,19 +3,21 @@
 		"Regions": {
 			"United Kingdom": "United Kingdom",
 			"Spain": "Spain",
-			"Italy": "Italy"
+			"Italy": "Italy",
+			"France": "France"
 		},
 
 		"Languages": {
 			"English": "English",
 			"Spanish": "Spanish",
-			"Italian": "Italian"
+			"Italian": "Italian",
+			"French": "French"
 		},
 
 		"Links": {
 			"Homepage": "Homepage",
 			"Company": "Company",
-			"Why MyMonty": "WhyMyMonty",
+			"Why MyMonty": "Why MyMonty",
 			"Who We Are": "Who We Are",
 			"Careers": "Careers",
 			"Code of Conduct": "Code of Conduct",
@@ -32,6 +34,8 @@
 			"Contact Us": "Contact Us",
 			"Terms & Conditions": "Terms & Conditions",
 			"Privacy Policy": "Privacy Policy",
+			"Paynetics Terms & Conditions": "Paynetics Terms & Conditions",
+			"Paynetics Privacy Policy": "Paynetics Privacy Policy",
 			"Cookie Policy": "Cookie Policy",
 			"Cookie Settings": "Cookie Settings"
 		},
@@ -55,20 +59,10 @@
 			"Chevron Left Box Gray": "Chevron Left Box Gray",
 			"Phone Box Blue": "Phone Box Blue",
 			"Search Gray": "Search Gray",
+			"Qr Code": "Qr Code",
+			"Check Box Primary": "Check Box Primary",
 			"Apple Store": "Apple Store",
-			"Google Play": "Google Play",
-			"Simple & Hassle-Free Digital Payment": "Simple & Hassle-Free Digital Payment",
-			"See what sets us apart": "See what sets us apart",
-			"One app for all things money": "One app for all things money",
-			"Choose Your Plan": "Choose Your Plan",
-			"What is happening at mymonty": "What's happening at mymonty",
-			"Unlock the best of what we offer": "Unlock the best of what we offer",
-			"Frequently asked questions": "Frequently asked questions",
-			"Got any questions": "Got any questions",
-			"Our code of conduct": "Our code of conduct",
-			"Join our dream team": "Join our dream team",
-			"Leadership team": "Leadership team",
-			"What is happening at mymonty blogs": "What's happening at mymonty blogs"
+			"Google Play": "Google Play"
 		},
 
 		"Buttons": {
@@ -85,7 +79,8 @@
 			"Read More": "Read More",
 			"View More": "View More",
 			"Back To News": "Back to news",
-			"Back To Blogs": "Back to blogs"
+			"Back To Blogs": "Back to blogs",
+			"Visit The Homepage": "Visit the homepage"
 		},
 
 		"Copyright": "Copyright MyMonty, 2024",
@@ -105,7 +100,7 @@
 			"Files Accepted": "Files Accepted",
 			"Maximum file size": "Maximum file size",
 			"Uploaded File": "Uploaded File",
-			"File Size": "Uploaded File",
+			"File Size": "File Size",
 			"Acknowlegment": {
 				"Part 1": "By checking this box, you confirm that you've read and accepted our",
 				"Part 2": "for our website"
@@ -180,12 +175,13 @@
 		"Homepage": {
 			"Banner": {
 				"Title": "Simple &<br />Hassle-Free<br />Digital Payment",
-				"Description": "Empowering you with personalized financial&nbsp;solutions."
+				"Description": "Empowering you with personalized financial&nbsp;solutions.",
+				"Image Alt": "Simple & Hassle-Free Digital Payment"
 			},
 
 			"Section 2": {
 				"Title": "Get on board with us",
-				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque.",
+				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque."
 			},
 
 			"Section 3": {
@@ -280,7 +276,8 @@
 			"Banner": {
 				"Sub Title": "Why MyMonty?",
 				"Title": "See what sets us apart",
-				"Description": "At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees."
+				"Description": "At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees.",
+				"Image Alt": "See what sets us apart"
 			},
 
 			"Section 2": {
@@ -327,11 +324,12 @@
 			"Banner": {
 				"Sub Title": "Who We Are",
 				"Title": "One app for all things money",
-				"Description": "Manage your money effortlessly from the comfort of one single intuitive&nbsp;app."
+				"Description": "Manage your money effortlessly from the comfort of one single intuitive&nbsp;app.",
+				"Image Alt": "One app for all things money"
 			},
 
 			"Section 2": {
-				"Title": "One app for all things money",
+				"Title": "Who We Are",
 				"Description": "At MyMonty EEA/UK, we're all about simplifying financial processes. Our digital platform offers innovative, user-friendly financial services to individuals across the EEA and UK. We're all about making banking easy, secure, and accessible for everyone, especially the unbanked, underbanked, and youth, so they can enjoy personalized financial solutions.",
 
 				"Cards": [
@@ -390,7 +388,8 @@
 			"Banner": {
 				"Sub Title": "Plans",
 				"Title": "Choose Your Plan",
-				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare&nbsp;plans."
+				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare&nbsp;plans.",
+				"Image Alt": "Choose Your Plan"
 			},
 
 			"Section 2": [
@@ -436,11 +435,11 @@
 					"Description": "If you're looking for a true value plan with zero card fees, zero monthly charges and more.",
 					"Layout": "half",
 					"Features": [
-						"Free contactless physical card",
-						"Priority customer support",
-						"1 fee free SEPA transfer",
-						"25 fee free POS transactions",
-						"1 fee free account top up per month"
+						"Multicurrency accounts",
+						"Contactless metal debit card",
+						"Investment accounts",
+						"Health insurance",
+						"Joint accounts"
 					],
 					"Button Text": "Coming Soon"
 				}
@@ -460,7 +459,8 @@
 			"Banner": {
 				"Sub Title": "News",
 				"Title": "What's happening at mymonty?",
-				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+				"Description": "Explore our news for the latest updates and&nbsp;offerings.",
+				"Image Alt": "What is happening at mymonty"
 			},
 
 			"Seo": {
@@ -477,7 +477,8 @@
 			"Banner": {
 				"Sub Title":"Features",
 				"Title": "Unlock the best of what we offer",
-				"Description": "Enjoy our outstanding features and stand out from the&nbsp;crowd"
+				"Description": "Enjoy our outstanding features and stand out from the&nbsp;crowd",
+				"Image Alt": "Unlock the best of what we offer"
 			},
 
 			"Section 2": {
@@ -582,237 +583,242 @@
 			"Banner": {
 				"Sub Title": "FAQ",
 				"Title": "Frequently asked questions",
-				"Description": "Our team is always ready to assist you or answer your inquiries. Fill out this form to reach&nbsp;us."
+				"Description": "Our team is always ready to assist you or answer your inquiries. Fill out this form to reach&nbsp;us.",
+				"Image Alt": "Frequently asked questions"
 			},
 
-			"Section 2": [
-				{
-					"Topic": "Open Account",
-					"Cards": [
-						{
-							"Question": "How to use MyMonty on a new device?",
-							"Answer": "When attempting to sign in on a new device, an OTP (One-Time Password) will be sent to the mobile device associated with the registered mobile number. Once the OTP is entered correctly, input your PIN to complete the login process. An email will also be sent to the registered email address to confirm the new login."
-						},
-						{
-							"Question": "What are the benefits of choosing the Starter plan?",
-							"Answer": "<ul><li>Dedicated individual Euro IBAN</li><li>MyMonty virtual debit card</li><li>MyMonty contactless physical card</li><li>Enhanced data security &amp; privacy</li><li>Customer support</li><li>P2P money transfer</li><li>Global ATM withdrawals <br> </li></ul>"
-						},
-						{
-							"Question": "What are the current plans available at MyMonty?",
-							"Answer": "Currently, we offer a Free Starter account to our customers, which provides all the essential features to ensure your experience with MyMonty is comfortable."
-						},
-						{
-							"Question": "How to find your IBAN details",
-							"Answer": "To locate your IBAN, navigate to “Profile,” tap on your name, and then select the “Personal IBAN” option."
-						},
-						{
-							"Question": "Are my deposits insured with MyMonty?",
-							"Answer": "Yes, each deposit in your IBAN is insured by FSCS for up to €100,000."
-						},
-						{
-							"Question": "What is IBAN?",
-							"Answer": "An IBAN is a unique code used to identify a specific bank account for cross-border payments. Knowing your beneficiary's IBAN ensures that your international payments reach their destination securely."
-						},
-						{
-							"Question": "Why do I need to connect my email?",
-							"Answer": "Connecting your email adds an extra layer of security to your account. An OTP will be sent to your provided email address. Please enter the OTP in the designated field and tap 'Verify.'"
-						},
-						{
-							"Question": "Which countries are eligible to open accounts with MyMonty?",
-							"Answer": "We currently provide services within the European Economic Area (EEA).<br />The EEA includes Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, and Sweden."
-						},
-						{
-							"Question": "How long will the KYC check take?",
-							"Answer": "After you submit your KYC documents, we will review your application. Please note that the verification process may take up to 3 hours during a working day."
-						},
-						{
-							"Question": "How is the KYC process done at MyMonty?",
-							"Answer": "Upon submitting your verification documents, a liveness check is conducted. Smile for the camera and snap a selfie. The final step involves verifying your home address. Please upload a utility bill dated no more than 3 months from today's date."
-						},
-						{
-							"Question": "What is KYC?",
-							"Answer": "KYC, or Know Your Customer, is a standard practice where companies verify the identity of their clients to comply with legal requirements and regulations. In the digital age, KYC helps prevent online fraud and meets global financial standards."
-						},
-						{
-							"Question": "What are the required documents to onboard?",
-							"Answer": "<ul><li>Passport</li><li>Driving License</li><li>ID Card</li><li>Proof of Address such as utility bill<br> </li></ul>"
-						},
-						{
-							"Question": "How to create an account in MyMonty?",
-							"Answer": "<ul><li>Download the MyMonty app from the Apple Store or Google Pay, or access it via our web app. (Link doesn't work)</li><li>Enter your phone number.</li><li>Enter the 6-digit code received via SMS on your mobile device.</li><li>Follow the instructions to verify your identity. <br> </li></ul>"
-						}
-					]
-				},
-				{
-					"Topic": "Payment Instruments",
-					"Cards": [
-						{
-							"Question": "Why am I asked to verify my payment when sending money?",
-							"Answer": "Verification ensures that the payment request is authorized by you, the account holder."
-						},
-						{
-							"Question": "How do I send money to someone’s bank account?",
-							"Answer": "<ul><li>Tap the “Transfer” quick icon on the main page.</li><li>Swipe to the “IBAN Transfer” tab.</li><li>Choose the recipient from the list or tap “New Recipient”.</li><li>Enter the recipient’s banking details (Recipient, Currency, IBAN…) and tap Next.</li><li>Enter the amount and an optional description, then tap Transfer.</li></ul><strong>Important</strong>: Currently supports EUR SEPA transfers and BGN BISERA outbound transfers. You can save recipients for faster transactions in the future."
-						},
-						{
-							"Question": "How do I send money to another MyMonty user?",
-							"Answer": "<ul><li>Tap the “Transfer” quick icon on the main page.</li><li>Select the recipient’s name from the list (ensure the MyMonty logo appears next to their name).</li><li>Enter the amount and tap “send”.</li></ul>"
-						},
-						{
-							"Question": "Where can I share the payment link?",
-							"Answer": "Simply tap the \"QR Code\" quick icon, swipe to the \"My QR Code\" tab, set the desired amount, and generate the QR code along with a payment link. Tap “Share Link” to send it via any messaging app on your mobile device. Once clicked by another MyMonty user, the requested money will be sent directly to your account."
-						},
-						{
-							"Question": "How can someone send me money via QR code?",
-							"Answer": "Tap the \"QR Code\" quick icon, swipe to the \"My QR Code\" tab, set the desired amount, and generate the QR code. When another MyMonty user scans it, the requested money will be sent directly to your account."
-						},
-						{
-							"Question": "How can I review my past transactions?",
-							"Answer": "Your balance updates automatically after each transaction. View all past transactions under “Payment History” on the mobile app homepage."
-						},
-						{
-							"Question": "What are the transfer limits within MyMonty?",
-							"Answer": "Here are the transfer limits you should be aware of:<ul><li>Single Outgoing transfer – €3,000</li><li>Outgoing transfer per 24 hours – €5,100</li><li>Outgoing transfer per 7 days – €15,000</li><li>Outgoing transfer per 30 days – €30,000</li><li>Outgoing transfer per year – €100,000</li><li>Total of incoming or outgoing transfers per month – €50,000</li><li>Total of incoming or outgoing transfers per year – €180,000</li><li>Transfer to IBAN top-up not exceeding €51,300 per month</li><li>Credit/Debit card top-up not exceeding €30,700 per month</li><li>Maximum account balance – €180,000</li></ul>Please note that there is no limit on the number of P2P transfers."
-						},
-						{
-							"Question": "What are the transactional fees?",
-							"Answer": "<ul><li>Top-up fee: The first top-up is free, and a 1.5% fee is charged thereafter.</li><li>ATM withdrawal within SEPA region (EUR): 1.5% fee with a minimum of €1.</li><li>ATM withdrawal internationally: 2% fee with a minimum of €2.</li><li>ATM balance inquiry/PIN change: Free of charge.</li><li>Transaction decline/return fee: Free of charge.</li><li>POS domestic transactions: Free of charge.</li><li>POS international transactions: Free of charge, plus merchant fees if applicable (FX passthrough).</li><li>SEPA Transfer fee: €0.15.</li><li>Faster Payments: €0.2</li></ul>"
-						},
-						{
-							"Question": "How can I withdraw cash from my account?",
-							"Answer": "You can withdraw money globally from any ATM that accepts MasterCard.<ul><li>ATM and FX fees may apply when withdrawing money.</li><li>We recommend withdrawing in the local currency of the country you're in.</li><li>Please note any applied ATM fees.</li><li>Opt to withdraw \"without conversion\" to be charged in the local currency. For example, if you're in Poland, withdraw in Zloty (zł).</li><li>Choosing \"with conversion\" may result in additional fees due to the bank's exchange rate.</li></ul>"
-						}
-					]
-				},
-				{
-					"Topic": "Setting up",
-					"Cards": [
-						{
-							"Question": "Why am I asked to set a PIN during the onboarding?",
-							"Answer": "Your PIN is essential to safeguard your account from unauthorized access."
-						},
-						{
-							"Question": "How can I deactivate my MyMonty account?",
-							"Answer": "To deactivate your account, simply refrain from using it. After a period of inactivity, your account status will change to dormant."
-						},
-						{
-							"Question": "Can I change my name and number after onboarding?",
-							"Answer": "For security reasons, the name and phone number provided during onboarding cannot be changed."
-						},
-						{
-							"Question": "How can I change my personal details?",
-							"Answer": "You can update your email address and occupation anytime within the app. Navigate to the “Profile” tab, select your name, and then tap on “Personal Details”."
-						}
-					]
-				},
-				{
-					"Topic": "Emergency",
-					"Cards": [
-						{
-							"Question": "How do i change my PIN?",
-							"Answer": "To change your PIN, follow these steps:<ul><li>Log out of your account if you haven’t already done so and close the app completely. </li><li>Open the MyMonty app and enter your phone number. </li><li>When prompted, enter your current PIN code. On the same screen, locate the \"Forgot PIN\" option in the lower left corner. </li><li>Select \"Forgot PIN\" and follow the prompts to enter and confirm your new PIN. </li><li>You will be asked to send a selfie holding your ID card to one of our associates via chat. </li><li>Ensure your face and the name and photo on the ID card are clearly visible in the photo. Obscure any other information on the ID card. </li><li>Please note that photos that do not meet these requirements will not be accepted, and your PIN change request may not be approved.</li></ul>"
-						},
-						{
-							"Question": "What if I lost or damaged my phone?",
-							"Answer": "If you lose or damage your phone, don't worry! Your MyMonty account remains accessible without your phone. You can continue using all services.<br/>To regain access:<ul><li>Download the MyMonty app on your new phone. <br> </li><li>Enter your phone number and follow the steps to receive an OTP verification code. <br> </li><li>Enter your 4-digit PIN to log in and resume using your MyMonty account seamlessly. <br> </li></ul>"
-						}
-					]
-				},
-				{
-					"Topic": "Cards",
-					"Cards": [
-						{
-							"Question": "What are the controls accessible by the user after physical card activation?",
-							"Answer": "Once your physical card is activated, you have access to the following controls:<ul><li><strong>View card details:</strong> Click the \"See details\" button and authenticate yourself to view your card's details.<li><strong>View card PIN:</strong> Click the \"View PIN\" button and authenticate yourself to view your card's PIN.<li><strong>Freeze the card:</strong> Click the \"Freeze card\" button to temporarily deactivate your card.<li><strong>Destroy the card:</strong> Click the \"Destroy card\" button to permanently deactivate and discard your card.<li><strong>Add to Apple or Google Pay:</strong> If in-app provisioning is enabled, you can add your card to Apple Pay or Google Pay for convenient mobile payments.</ul>"
-						},
-						{
-							"Question": "What happens if the card has expired before the account balance is exhausted?",
-							"Answer": "If your physical card is approaching its expiration date, you can initiate a reissue by selecting the card and clicking on the \"Reissue\" button. To ensure you don't miss the expiration, we'll send you a push notification alerting you that your card's validity is ending soon.<br />The reissue process involves selecting a delivery address and PIN, similar to ordering a new card. Please note that card delivery fees apply. Your existing balance will be transferred to the new card once issued."
-						},
-						{
-							"Question": "What if I find the reported lost card?",
-							"Answer": "If you recover a card that you previously reported lost or stolen, please ensure to immediately destroy the found card by cutting it in half through the magnetic stripe and chip."
-						},
-						{
-							"Question": "What happens if my card gets stuck in the ATM?",
-							"Answer": "If your card is retained by an ATM, please freeze and destroy it using the app, then request a replacement card."
-						},
-						{
-							"Question": "How can I change my card PIN?",
-							"Answer": "To change your PIN, visit any ATM that offers PIN change services for Mastercard. Follow the instructions displayed on the ATM screen for changing your PIN."
-						},
-						{
-							"Question": "When does my card expires?",
-							"Answer": "Your card displays an expiry date (the \"Expiry Date\") on it. After this date, your card and any linked bank account will no longer be usable. However, you can still receive and send funds to and from the account associated with the card."
-						},
-						{
-							"Question": "How can I order a physical card?",
-							"Answer": "Ordering a physical card follows a process similar to virtual cards:<ul><li>Navigate to the \"Physical Cards\" section in the Cards tab.</li><li>Ensure you have completed KYC verification and have a non-zero balance.</li><li>Tap on \"Order Card\" to begin.</li><li>Start by entering the delivery details for the card.</li><li>Proceed through two screens to choose and confirm your card PIN.</li><li>Once you've entered the address and confirmed the PIN, review your details and confirm to initiate delivery of your card.</li></ul>"
-						},
-						{
-							"Question": "What are Virtual Cards?",
-							"Answer": "Virtual cards function similarly to physical cards but are exclusively used within the app. Once activated, they can be used immediately for online payments, contactless ATM withdrawals, and transactions at any contactless POS."
-						},
-						{
-							"Question": "How do I get my card PIN?",
-							"Answer": "To retrieve your card PIN:<ul><li>Navigate to the \"Cards\" tab in your app.</li><li>Swipe to select the card for which you want to view the PIN.</li><li>Tap on \"Show PIN\". Your PIN will be displayed in no time.</li></ul>"
-						},
-						{
-							"Question": "What is a card PIN?",
-							"Answer": "A Personal Identification Number (PIN) is required for withdrawing money from ATMs or making payments at card terminals."
-						},
-						{
-							"Question": "Can a minor have an independent MyMonty card?",
-							"Answer": "Only individuals aged 18 and above are eligible to use our payment services and onboard independently."
-						},
-						{
-							"Question": "Can I overdraft my account?",
-							"Answer": "Our payment services are prepaid and not credit-based. You must maintain a sufficient Available Balance to cover your transactions and associated fees. If for any reason a transaction exceeds your Available Balance and is processed, you must promptly repay the exceeded amount, and we may restrict future transactions."
-						},
-						{
-							"Question": "Do I get any interest on my account?",
-							"Answer": "No, the Available Balance in your card or account does not accrue interest."
-						},
-						{
-							"Question": "Are there any exchange fees when using the MyMonty card?",
-							"Answer": "Transactions made in a currency other than your card's denomination will incur fees at the current exchange rate."
-						},
-						{
-							"Question": "Are my payment services instantly activated?",
-							"Answer": "Your payment services may not be activated instantly until we verify your identity and meet all applicable regulatory requirements. We maintain records of this information as required by law."
-						},
-						{
-							"Question": "How can I top up my card?",
-							"Answer": "You can add funds to your MyMonty debit card using the following methods:<ul><li>An external credit or debit card*</li><li>SEPA</li></ul> <br>*Please ensure that the bank card is issued in your name."
-						},
-						{
-							"Question": "What if I lost or damaged physical card",
-							"Answer": "If your physical card is lost or damaged, please follow these steps to freeze it immediately:<ul><li>Tap on the card widget on your home screen</li><li>Swipe to select the card you wish to stop</li><li>Turn on the \"Freeze card\" toggle</li></ul>"
-						},
-						{
-							"Question": "Where will the card be sent?",
-							"Answer": "The replacement card will be mailed to the most recent address registered on your account.<br />PS: Please ensure the address provided is accurate to avoid a card replacement fee. We will contact you the day before delivery"
-						},
-						{
-							"Question": "How do I reorder the physical / virtual card?",
-							"Answer": "You can easily replace your card if it's damaged or expired:<ul><li>Open the MyMonty app</li><li>Navigate to the card tab</li><li>Freeze the card by tapping the \"Freeze\" card toggle</li><li>Tap on the \"Destroy card\" link that appears once the card is frozen. <br>Once destroyed, you can reorder physical/virtual cards. A delivery fee will apply again for the physical card.</li></ul>Once destroyed, you can reorder physical/virtual cards. A delivery fee will apply again for the physical card."
-						},
-						{
-							"Question": "Are there any delivery fees for my physical card?",
-							"Answer": "Yes, there is a €5 delivery fee to cover the cost of delivering your card."
-						},
-						{
-							"Question": "What are the card transactional fees?",
-							"Answer": "<ul><li><strong>Top-up fee</strong>: The first top-up is free, and a 1.5% fee applies thereafter.</li><li><strong>ATM withdrawal/SEPA region (Eur)</strong>: 1.5% fee with a minimum of 1€.</li><li><strong>ATM withdrawal/international</strong>: 2% fee with a minimum of 2€.</li><li><strong>ATM balance inquiry/PIN change</strong>: Free.</li><li><strong>Transaction decline/return fee:</strong> Free.</li><li><strong>POS domestic</strong>: Free.</li><li><strong>POS international/transaction</strong>: Free, plus applicable merchant fees (FX passthrough).</li><li><strong>Delivery fee</strong>: 5€.</li><li><strong>Replacement fee</strong>: 2€.</li></ul>"
-						},
-						{
-							"Question": "What are the Card Transaction limits?",
-							"Answer": "<ul><li ><strong>Single Payment POS</strong>: €5,000</li><li ><strong>Single ATM Transaction</strong>: €200</li><li ><strong>Single Top-up</strong>: €5,000</li></ul><br />Transaction limits per 24 hours:<ul><li><strong>POS transactions</strong>: €10,000 or 50 payments at POS for digitized or virtual cards; 20 payments at POS for physical card</li><li><strong>ATM transactions</strong>: €1,000 or 5 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €10,000 or 50 top-ups</li></ul><br />Transaction limits per 7 days:<ul><li><strong>POS transactions</strong>: €15,000 or 120 payments at POS for all card types</li><li><strong>ATM transactions</strong>: €4,000 or 35 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €15,000 or 100 top-ups</li></ul><br />Transaction limits per 30 days:<ul><li><strong>POS transactions</strong>: €30,000 or 300 payments at POS for all card types</li><li><strong>ATM transactions</strong>: €10,000 or 90 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €30,000 or 300 top-ups</li></ul>"
-						}	
-					]
-				}
-			],
-
+			"Section 2": {
+				"Topic Heading": "Topic",
+				"Question Not Found": "No matching questions found",
+				"Faqs": [
+					{
+						"Topic": "Open Account",
+						"Cards": [
+							{
+								"Question": "How to use MyMonty on a new device?",
+								"Answer": "When attempting to sign in on a new device, an OTP (One-Time Password) will be sent to the mobile device associated with the registered mobile number. Once the OTP is entered correctly, input your PIN to complete the login process. An email will also be sent to the registered email address to confirm the new login."
+							},
+							{
+								"Question": "What are the benefits of choosing the Starter plan?",
+								"Answer": "<ul><li>Dedicated individual Euro IBAN</li><li>MyMonty virtual debit card</li><li>MyMonty contactless physical card</li><li>Enhanced data security &amp; privacy</li><li>Customer support</li><li>P2P money transfer</li><li>Global ATM withdrawals <br> </li></ul>"
+							},
+							{
+								"Question": "What are the current plans available at MyMonty?",
+								"Answer": "Currently, we offer a Free Starter account to our customers, which provides all the essential features to ensure your experience with MyMonty is comfortable."
+							},
+							{
+								"Question": "How to find your IBAN details",
+								"Answer": "To locate your IBAN, navigate to “Profile,” tap on your name, and then select the “Personal IBAN” option."
+							},
+							{
+								"Question": "Are my deposits insured with MyMonty?",
+								"Answer": "Yes, each deposit in your IBAN is insured by FSCS for up to €100,000."
+							},
+							{
+								"Question": "What is IBAN?",
+								"Answer": "An IBAN is a unique code used to identify a specific bank account for cross-border payments. Knowing your beneficiary's IBAN ensures that your international payments reach their destination securely."
+							},
+							{
+								"Question": "Why do I need to connect my email?",
+								"Answer": "Connecting your email adds an extra layer of security to your account. An OTP will be sent to your provided email address. Please enter the OTP in the designated field and tap 'Verify.'"
+							},
+							{
+								"Question": "Which countries are eligible to open accounts with MyMonty?",
+								"Answer": "We currently provide services within the European Economic Area (EEA).<br />The EEA includes Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, and Sweden."
+							},
+							{
+								"Question": "How long will the KYC check take?",
+								"Answer": "After you submit your KYC documents, we will review your application. Please note that the verification process may take up to 3 hours during a working day."
+							},
+							{
+								"Question": "How is the KYC process done at MyMonty?",
+								"Answer": "Upon submitting your verification documents, a liveness check is conducted. Smile for the camera and snap a selfie. The final step involves verifying your home address. Please upload a utility bill dated no more than 3 months from today's date."
+							},
+							{
+								"Question": "What is KYC?",
+								"Answer": "KYC, or Know Your Customer, is a standard practice where companies verify the identity of their clients to comply with legal requirements and regulations. In the digital age, KYC helps prevent online fraud and meets global financial standards."
+							},
+							{
+								"Question": "What are the required documents to onboard?",
+								"Answer": "<ul><li>Passport</li><li>Driving License</li><li>ID Card</li><li>Proof of Address such as utility bill<br> </li></ul>"
+							},
+							{
+								"Question": "How to create an account in MyMonty?",
+								"Answer": "<ul><li>Download the MyMonty app from the Apple Store or Google Pay, or access it via our web app. (Link doesn't work)</li><li>Enter your phone number.</li><li>Enter the 6-digit code received via SMS on your mobile device.</li><li>Follow the instructions to verify your identity. <br> </li></ul>"
+							}
+						]
+					},
+					{
+						"Topic": "Payment Instruments",
+						"Cards": [
+							{
+								"Question": "Why am I asked to verify my payment when sending money?",
+								"Answer": "Verification ensures that the payment request is authorized by you, the account holder."
+							},
+							{
+								"Question": "How do I send money to someone’s bank account?",
+								"Answer": "<ul><li>Tap the “Transfer” quick icon on the main page.</li><li>Swipe to the “IBAN Transfer” tab.</li><li>Choose the recipient from the list or tap “New Recipient”.</li><li>Enter the recipient’s banking details (Recipient, Currency, IBAN…) and tap Next.</li><li>Enter the amount and an optional description, then tap Transfer.</li></ul><strong>Important</strong>: Currently supports EUR SEPA transfers and BGN BISERA outbound transfers. You can save recipients for faster transactions in the future."
+							},
+							{
+								"Question": "How do I send money to another MyMonty user?",
+								"Answer": "<ul><li>Tap the “Transfer” quick icon on the main page.</li><li>Select the recipient’s name from the list (ensure the MyMonty logo appears next to their name).</li><li>Enter the amount and tap “send”.</li></ul>"
+							},
+							{
+								"Question": "Where can I share the payment link?",
+								"Answer": "Simply tap the \"QR Code\" quick icon, swipe to the \"My QR Code\" tab, set the desired amount, and generate the QR code along with a payment link. Tap “Share Link” to send it via any messaging app on your mobile device. Once clicked by another MyMonty user, the requested money will be sent directly to your account."
+							},
+							{
+								"Question": "How can someone send me money via QR code?",
+								"Answer": "Tap the \"QR Code\" quick icon, swipe to the \"My QR Code\" tab, set the desired amount, and generate the QR code. When another MyMonty user scans it, the requested money will be sent directly to your account."
+							},
+							{
+								"Question": "How can I review my past transactions?",
+								"Answer": "Your balance updates automatically after each transaction. View all past transactions under “Payment History” on the mobile app homepage."
+							},
+							{
+								"Question": "What are the transfer limits within MyMonty?",
+								"Answer": "Here are the transfer limits you should be aware of:<ul><li>Single Outgoing transfer – €3,000</li><li>Outgoing transfer per 24 hours – €5,100</li><li>Outgoing transfer per 7 days – €15,000</li><li>Outgoing transfer per 30 days – €30,000</li><li>Outgoing transfer per year – €100,000</li><li>Total of incoming or outgoing transfers per month – €50,000</li><li>Total of incoming or outgoing transfers per year – €180,000</li><li>Transfer to IBAN top-up not exceeding €51,300 per month</li><li>Credit/Debit card top-up not exceeding €30,700 per month</li><li>Maximum account balance – €180,000</li></ul>Please note that there is no limit on the number of P2P transfers."
+							},
+							{
+								"Question": "What are the transactional fees?",
+								"Answer": "<ul><li>Top-up fee: The first top-up is free, and a 1.5% fee is charged thereafter.</li><li>ATM withdrawal within SEPA region (EUR): 1.5% fee with a minimum of €1.</li><li>ATM withdrawal internationally: 2% fee with a minimum of €2.</li><li>ATM balance inquiry/PIN change: Free of charge.</li><li>Transaction decline/return fee: Free of charge.</li><li>POS domestic transactions: Free of charge.</li><li>POS international transactions: Free of charge, plus merchant fees if applicable (FX passthrough).</li><li>SEPA Transfer fee: €0.15.</li><li>Faster Payments: €0.2</li></ul>"
+							},
+							{
+								"Question": "How can I withdraw cash from my account?",
+								"Answer": "You can withdraw money globally from any ATM that accepts MasterCard.<ul><li>ATM and FX fees may apply when withdrawing money.</li><li>We recommend withdrawing in the local currency of the country you're in.</li><li>Please note any applied ATM fees.</li><li>Opt to withdraw \"without conversion\" to be charged in the local currency. For example, if you're in Poland, withdraw in Zloty (zł).</li><li>Choosing \"with conversion\" may result in additional fees due to the bank's exchange rate.</li></ul>"
+							}
+						]
+					},
+					{
+						"Topic": "Setting up",
+						"Cards": [
+							{
+								"Question": "Why am I asked to set a PIN during the onboarding?",
+								"Answer": "Your PIN is essential to safeguard your account from unauthorized access."
+							},
+							{
+								"Question": "How can I deactivate my MyMonty account?",
+								"Answer": "To deactivate your account, simply refrain from using it. After a period of inactivity, your account status will change to dormant."
+							},
+							{
+								"Question": "Can I change my name and number after onboarding?",
+								"Answer": "For security reasons, the name and phone number provided during onboarding cannot be changed."
+							},
+							{
+								"Question": "How can I change my personal details?",
+								"Answer": "You can update your email address and occupation anytime within the app. Navigate to the “Profile” tab, select your name, and then tap on “Personal Details”."
+							}
+						]
+					},
+					{
+						"Topic": "Emergency",
+						"Cards": [
+							{
+								"Question": "How do i change my PIN?",
+								"Answer": "To change your PIN, follow these steps:<ul><li>Log out of your account if you haven’t already done so and close the app completely. </li><li>Open the MyMonty app and enter your phone number. </li><li>When prompted, enter your current PIN code. On the same screen, locate the \"Forgot PIN\" option in the lower left corner. </li><li>Select \"Forgot PIN\" and follow the prompts to enter and confirm your new PIN. </li><li>You will be asked to send a selfie holding your ID card to one of our associates via chat. </li><li>Ensure your face and the name and photo on the ID card are clearly visible in the photo. Obscure any other information on the ID card. </li><li>Please note that photos that do not meet these requirements will not be accepted, and your PIN change request may not be approved.</li></ul>"
+							},
+							{
+								"Question": "What if I lost or damaged my phone?",
+								"Answer": "If you lose or damage your phone, don't worry! Your MyMonty account remains accessible without your phone. You can continue using all services.<br/>To regain access:<ul><li>Download the MyMonty app on your new phone. <br> </li><li>Enter your phone number and follow the steps to receive an OTP verification code. <br> </li><li>Enter your 4-digit PIN to log in and resume using your MyMonty account seamlessly. <br> </li></ul>"
+							}
+						]
+					},
+					{
+						"Topic": "Cards",
+						"Cards": [
+							{
+								"Question": "What are the controls accessible by the user after physical card activation?",
+								"Answer": "Once your physical card is activated, you have access to the following controls:<ul><li><strong>View card details:</strong> Click the \"See details\" button and authenticate yourself to view your card's details.<li><strong>View card PIN:</strong> Click the \"View PIN\" button and authenticate yourself to view your card's PIN.<li><strong>Freeze the card:</strong> Click the \"Freeze card\" button to temporarily deactivate your card.<li><strong>Destroy the card:</strong> Click the \"Destroy card\" button to permanently deactivate and discard your card.<li><strong>Add to Apple or Google Pay:</strong> If in-app provisioning is enabled, you can add your card to Apple Pay or Google Pay for convenient mobile payments.</ul>"
+							},
+							{
+								"Question": "What happens if the card has expired before the account balance is exhausted?",
+								"Answer": "If your physical card is approaching its expiration date, you can initiate a reissue by selecting the card and clicking on the \"Reissue\" button. To ensure you don't miss the expiration, we'll send you a push notification alerting you that your card's validity is ending soon.<br />The reissue process involves selecting a delivery address and PIN, similar to ordering a new card. Please note that card delivery fees apply. Your existing balance will be transferred to the new card once issued."
+							},
+							{
+								"Question": "What if I find the reported lost card?",
+								"Answer": "If you recover a card that you previously reported lost or stolen, please ensure to immediately destroy the found card by cutting it in half through the magnetic stripe and chip."
+							},
+							{
+								"Question": "What happens if my card gets stuck in the ATM?",
+								"Answer": "If your card is retained by an ATM, please freeze and destroy it using the app, then request a replacement card."
+							},
+							{
+								"Question": "How can I change my card PIN?",
+								"Answer": "To change your PIN, visit any ATM that offers PIN change services for Mastercard. Follow the instructions displayed on the ATM screen for changing your PIN."
+							},
+							{
+								"Question": "When does my card expires?",
+								"Answer": "Your card displays an expiry date (the \"Expiry Date\") on it. After this date, your card and any linked bank account will no longer be usable. However, you can still receive and send funds to and from the account associated with the card."
+							},
+							{
+								"Question": "How can I order a physical card?",
+								"Answer": "Ordering a physical card follows a process similar to virtual cards:<ul><li>Navigate to the \"Physical Cards\" section in the Cards tab.</li><li>Ensure you have completed KYC verification and have a non-zero balance.</li><li>Tap on \"Order Card\" to begin.</li><li>Start by entering the delivery details for the card.</li><li>Proceed through two screens to choose and confirm your card PIN.</li><li>Once you've entered the address and confirmed the PIN, review your details and confirm to initiate delivery of your card.</li></ul>"
+							},
+							{
+								"Question": "What are Virtual Cards?",
+								"Answer": "Virtual cards function similarly to physical cards but are exclusively used within the app. Once activated, they can be used immediately for online payments, contactless ATM withdrawals, and transactions at any contactless POS."
+							},
+							{
+								"Question": "How do I get my card PIN?",
+								"Answer": "To retrieve your card PIN:<ul><li>Navigate to the \"Cards\" tab in your app.</li><li>Swipe to select the card for which you want to view the PIN.</li><li>Tap on \"Show PIN\". Your PIN will be displayed in no time.</li></ul>"
+							},
+							{
+								"Question": "What is a card PIN?",
+								"Answer": "A Personal Identification Number (PIN) is required for withdrawing money from ATMs or making payments at card terminals."
+							},
+							{
+								"Question": "Can a minor have an independent MyMonty card?",
+								"Answer": "Only individuals aged 18 and above are eligible to use our payment services and onboard independently."
+							},
+							{
+								"Question": "Can I overdraft my account?",
+								"Answer": "Our payment services are prepaid and not credit-based. You must maintain a sufficient Available Balance to cover your transactions and associated fees. If for any reason a transaction exceeds your Available Balance and is processed, you must promptly repay the exceeded amount, and we may restrict future transactions."
+							},
+							{
+								"Question": "Do I get any interest on my account?",
+								"Answer": "No, the Available Balance in your card or account does not accrue interest."
+							},
+							{
+								"Question": "Are there any exchange fees when using the MyMonty card?",
+								"Answer": "Transactions made in a currency other than your card's denomination will incur fees at the current exchange rate."
+							},
+							{
+								"Question": "Are my payment services instantly activated?",
+								"Answer": "Your payment services may not be activated instantly until we verify your identity and meet all applicable regulatory requirements. We maintain records of this information as required by law."
+							},
+							{
+								"Question": "How can I top up my card?",
+								"Answer": "You can add funds to your MyMonty debit card using the following methods:<ul><li>An external credit or debit card*</li><li>SEPA</li></ul> <br>*Please ensure that the bank card is issued in your name."
+							},
+							{
+								"Question": "What if I lost or damaged physical card",
+								"Answer": "If your physical card is lost or damaged, please follow these steps to freeze it immediately:<ul><li>Tap on the card widget on your home screen</li><li>Swipe to select the card you wish to stop</li><li>Turn on the \"Freeze card\" toggle</li></ul>"
+							},
+							{
+								"Question": "Where will the card be sent?",
+								"Answer": "The replacement card will be mailed to the most recent address registered on your account.<br />PS: Please ensure the address provided is accurate to avoid a card replacement fee. We will contact you the day before delivery"
+							},
+							{
+								"Question": "How do I reorder the physical / virtual card?",
+								"Answer": "You can easily replace your card if it's damaged or expired:<ul><li>Open the MyMonty app</li><li>Navigate to the card tab</li><li>Freeze the card by tapping the \"Freeze\" card toggle</li><li>Tap on the \"Destroy card\" link that appears once the card is frozen. <br>Once destroyed, you can reorder physical/virtual cards. A delivery fee will apply again for the physical card.</li></ul>Once destroyed, you can reorder physical/virtual cards. A delivery fee will apply again for the physical card."
+							},
+							{
+								"Question": "Are there any delivery fees for my physical card?",
+								"Answer": "Yes, there is a €5 delivery fee to cover the cost of delivering your card."
+							},
+							{
+								"Question": "What are the card transactional fees?",
+								"Answer": "<ul><li><strong>Top-up fee</strong>: The first top-up is free, and a 1.5% fee applies thereafter.</li><li><strong>ATM withdrawal/SEPA region (Eur)</strong>: 1.5% fee with a minimum of 1€.</li><li><strong>ATM withdrawal/international</strong>: 2% fee with a minimum of 2€.</li><li><strong>ATM balance inquiry/PIN change</strong>: Free.</li><li><strong>Transaction decline/return fee:</strong> Free.</li><li><strong>POS domestic</strong>: Free.</li><li><strong>POS international/transaction</strong>: Free, plus applicable merchant fees (FX passthrough).</li><li><strong>Delivery fee</strong>: 5€.</li><li><strong>Replacement fee</strong>: 2€.</li></ul>"
+							},
+							{
+								"Question": "What are the Card Transaction limits?",
+								"Answer": "<ul><li ><strong>Single Payment POS</strong>: €5,000</li><li ><strong>Single ATM Transaction</strong>: €200</li><li ><strong>Single Top-up</strong>: €5,000</li></ul><br />Transaction limits per 24 hours:<ul><li><strong>POS transactions</strong>: €10,000 or 50 payments at POS for digitized or virtual cards; 20 payments at POS for physical card</li><li><strong>ATM transactions</strong>: €1,000 or 5 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €10,000 or 50 top-ups</li></ul><br />Transaction limits per 7 days:<ul><li><strong>POS transactions</strong>: €15,000 or 120 payments at POS for all card types</li><li><strong>ATM transactions</strong>: €4,000 or 35 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €15,000 or 100 top-ups</li></ul><br />Transaction limits per 30 days:<ul><li><strong>POS transactions</strong>: €30,000 or 300 payments at POS for all card types</li><li><strong>ATM transactions</strong>: €10,000 or 90 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €30,000 or 300 top-ups</li></ul>"
+							}	
+						]
+					}
+				]
+			},
+			
 			"Seo": {
 				"Title": "Frequently Asked Questions",
 				"Description": "",
@@ -827,7 +833,8 @@
 			"Banner": {
 				"Sub Title": "Contact Us",
 				"Title": "Got any questions?",
-				"Description": "Our friendly team is here to help. Just fill out the form below, and we'll be in touch with you&nbsp;soon."
+				"Description": "Our friendly team is here to help. Just fill out the form below, and we'll be in touch with you&nbsp;soon.",
+				"Image Alt": "Got any questions"
 			},
 
 			"Section 2": {
@@ -854,7 +861,8 @@
 			"Banner": {
 				"Sub Title": "MyMonty Values",
 				"Title": "Our code of conduct",
-				"Description": "Learn about the guiding principles at&nbsp;MyMonty."
+				"Description": "Learn about the guiding principles at&nbsp;MyMonty.",
+				"Image Alt": "Our code of conduct"
 			},
 
 			"Section 2": {
@@ -921,7 +929,8 @@
 			"Banner": {
 				"Sub Title": "Careers",
 				"Title": "Join our dream team",
-				"Description": "Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a>&nbsp;now."
+				"Description": "Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a>&nbsp;now.",
+				"Image Alt": "Join our dream team"
 			},
 
 			"Section 2": {
@@ -933,7 +942,7 @@
 						"Title": "Always there for you",
 						"Description 1": "Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed",
 						"Description 2": "Have a complaint or need any assistance?<br />Reach out to us <a href='' class='text-primary'>here</a>",
-						"Image Alt": "This Is The Future"
+						"Image Alt": "Always There For You"
 					}
 				]
 			},
@@ -956,7 +965,8 @@
 			"Banner": {
 				"Sub Title": "Board of Directors",
 				"Title": "Leadership team",
-				"Description": "We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking&nbsp;experience."
+				"Description": "We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking&nbsp;experience.",
+				"Image Alt": "Leadership team"
 			},
 
 			"Section 2": {
@@ -1008,7 +1018,8 @@
 			"Banner": {
 				"Sub Title": "Blogs",
 				"Title": "What's happening at mymonty?",
-				"Description": "Explore our news for the latest updates and&nbsp;offerings."
+				"Description": "Explore our news for the latest updates and&nbsp;offerings.",
+				"Image Alt": "What is happening at mymonty blogs"
 			},
 
 			"Seo": {
@@ -1068,6 +1079,57 @@
 				"Og Title": "Cookie Policy",
 				"Og Description": "",
 				"Twitter Title": "Cookie Policy",
+				"Twitter Description": ""
+			}
+		},
+		
+		"Paynetics Terms And Conditions": {
+			"Banner": {
+				"Sub Title": "Paynetics Terms & Conditions",
+				"Title": "Paynetics Terms & Conditions",
+				"Description": "Paynetics Terms & Conditions."
+			},
+
+			"Seo": {
+				"Title": "Paynetics Terms & Conditions",
+				"Description": "",
+				"Og Title": "Paynetics Terms & Conditions",
+				"Og Description": "",
+				"Twitter Title": "Paynetics Terms & Conditions",
+				"Twitter Description": ""
+			}
+		},
+
+		"Paynetics Privacy Policy": {
+			"Banner": {
+				"Sub Title": "Paynetics Privacy Policy",
+				"Title": "Paynetics Privacy Policy",
+				"Description": "Paynetics Privacy Policy."
+			},
+
+			"Seo": {
+				"Title": "Paynetics Privacy Policy",
+				"Description": "",
+				"Og Title": "Paynetics Privacy Policy",
+				"Og Description": "",
+				"Twitter Title": "Paynetics Privacy Policy",
+				"Twitter Description": ""
+			}
+		},
+		
+		"Error 404": {
+			"Section 1": {
+				"Image Alt": "Error 404",
+				"Title": "We can't find that one",
+				"Description": "We update our website regularly, so this page may have been moved, removed, or the URL wasn't quite right.<br /><br />Explore the latest from MyMonty this way..."
+			},
+
+			"Seo": {
+				"Title": "Page Not Found",
+				"Description": "",
+				"Og Title": "Page Not Found",
+				"Og Description": "",
+				"Twitter Title": "Page Not Found",
 				"Twitter Description": ""
 			}
 		}

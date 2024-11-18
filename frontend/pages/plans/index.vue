@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="choose-your-plans"
-            alt="One app for all things money"
+            alt="Image Alt"
             page="Plans"
         />
 
@@ -25,7 +25,7 @@
                             </div>
                             <div class="grid lg:grid-cols-2 gap-y-4 gap-x-12">
                                 <div v-for="(feature, index) in plan.plansItems" :key="index" class="flex gap-4 items-baseline">
-                                    <img src="/images/icons/check-box-primary.svg" alt="Check Box" width="" height="">
+                                    <img src="/images/icons/check-box-primary.svg" :alt="t(`General.Alts.Check Box Primary`)" width="18" height="18">
                                     <span class="text-xl">{{ feature }}</span>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="flex flex-col gap-4">
                                     <div v-for="(feature, index) in plan.plansItems" :key="index" class="flex gap-4 items-baseline">
-                                        <img src="/images/icons/check-box-primary.svg" alt="Check Box" width="" height="">
+                                        <img src="/images/icons/check-box-primary.svg" :alt="t(`General.Alts.Check Box Primary`)" width="18" height="18">
                                         <span class="text-xl">{{ feature }}</span>
                                     </div>
                                 </div>

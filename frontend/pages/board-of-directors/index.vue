@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Get Started"
             image="leadership-team"
-            alt="Leadership team"
+            alt="Image Alt"
             page="Board Of Directors"
         />
 

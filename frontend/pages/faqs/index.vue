@@ -7,7 +7,7 @@
             buttonLink="contact-us"
             buttonText="Contact Us"
             image="frequently-asked-questions"
-            alt="Frequently asked questions"
+            alt="Image Alt"
             page="Frequently Asked Questions"
         />
 
@@ -16,7 +16,7 @@
                 <div class="relative">
                     <input v-model="searchQuery" type="text" class="relative w-full py-4 px-12 bg-[#ECECEE] rounded-full leading-none outline-none" :placeholder="t(`General.Placeholders.Search`)" />
                     <img v-if="!searchQuery" src="/images/icons/search-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2" :alt="t(`General.Alts.Search Gray`)" width="20" height="20">
-                    <img v-else @click="searchQuery = ''" src="/images/icons/close-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2 cursor-pointer" alt="Search Gray" width="16" height="16">
+                    <img v-else @click="searchQuery = ''" src="/images/icons/close-gray.svg" class="absolute top-1/2 right-12 -translate-y-1/2 cursor-pointer" :alt="t(`General.Alts.Search Gray`)" width="16" height="16">
                 </div>
                 <div class="flex flex-col justify-center items-center gap-8 lg:w-2/3 mx-auto text-center mt-8">
                     <h2 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl uppercase">{{ faqsItems[selectedCategoryIndex]?.topic || 'No Category Selected' }}</h2>
@@ -24,7 +24,7 @@
 
                 <div class="grid md:grid-cols-3 lg:grid-cols-5 items-start gap-14 md:gap-8 lg:gap-14">
                     <div class="md:col-span-1 lg:col-span-1">
-                        <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">Topics</h2>
+                        <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">{{ t('Pages.Frequently Asked Questions.Section 2.Topic Heading') }}</h2>
                         <div class="flex flex-col gap-4 lg:gap-12 mt-8">
                             <div v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['relative max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
                                 <h3 class="text-xl font-AeonikMedium">{{ item.topic }}</h3>
@@ -45,7 +45,7 @@
                                 </template>
                                 <!-- Fallback if no matching questions -->
                                 <div v-else class="text-center text-gray-500">
-                                    <p>No matching questions found</p>
+                                    <p>{{ t('Pages.Frequently Asked Questions.Section 2.Question Not Found') }}</p>
                                 </div>
                             </template>
                         </template>

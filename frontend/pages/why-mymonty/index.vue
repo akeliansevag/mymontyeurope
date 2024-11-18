@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="see-what-sets-us-apart"
-            alt="See what sets us apart"
+            alt="Image Alt"
             page="Why MyMonty"
         />
 

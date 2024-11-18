@@ -7,7 +7,7 @@
             buttonLink=""
             buttonText="Download App"
             image="one-app-for-all-things-money"
-            alt="One app for all things money"
+            alt="Image Alt"
             page="Who We Are"
         />
 

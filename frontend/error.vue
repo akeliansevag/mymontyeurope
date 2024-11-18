@@ -18,7 +18,7 @@
 				<h1 class="font-AeonikBlack text-3xl md:text-4xl xl:text-5xl 4xl:text-6xl" v-html="t(`Pages.Error 404.Section 1.Title`)"></h1>
 				<p class="lg:w-2/3 text-xl" v-html="t(`Pages.Error 404.Section 1.Description`)"></p>
 				<NuxtLinkLocale :to="'/'" >
-					<ScrollButton target="download" class="w-max py-2 px-6 text-base text-black hover:text-white bg-white hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Visit The Homepage`) }}</ScrollButton>
+					<button class="w-max py-2 px-6 text-base text-black hover:text-white bg-white hover:bg-primary rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Visit The Homepage`) }}</button>
 				</NuxtLinkLocale>
 			</div>
         </section>
