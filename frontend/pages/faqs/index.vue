@@ -27,7 +27,7 @@
                         <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">{{ t('Pages.Frequently Asked Questions.Section 2.Topic Heading') }}</h2>
                         <div class="flex flex-col gap-4 lg:gap-12 mt-8">
                             <ScrollButton target="questions-answers" v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['relative max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
-                                <h3 class="text-xl font-AeonikMedium">{{ item.topic }}</h3>
+                                <h3 class="text-xl font-AeonikMedium text-left">{{ item.topic }}</h3>
                                 <!-- Check if any FAQ question matches the search query -->
                                 <div v-if="searchQuery && hasMatchingFaqs(item.faqsItems)" class="absolute top-2 right-2 lg:top-3 lg:right-3 w-1 h-1 lg:w-2 lg:h-2 bg-red-400 rounded-full"></div>
                             </ScrollButton>
@@ -64,7 +64,8 @@
 
 <script setup>
     import ScrollButton from '~/components/ScrollButton.vue';
-import { faqsData } from '~/data/faqs'; // Adjust the path accordingly
+    import { faqsData } from '~/data/faqs'; // Adjust the path accordingly
+    
 	const { t } = useLocale(); 
 
     useSeoMeta({
