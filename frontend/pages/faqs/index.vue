@@ -26,15 +26,15 @@
                     <div class="md:col-span-1 lg:col-span-1">
                         <h2 class="font-AeonikBlack text-xl md:text-2xl xl:text-3xl 4xl:text-4xl uppercase">{{ t('Pages.Frequently Asked Questions.Section 2.Topic Heading') }}</h2>
                         <div class="flex flex-col gap-4 lg:gap-12 mt-8">
-                            <div v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['relative max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
+                            <ScrollButton target="questions-answers" v-for="(item, index) in faqsItems" :key="index" @click="selectCategory(index)" :class="['relative max-lg:w-max p-2 lg:p-4 rounded-2xl select-none cursor-pointer', selectedCategoryIndex === index ? 'text-white bg-primary' : 'hover:bg-[#D4D4D4]']">
                                 <h3 class="text-xl font-AeonikMedium">{{ item.topic }}</h3>
                                 <!-- Check if any FAQ question matches the search query -->
-                                <div v-if="searchQuery && hasMatchingFaqs(item.faqsItems)" class="absolute top-3 right-3 w-2 h-2 bg-red-400 rounded-full"></div>
-                            </div>
+                                <div v-if="searchQuery && hasMatchingFaqs(item.faqsItems)" class="absolute top-2 right-2 lg:top-3 lg:right-3 w-1 h-1 lg:w-2 lg:h-2 bg-red-400 rounded-full"></div>
+                            </ScrollButton>
                         </div>
                     </div>
 
-                    <div class="md:col-span-2 lg:col-span-4" :class="{'grid grid-cols-2 lg:grid-cols-3 gap-4': selectedFaqIndex === null}"> <!-- sm:grid-cols-2 -->
+                    <div id="questions-answers" class="md:col-span-2 lg:col-span-4" :class="{'grid grid-cols-2 lg:grid-cols-3 gap-4': selectedFaqIndex === null}"> <!-- sm:grid-cols-2 -->
                         <template v-if="selectedCategoryIndex !== null">
                             <template v-if="showQuestions">
                                 <!-- Check if there are any filtered FAQs -->
@@ -63,7 +63,8 @@
 </template>
 
 <script setup>
-    import { faqsData } from '~/data/faqs'; // Adjust the path accordingly
+    import ScrollButton from '~/components/ScrollButton.vue';
+import { faqsData } from '~/data/faqs'; // Adjust the path accordingly
 	const { t } = useLocale(); 
 
     useSeoMeta({
