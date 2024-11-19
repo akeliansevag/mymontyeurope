@@ -28,7 +28,7 @@
                                 </template>    
                                 <a href="https://mymonty.com.lb" target="_blank" >    
                                     <li class="flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4]">
-                                        <img src="`/images/flags/LB.svg`" :alt="t(`General.Regions.Lebanon`)" width="24" height="24" />
+                                        <img src="/images/flags/LB.svg" :alt="t(`General.Regions.Lebanon`)" width="24" height="24" />
                                         <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.Lebanon`) }}</span>
                                     </li>
                                 </a>
