@@ -107,7 +107,7 @@ export default defineNuxtConfig({
 				{
 					type: 'text/javascript',
 					innerHTML: `
-					  	var Tawk_API = Tawk_API || {},
+						var Tawk_API = Tawk_API || {},
 							Tawk_LoadStart = new Date();
 						(function() {
 							setTimeout(function() {
@@ -126,7 +126,7 @@ export default defineNuxtConfig({
 				},
 			],
 			__dangerouslyDisableSanitizersByTagID: {
-			  'tawk-to-script': ['innerHTML'],
+				'tawk-to-script': ['innerHTML'],
 			},
 		},
 		//pageTransition: { name: 'page', mode: 'out-in' }
@@ -160,12 +160,12 @@ export default defineNuxtConfig({
 		// baseUrl: 'http://mymontyeurope.localhost',
 		locales: [
 			{
-				code: 'en-UK',
-				iso: 'en-UK',
+				code: 'en-GB',
+				iso: 'en-GB',
 				region: 'United Kingdom',
 				language: 'English',
-				icon: 'uk',
-				file: 'en-UK.json',
+				icon: 'gb',
+				file: 'en-GB.json',
 				native: true,
 				hideLanguages: true,
 			},
@@ -254,12 +254,13 @@ export default defineNuxtConfig({
 		langDir: './locales/', // Ensure this directory exists
 		// lazy: true, // If false, this will show the translation not yet translate.
 		defaultLocale: 'en-EU',
-		detectBrowserLanguage: {
-			useCookie: true,  // Store the detected locale in a cookie
-			cookieKey: 'i18n_redirected', // Name of the cookie
-			alwaysRedirect: true, // Always redirect to the user's browser language if not set
-			fallbackLocale: 'en-EU'
-		},
+		detectBrowserLanguage: false,
+		// detectBrowserLanguage: {
+		// 	useCookie: true,  // Store the detected locale in a cookie
+		// 	cookieKey: 'i18n_redirected', // Name of the cookie
+		// 	alwaysRedirect: true, // Always redirect to the user's browser language if not set
+		// 	fallbackLocale: 'en-EU'
+		// },
 		compilation: {
 			strictMessage: false,
 			// escapeHtml: true,

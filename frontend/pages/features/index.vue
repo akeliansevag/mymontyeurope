@@ -53,7 +53,7 @@
     import slugify from '~/utils/slugify';
     import { featuresData } from '~/data/features'; // Adjust the path accordingly
 
-	const { t } = useLocale(); 
+	const { t, currentLocale } = useLocale(); 
 
     const route = useRoute();
 
@@ -76,7 +76,13 @@
         activeTab.value = index;
     };
 
-	const featuresItems = useState('featuresItems', () => featuresData(t));
+	// const featuresItems = useState('featuresItems', () => featuresData(t));
+
+    const featuresItems = ref([]);
+
+    watchEffect(async () => {
+        featuresItems.value = await featuresData(t, currentLocale.value);
+    });
     
     // Watch the route to update activeTab based on the URL
     watchEffect(() => {

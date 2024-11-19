@@ -20,7 +20,7 @@
 		-ms-flex-align: center
 		-webkit-box-pack: center
 		-ms-flex-pack: center
-		@apply fixed top-0 left-0 w-full h-full z-50 flex items-center justify-center bg-black bg-no-repeat bg-center
+		@apply fixed top-0 left-0 w-full h-full z-[9999] flex items-center justify-center bg-black bg-no-repeat bg-center
 		
 		.custom-loader 
 			-webkit-animation: 1s preloader linear infinite

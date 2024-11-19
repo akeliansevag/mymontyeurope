@@ -82,12 +82,11 @@
     })
 
 	// const faqsItems = useState('faqsItems', () => faqsData(t));
-    // const faqsItems = useState('faqsItems', () => faqsData(t, currentLocale.value));
 
     const faqsItems = ref([]);
 
     watchEffect(async () => {
-    faqsItems.value = await faqsData(t, currentLocale.value);
+        faqsItems.value = await faqsData(t, currentLocale.value);
     });
 
     const selectedCategoryIndex = ref(0);

@@ -5,10 +5,30 @@ export const useCountry = () => { // (manualSelection)
     const countryIsEU = ref(false);
     const initialCode = ref(''); // Store the initial value
     const errors = ref({ country: null });
-	// const titleTemplate = ref('%s | MontyFinance')
-    // const router = useRouter();
-    // const route = useRoute(); // Get the current route
-    // const currentPath = ref(route.path); // Get the current path
+    const router = useRouter();
+    const { locale,locales, setLocale } = useI18n();
+    const i18nCookie = useCookie('i18n_redirected');
+
+    const findNearestLocale = (iso2) => {
+        const availableLocales = locales.value;
+        
+        // First, look for an exact country match
+        const exactCountryMatch = availableLocales.find(locale => {
+            const [lang, country] = locale.code.split('-');
+            return country.toLowerCase() === iso2.toLowerCase();
+        });
+        if (exactCountryMatch) return exactCountryMatch.code;
+        
+        // If no exact country match, look for a language match with EU
+        const languageEUMatch = availableLocales.find(locale => {
+            const [lang, country] = locale.code.split('-');
+            return lang.toLowerCase() === iso2.toLowerCase() && country === 'EU';
+        });
+        if (languageEUMatch) return languageEUMatch.code;
+        
+        // If still no match, default to en-EU
+        return 'en-EU';
+    };
 
     const detectCountry = async () => {
         try {
@@ -23,25 +43,30 @@ export const useCountry = () => { // (manualSelection)
                         countryIsEU.value = detectedCountry.is_eu;
                         selectedCountry.value = detectedCountry;
                         initialCode.value = detectedCountry.code;
+                        // console.log(selectedCountry.value)
+
+                        if (i18nCookie.value) {
+                            await setLocale(i18nCookie.value);
+                            // console.log("!!!!")
+                            return;
+                        }
+                    
+                        // // Check if the i18n_redirected cookie exists
+                        // if (i18nCookie.value) return;
+
+                        const nearestLocale = findNearestLocale(detectedCountry.iso2);
+                        // console.log(nearestLocale)
+
+                        // Set the locale
+                        await setLocale(nearestLocale);
+
+                        // Set the cookie
+                        i18nCookie.value = nearestLocale;
+
+                        // // Redirect to the new locale
+                        await router.push(useLocalePath()('/'));
+                        
                     }
-                    
-                    // // On refresh or manually writing the url, take stay on the same path of /lb or /eu
-                    // if(currentPath.value !== "/") return
-
-                    // // Only call detectCountry if no manual selection has been made
-                    // if (manualSelection.value) return;
-
-                    // // Push the detected country to the URL based on EU membership
-                    // const region = countryIsEU.value ? 'eu' : 'lb';
-                    // titleTemplate.value = countryIsEU.value ? '%s | MontyFinance Europe' : '%s | MontyFinance SAL';
-
-                    // // Dynamically set the title template based on the country
-                    // useHead({
-                    //     titleTemplate: titleTemplate.value
-                    // });
-                    
-                    // // Dynamic routing to /lebanon or /europe
-                    // await router.push(`${region}`); 
                 } else {
                     // console.warn('Detected country not found in countries data');
                 }
@@ -54,28 +79,12 @@ export const useCountry = () => { // (manualSelection)
         }
     };
 
-    // const manualRoute = async (value) => {
-    //     manualSelection.value = true; // Set the manual selection flag
-    //     const region = value === 'eu' ? '/eu' : '/lb';
-    //     titleTemplate.value = value === 'eu' ? '%s | MontyFinance Europe' : '%s | MontyFinance SAL';
-
-    //     // Dynamically set the title template based on the country
-    //     useHead({
-    //         titleTemplate: titleTemplate.value
-    //     });
-
-    //     // Dynamic routing to /lebanon or /europe
-    //     await router.push(`${region}`); 
-    // };
-
     return {
-        // manualSelection,
         countriesData,
         selectedCountry,
         countryIsEU,
         initialCode,
         errors,
         detectCountry,
-        // manualRoute
     };
 };

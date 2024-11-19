@@ -1,5 +1,5 @@
 <template>
-	<!-- <Preloader /> -->
+	<Preloader />
 	<div>
 		<AppHeader />
 		<main class="mt-[93px]">

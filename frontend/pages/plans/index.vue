@@ -60,7 +60,7 @@
 
 <script setup>
     import { plansData } from '~/data/plans'; // Adjust the path accordingly
-	const { t } = useLocale(); 
+	const { t, currentLocale } = useLocale(); 
 
     useSeoMeta({
         title: t('Pages.Plans.Seo.Title'),
@@ -75,7 +75,13 @@
         twitterCard: 'summary_large_image',
     })
 
-	const plansItems = useState('plansItems', () =>  plansData(t));
+	// const plansItems = useState('plansItems', () =>  plansData(t));
+
+    const plansItems = ref([]);
+
+    watchEffect(async () => {
+        plansItems.value = await plansData(t, currentLocale.value);
+    });
 </script>
 
 <style lang="" scoped>

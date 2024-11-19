@@ -21,7 +21,7 @@
                             <!-- Location Dropdown (1.5padding, 1px border bottom) -->
                             <ul class="absolute top-[calc(100%+1.5rem+1px)] left-0 z-10 w-full rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                 <template v-for="(locale, index) in filteredRegions" :key="locale.index">
-                                    <li v-if="locale.native" @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4] border-b']">
+                                    <li v-if="locale.native" @click.prevent.stop="changeLocale(locale.code)" :class="['flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4] border-b']">
                                         <img v-if="locale.native" :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" :alt="t(`General.Regions.${locale.region}`)" width="24" height="24" />
                                         <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.${locale.region}`) }}</span>
                                     </li>
@@ -45,7 +45,7 @@
                             <div class="flex justify-between items-center gap-2">
                                 <!-- Link if clickable -->
                                 <template v-if="item.clickable">
-                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-4 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black hover:text-primary cursor-pointer select-none">
+                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-6 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black hover:text-primary cursor-pointer select-none">
                                         {{ t(`General.Links.${item.title}`) }}
                                     </NuxtLinkLocale>
                                 </template>
@@ -93,7 +93,7 @@
                                 <ul class="w-max">
                                     <template v-if="filteredLocales.length > 0">
                                         <template v-for="(locale, index) in filteredLocales" :key="locale.index">
-                                            <li @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 py-3 px-4 transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]', { 'border-b': index !== filteredLocales.length - 1 }]">
+                                            <li @click.prevent.stop="changeLocale(locale.code)" :class="['flex items-center gap-2 py-3 px-4 transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]', { 'border-b': index !== filteredLocales.length - 1 }]">
                                                 <!-- <img :src="`/images/flags/${ locale.code.split('-')[0].toUpperCase() }.svg`" :alt="{{ locale.language }}" width="24" height="24" /> -->
                                                 <span class="text-sm font-AeonikRegular">{{ t(`General.Languages.${locale.language}`) }}</span>
                                             </li>
@@ -169,7 +169,7 @@
                     <template v-if="filteredLocales.length > 0">
                         <ul class="languages-mobile absolute bottom-full left-1/2 -translate-x-1/2 z-50 grid grid-cols-2 gap-4 w-1/2 mx-auto py-4 px-2 rounded text-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <template v-for="(locale, index) in filteredLocales" :key="locale.index">
-                                <li @click.prevent.stop="setLocale(locale.code)" class="flex gap-2 justify-start w-max transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]">
+                                <li @click.prevent.stop="changeLocale(locale.code)" class="flex gap-2 justify-start w-max transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]">
                                     <!-- <img :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
                                     <span class="text-sm font-AeonikRegular">{{ t(`General.Languages.${locale.language}`) }}</span>
                                 </li>
@@ -186,6 +186,7 @@
 
 <script setup>
     const { currentLocale, currentRegion, currentLanguage, currentLocaleDetails, filteredLocales, filteredRegions, setLocale, t } = useLocale();
+    const i18nCookie = useCookie('i18n_redirected');
 
     useHead(() => ({
         meta: [
@@ -195,6 +196,11 @@
             lang: currentLanguage,
         },
     }))
+
+    function changeLocale(localeCode) {
+        setLocale(localeCode); // Change the locale using i18n
+        i18nCookie.value = localeCode;
+    }
 
     const isOnTop = ref(true);
     const lastScrollPosition = ref(0);
