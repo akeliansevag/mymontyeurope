@@ -1,45 +1,46 @@
 {
 	"General": {
 		"Regions": {
-			"United Kingdom": "United Kingdom",
-			"Spain": "Spain",
-			"Italy": "Italy",
-			"France": "France"
+			"United Kingdom": "Reino Unido",
+			"Europe": "Europe",
+			"Spain": "España",
+			"Italy": "Italia",
+			"France": "Francia",
+			"Bulgaria": "Bulgaria",
+			"Lebanon": "Lebanon"
 		},
-
 		"Languages": {
-			"English": "English",
-			"Spanish": "Spanish",
-			"Italian": "Italian",
-			"French": "French"
+			"English": "Inglés",
+			"Spanish": "Español",
+			"Italian": "Italiano",
+			"French": "Francés",
+			"Bulgarian": "Bulgarian"
 		},
-
 		"Links": {
-			"Homepage": "Homepage",
-			"Company": "Company",
-			"Why MyMonty": "Why MyMonty",
-			"Who We Are": "Who We Are",
-			"Careers": "Careers",
-			"Code of Conduct": "Code of Conduct",
-			"News": "News",
+			"Homepage": "Página principal",
+			"Company": "Empresa",
+			"Why MyMonty": "Por qué MyMonty",
+			"Who We Are": "Quiénes somos",
+			"Careers": "Carreras",
+			"Code of Conduct": "Código de conducta",
+			"News": "Noticias",
 			"Blogs": "Blogs",
-			"Board of Directors": "Board of Directors",
-			"FAQs": "FAQs",
-			"Features": "Features",
-			"Accounts": "Accounts",
-			"Cards": "Cards",
-			"Transfers": "Transfers",
-			"Payments": "Payments",
-			"Plans": "Plans",
-			"Contact Us": "Contact Us",
-			"Terms & Conditions": "Terms & Conditions",
-			"Privacy Policy": "Privacy Policy",
-			"Paynetics Terms & Conditions": "Paynetics Terms & Conditions",
-			"Paynetics Privacy Policy": "Paynetics Privacy Policy",
-			"Cookie Policy": "Cookie Policy",
-			"Cookie Settings": "Cookie Settings"
+			"Board of Directors": "Junta Directiva",
+			"FAQs": "Preguntas frecuentes",
+			"Features": "Características",
+			"Accounts": "Cuentas",
+			"Cards": "Tarjetas",
+			"Transfers": "Transferencias",
+			"Payments": "Pagos",
+			"Plans": "Planes",
+			"Contact Us": "Contáctenos",
+			"Terms & Conditions": "Términos y condiciones",
+			"Privacy Policy": "Política de privacidad",
+			"Paynetics Terms & Conditions": "Términos y condiciones de Paynetics",
+			"Paynetics Privacy Policy": "Política de privacidad de Paynetics",
+			"Cookie Policy": "Política de cookies",
+			"Cookie Settings": "Configuración de cookies"
 		},
-
 		"Alts": {
 			"Logo": "MyMonty Logo",
 			"Chevron Up Gray": "Chevron Up Gray",
@@ -64,66 +65,61 @@
 			"Apple Store": "Apple Store",
 			"Google Play": "Google Play"
 		},
-
 		"Buttons": {
-			"Download App": "Download App",
-			"Get Started": "Get Started",
-			"Subscribe": "Subscribe",
-			"Contact Us": "Contact Us",
-			"Payments": "Payments",
-			"View All Features": "View All Features",
-			"View all plans": "View all plans",
-			"Submit": "Submit",
-			"Choose Plan": "Choose Plan",
-			"Coming Soon": "Coming Soon",
-			"Read More": "Read More",
-			"View More": "View More",
-			"Back To News": "Back to news",
-			"Back To Blogs": "Back to blogs",
-			"Visit The Homepage": "Visit the homepage"
+			"Download App": "Descargar aplicación",
+			"Get Started": "Comenzar",
+			"Subscribe": "Suscribirse",
+			"Contact Us": "Contáctenos",
+			"Payments": "Pagos",
+			"View All Features": "Ver todas las características",
+			"View all plans": "Ver todos los planes",
+			"Submit": "Enviar",
+			"Choose Plan": "Elegir plan",
+			"Coming Soon": "Próximamente",
+			"Read More": "Leer más",
+			"View More": "Ver más",
+			"Back To News": "Volver a noticias",
+			"Back To Blogs": "Volver a blogs",
+			"Visit The Homepage": "Visitar la página principal"
 		},
-
-		"Copyright": "Copyright MyMonty, 2024",
-
+		"Copyright": "Derechos de autor MyMonty, 2024",
 		"Labels": {
-			"Full Name": "Full Name",
-			"Email Address": "Email Address",
-			"Company Name": "Company Name",
-			"Position": "Position",
-			"Profession": "Profession",
-			"Mobile Number": "Mobile Number",
-			"Subject": "Subject",
-			"Message": "Your Message",
-			"Country": "Country",
-			"Upload your CV": "Upload your CV",
-			"Click to Upload": "Click to Upload",
-			"Files Accepted": "Files Accepted",
-			"Maximum file size": "Maximum file size",
-			"Uploaded File": "Uploaded File",
-			"File Size": "File Size",
+			"Full Name": "Nombre completo",
+			"Email Address": "Dirección de correo electrónico",
+			"Company Name": "Nombre de la empresa",
+			"Position": "Cargo",
+			"Profession": "Profesión",
+			"Mobile Number": "Número de móvil",
+			"Subject": "Asunto",
+			"Message": "Tu mensaje",
+			"Country": "País",
+			"Upload your CV": "Sube tu CV",
+			"Click to Upload": "Haz clic para subir",
+			"Files Accepted": "Archivos aceptados",
+			"Maximum file size": "Tamaño máximo del archivo",
+			"Uploaded File": "Archivo subido",
+			"File Size": "Tamaño del archivo",
 			"Acknowlegment": {
-				"Part 1": "By checking this box, you confirm that you've read and accepted our",
-				"Part 2": "for our website"
+				"Part 1": "Al marcar esta casilla, confirmas que has leído y aceptado nuestro",
+				"Part 2": "para nuestro sitio web"
 			},
-			"Select": "Select",
-			"Optional": "Optional"
+			"Select": "Seleccionar",
+			"Optional": "Opcional"
 		},
-		
 		"Placeholders": {
-			"Email": "Enter Your Email",
-			"Full Name": "Full Name",
-			"Email Address": "Email Address",
-			"Company Name": "Company Name",
-			"Position": "Position",
-			"Profession": "Profession",
-			"Mobile Number": "Mobile Number",
-			"Subject": "Subject",
-			"Message": "Your Message",
-			"Search": "Search"
+			"Email": "Introduce tu correo electrónico",
+			"Full Name": "Nombre completo",
+			"Email Address": "Dirección de correo electrónico",
+			"Company Name": "Nombre de la empresa",
+			"Position": "Cargo",
+			"Profession": "Profesión",
+			"Mobile Number": "Número de móvil",
+			"Subject": "Asunto",
+			"Message": "Tu mensaje",
+			"Search": "Buscar"
 		},
-
 		"Messages": {
-            "Errors": {
+			"Errors": {
 				"Required": {
 					"Full Name": "Please enter your full name",
 					"Email": "Please enter your email address",
@@ -136,8 +132,7 @@
 					"Message": "Please enter your message",
 					"File": "Please upload at least one valid file"
 				},
-
-				"Safe": "Your input has invalid value", 
+				"Safe": "Your input has invalid value",
 				"Valid Email": "Please enter a valid email address",
 				"Valid Code": "Please enter a valid country code",
 				"Unique Email": "This email address is already subscribed.",
@@ -155,123 +150,109 @@
 				"Api Response Validation Failed": "Error in submitting your message. Please try again later",
 				"Api Failed": "Error in submitting your message. Please try again later"
 			},
-
 			"Success": {
 				"Newsletter": "Thank you for subscribing.",
-                "Career": "Thank you for your message, our team will be in touch with you the soonest."
+				"Career": "Thank you for your message, our team will be in touch with you the soonest."
 			}
 		},
-
 		"Download": {
-			"Title": "Download the app now",
-			"Description": "Sign up and explore our endless benefits",
-			"Scan Qr": "Scan the QR to <br /> download the app"
+			"Title": "Descarga la aplicación ahora",
+			"Description": "Regístrate y descubre nuestros infinitos beneficios",
+			"Scan Qr": "Escanea el QR para <br /> descargar la aplicación"
 		},
-		
-		"And": "and"
+		"And": "y"
 	},
-
 	"Pages": {
 		"Homepage": {
 			"Banner": {
-				"Title": "Simple &<br />Hassle-Free<br />Digital Payment",
-				"Description": "Empowering you with personalized financial&nbsp;solutions.",
-				"Image Alt": "Simple & Hassle-Free Digital Payment"
+				"Title": "Pago digital<br />simple y sin complicaciones",
+				"Description": "Te empoderamos con soluciones financieras personalizadas.",
+				"Image Alt": "Pago digital simple y sin complicaciones"
 			},
-
 			"Section 2": {
-				"Title": "Get on board with us",
+				"Title": "Únete a nosotros",
 				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque."
 			},
-
 			"Section 3": {
-				"Title": "We've got you covered worldwide",
-				"Description": "Send, receive and request money whenever and wherever you are.",
-				"Image Alt": "Get on Board With Us"
+				"Title": "Te cubrimos en todo el mundo",
+				"Description": "Envía, recibe y solicita dinero donde y cuando quieras.",
+				"Image Alt": "Únete a nosotros"
 			},
-
 			"Section 4": {
-				"Image Alt": "Manage Your Money",
-				"Title": "Manage your Money",
+				"Image Alt": "Gestiona tu dinero",
+				"Title": "Gestiona tu dinero",
 				"List Items": {
-                    "Item 1": "Save & control your payments",
-                    "Item 2": "Wire Transfers within the SEPA region",
-                    "Item 3": "Global P2P Money Transfers"
-                }
+					"Item 1": "Ahorra y controla tus pagos",
+					"Item 2": "Transferencias bancarias dentro de la región SEPA",
+					"Item 3": "Transferencias de dinero P2P globales"
+				}
 			},
-
 			"Section 5": {
-				"Title": "Request money with ease",
-				"Description": "No more fuss-just send a link, and get paid quickly and effortlessly from anyone, anywhere in the world.",
-				"Image Alt": "Request Money With Ease"
+				"Title": "Solicita dinero con facilidad",
+				"Description": "Sin complicaciones: solo envía un enlace y recibe pagos de manera rápida y sencilla desde cualquier lugar del mundo.",
+				"Image Alt": "Solicita dinero con facilidad"
 			},
-
 			"Section 6": {
-				"Title": "Stay protected",
+				"Title": "Mantente protegido",
 				"List Items": {
-                    "Item 1": "Biometric protection",
-                    "Item 2": "Account safeguarded from hackers",
-                    "Item 3": "No password needed"
-                },
-				"Image Alt": "Stay Protected"
+					"Item 1": "Protección biométrica",
+					"Item 2": "Cuenta protegida contra hackers",
+					"Item 3": "Sin necesidad de contraseña"
+				},
+				"Image Alt": "Mantente protegido"
 			},
-
 			"Section 7": {
-				"Title": "Time to go digital",
-				"Description": "Manage your finances effortlessly with our intuitive mobile app. From account management to fund transfers and upcoming budget tracking, MyMonty offers a user-friendly interface tailored to your needs. Choose between EUR or GBP for seamless transactions in your preferred currency.",
-				"Image Alt": "Time to go digital"
+				"Title": "Es hora de digitalizarte",
+				"Description": "Gestiona tus finanzas sin esfuerzo con nuestra intuitiva aplicación móvil. Desde la gestión de cuentas hasta las transferencias de fondos y el seguimiento de tu presupuesto, MyMonty ofrece una interfaz amigable adaptada a tus necesidades. Elige entre EUR o GBP para transacciones sin complicaciones en tu moneda preferida.",
+				"Image Alt": "Es hora de digitalizarte"
 			},
-
 			"Section 8": {
-                "Title": "Get a look at our revolutionary features",
-                "Features": [
-                    {
-                        "Title": "Streamlined contactless payments",
-                        "Description": "Enjoy the convenience of contactless payments with MyMonty EEA/UK's integration with Google Pay. Securely make purchases in-store, online, and at payment terminals with ease and speed.",
-                        "Image Alt": "Streamlined Contactless Payments"
-                    },
-                    {
-                        "Title": "Support around the clock",
-                        "Description": "Count on MyMonty for reliable customer support. Our dedicated team is available during business hours, backed by an in-app bot for 24/7 assistance. Whether you have questions or need help, we're here to ensure your experience is smooth and enjoyable.",
-                        "Image Alt": "Support Around the Clock"
-                    }
-                ]
-            },
-
+				"Title": "Echa un vistazo a nuestras características revolucionarias",
+				"Features": [
+					{
+						"Title": "Pagos sin contacto optimizados",
+						"Description": "Disfruta de la comodidad de los pagos sin contacto con la integración de MyMonty EEA/UK con Google Pay. Realiza compras de forma segura en tiendas, en línea y en terminales de pago con facilidad y rapidez.",
+						"Image Alt": "Pagos sin contacto optimizados"
+					},
+					{
+						"Title": "Soporte las 24 horas",
+						"Description": "Cuenta con MyMonty para un soporte al cliente confiable. Nuestro equipo dedicado está disponible durante el horario comercial, respaldado por un bot en la aplicación para asistencia 24/7. Ya sea que tengas preguntas o necesites ayuda, estamos aquí para garantizar una experiencia fluida y agradable.",
+						"Image Alt": "Soporte las 24 horas"
+					}
+				]
+			},
 			"Section 9": {
-                "Title": "Choose your plan",
-                "Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare plans.",
-                "Plans": [
-                    {
-                        "Title": "Starter",
-                        "Description": "Looking to start that journey to financial freedom? <br/> Get our Starter plan and enjoy true freedom with low in-store fees and a virtual/physical card.",
-                        "Button Label": "Free"
-                    },
-                    {
-                        "Title": "Plus",
-                        "Description": "If you're looking for true value, try our Classic plan with zero card fees, zero monthly charges and more.",
-                        "Status": "Not Available Yet",
-                        "Button Label": "COMING SOON"
-                    },
-                    {
-                        "Title": "Premium",
-                        "Description": "Step up to a truly global level. Enjoy multi-currency features and added value such as investment, health and much more.",
-                        "Status": "Not Available Yet",
-                        "Button Label": "COMING SOON"
-                    }
-                ]
-            },
-
+				"Title": "Elige tu plan",
+				"Description": "Te cubrimos con planes adaptados a tus necesidades. Simplemente elige el que mejor te convenga o compara los planes.",
+				"Plans": [
+					{
+						"Title": "Starter",
+						"Description": "¿Buscas comenzar tu camino hacia la libertad financiera? <br/> Obtén nuestro plan Starter y disfruta de verdadera libertad con tarifas bajas en tienda y una tarjeta virtual/física.",
+						"Button Label": "Gratis"
+					},
+					{
+						"Title": "Plus",
+						"Description": "Si buscas verdadero valor, prueba nuestro plan Classic sin tarifas de tarjeta, sin cargos mensuales y más.",
+						"Status": "No disponible todavía",
+						"Button Label": "PRÓXIMAMENTE"
+					},
+					{
+						"Title": "Premium",
+						"Description": "Pasa a un nivel verdaderamente global. Disfruta de funciones multimoneda y un valor añadido como inversión, salud y mucho más.",
+						"Status": "No disponible todavía",
+						"Button Label": "PRÓXIMAMENTE"
+					}
+				]
+			},
 			"Seo": {
-				"Title": "Homepage",
-				"Description": "Welcome to the homepage of our website.",
-				"Og Title": "Homepage",
-				"Og Description": "Welcome to the homepage of our website.",
-				"Twitter Title": "Homepage",
-				"Twitter Description": "Welcome to the homepage of our website."
+				"Title": "Inicio",
+				"Description": "Bienvenido a la página de inicio de nuestro sitio web.",
+				"Og Title": "Inicio",
+				"Og Description": "Bienvenido a la página de inicio de nuestro sitio web.",
+				"Twitter Title": "Inicio",
+				"Twitter Description": "Bienvenido a la página de inicio de nuestro sitio web."
 			}
 		},
-		
 		"Why MyMonty": {
 			"Banner": {
 				"Sub Title": "Why MyMonty?",
@@ -279,7 +260,6 @@
 				"Description": "At MyMonty, we're committed to making basic banking services a universal right. We empower you to effortlessly send, receive, or request money with transparent pricing and no hidden&nbsp;fees.",
 				"Image Alt": "See what sets us apart"
 			},
-
 			"Section 2": {
 				"Cards": [
 					{
@@ -309,7 +289,6 @@
 					}
 				]
 			},
-
 			"Seo": {
 				"Title": "Why MyMonty",
 				"Description": "",
@@ -319,7 +298,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Who We Are": {
 			"Banner": {
 				"Sub Title": "Who We Are",
@@ -327,11 +305,9 @@
 				"Description": "Manage your money effortlessly from the comfort of one single intuitive&nbsp;app.",
 				"Image Alt": "One app for all things money"
 			},
-
 			"Section 2": {
 				"Title": "Who We Are",
 				"Description": "At MyMonty EEA/UK, we're all about simplifying financial processes. Our digital platform offers innovative, user-friendly financial services to individuals across the EEA and UK. We're all about making banking easy, secure, and accessible for everyone, especially the unbanked, underbanked, and youth, so they can enjoy personalized financial solutions.",
-
 				"Cards": [
 					{
 						"Title": "This is the future",
@@ -340,40 +316,35 @@
 					}
 				]
 			},
-
 			"Section 3": {
 				"Title": "Equal opportunities for all",
 				"Description": "At MyMonty, we believe in leveling the playing field. Whether you're a tech enthusiast, an underserved individual, or a starter in financial services, we're here to serve you.",
 				"Image Alt": "Equal Opportunities For All"
 			},
-
 			"Section 4": {
 				"Title": "Digital all the way",
 				"Description": "Digital is at the heart of our operations. With MyMonty, you can effortlessly send, receive, and request funds with a single tap. Experience the ease of contactless transactions and embrace a seamless digital future with us!",
 				"Image Alt": "Digital All The Way"
 			},
-
 			"Section 5": {
 				"Title": "Our culture: building on diversity",
 				"Description": "Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.",
 				"Image Alt": "Digital All The Way"
 			},
-
 			"Section 6": {
-                "Title": "Our offices",
-                "Description": "Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.",
-                "Cards": [
-                    {
-                        "Location": "United Kingdom",
-                        "Address": "Beaumont Bridge House, 181 Queen Victoria Street, London EC4V 4EG"
-                    },
-                    {
-                        "Location": "United Arab Emirates",
-                        "Address": "Unit 30, floor 20, Central Park Tower DIFC 74777 Dubai"
-                    }
-                ]
-            },
-
+				"Title": "Our offices",
+				"Description": "Our strength lies in our dedicated, agile, and diverse team. Together, we're committed to pushing boundaries in digital innovation, ensuring your journey towards a simpler and more connected future.",
+				"Cards": [
+					{
+						"Location": "United Kingdom",
+						"Address": "Beaumont Bridge House, 181 Queen Victoria Street, London EC4V 4EG"
+					},
+					{
+						"Location": "United Arab Emirates",
+						"Address": "Unit 30, floor 20, Central Park Tower DIFC 74777 Dubai"
+					}
+				]
+			},
 			"Seo": {
 				"Title": "Who We Are",
 				"Description": "",
@@ -383,7 +354,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Plans": {
 			"Banner": {
 				"Sub Title": "Plans",
@@ -391,7 +361,6 @@
 				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare&nbsp;plans.",
 				"Image Alt": "Choose Your Plan"
 			},
-
 			"Section 2": [
 				{
 					"Category": "Starter",
@@ -444,7 +413,6 @@
 					"Button Text": "Coming Soon"
 				}
 			],
-
 			"Seo": {
 				"Title": "Plans",
 				"Description": "",
@@ -454,7 +422,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"News": {
 			"Banner": {
 				"Sub Title": "News",
@@ -462,7 +429,6 @@
 				"Description": "Explore our news for the latest updates and&nbsp;offerings.",
 				"Image Alt": "What is happening at mymonty"
 			},
-
 			"Seo": {
 				"Title": "News",
 				"Description": "",
@@ -472,20 +438,17 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Features": {
 			"Banner": {
-				"Sub Title":"Features",
+				"Sub Title": "Features",
 				"Title": "Unlock the best of what we offer",
 				"Description": "Enjoy our outstanding features and stand out from the&nbsp;crowd",
 				"Image Alt": "Unlock the best of what we offer"
 			},
-
 			"Section 2": {
 				"Title": "Features",
 				"Description": "Experience the convenience of features tailored just for you"
 			},
-
 			"Section 3": [
 				{
 					"Category": "Accounts",
@@ -568,7 +531,6 @@
 					]
 				}
 			],
-
 			"Seo": {
 				"Title": "Features",
 				"Description": "",
@@ -578,7 +540,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Frequently Asked Questions": {
 			"Banner": {
 				"Sub Title": "FAQ",
@@ -586,7 +547,6 @@
 				"Description": "Our team is always ready to assist you or answer your inquiries. Fill out this form to reach&nbsp;us.",
 				"Image Alt": "Frequently asked questions"
 			},
-
 			"Section 2": {
 				"Topic Heading": "Topic",
 				"Question Not Found": "No matching questions found",
@@ -813,12 +773,11 @@
 							{
 								"Question": "What are the Card Transaction limits?",
 								"Answer": "<ul><li ><strong>Single Payment POS</strong>: €5,000</li><li ><strong>Single ATM Transaction</strong>: €200</li><li ><strong>Single Top-up</strong>: €5,000</li></ul><br />Transaction limits per 24 hours:<ul><li><strong>POS transactions</strong>: €10,000 or 50 payments at POS for digitized or virtual cards; 20 payments at POS for physical card</li><li><strong>ATM transactions</strong>: €1,000 or 5 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €10,000 or 50 top-ups</li></ul><br />Transaction limits per 7 days:<ul><li><strong>POS transactions</strong>: €15,000 or 120 payments at POS for all card types</li><li><strong>ATM transactions</strong>: €4,000 or 35 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €15,000 or 100 top-ups</li></ul><br />Transaction limits per 30 days:<ul><li><strong>POS transactions</strong>: €30,000 or 300 payments at POS for all card types</li><li><strong>ATM transactions</strong>: €10,000 or 90 ATM withdrawals</li><li><strong>Top-up transactions</strong>: €30,000 or 300 top-ups</li></ul>"
-							}	
+							}
 						]
 					}
 				]
 			},
-			
 			"Seo": {
 				"Title": "Frequently Asked Questions",
 				"Description": "",
@@ -828,7 +787,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Contact Us": {
 			"Banner": {
 				"Sub Title": "Contact Us",
@@ -836,17 +794,14 @@
 				"Description": "Our friendly team is here to help. Just fill out the form below, and we'll be in touch with you&nbsp;soon.",
 				"Image Alt": "Got any questions"
 			},
-
 			"Section 2": {
 				"Title": "Fill out this form to reach us"
 			},
-
 			"Section 3": {
 				"Title": "Always there for you",
 				"Description 1": "Monday to Friday: 8:00 AM - 5:00 PM (EEST)<br />Saturday and Sunday: Closed",
 				"Description 2": "Have a complaint or need any assistance?<br/>Reach out to us <a href='mailto:' class='text-primary'>here</a>"
 			},
-
 			"Seo": {
 				"Title": "Contact Us",
 				"Description": "",
@@ -856,7 +811,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Code Of Conduct": {
 			"Banner": {
 				"Sub Title": "MyMonty Values",
@@ -864,57 +818,55 @@
 				"Description": "Learn about the guiding principles at&nbsp;MyMonty.",
 				"Image Alt": "Our code of conduct"
 			},
-
 			"Section 2": {
 				"Cards": [
-				{
-					"Title": "Equality",
-					"Description": "We believe in providing equal opportunities and rights to everyone, ensuring fairness and inclusivity in all our endeavors.",
-					"Image Alt": "Equality"
-				},
-				{
-					"Title": "Inclusivity",
-					"Description": "No one is left behind. We strive to include and empower individuals from all walks of life, regardless of their background or circumstances.",
-					"Image Alt": "Inclusivity"
-				},
-				{
-					"Title": "Integrity",
-					"Description": "Our actions are guided by honesty, transparency, and loyalty. We uphold the highest ethical standards in all our interactions.",
-					"Image Alt": "Integrity"
-				},
-				{
-					"Title": "Excellence",
-					"Description": "We are dedicated to delivering exceptional quality in everything we offer, striving for excellence in service and innovation.",
-					"Image Alt": "Excellence"
-				},
-				{
-					"Title": "Commitment",
-					"Description": "True to our core values, we are unwavering in our dedication to serving our customers, partners, and communities with passion and integrity.",
-					"Image Alt": "Commitment"
-				},
-				{
-					"Title": "Professionalism",
-					"Description": "Operating with efficiency and responsibility, we uphold professional standards to ensure the trust and confidence of all those we serve.",
-					"Image Alt": "Professionalism"
-				},
-				{
-					"Title": "Compliance & Legal Responsibility",
-					"Description": "We adhere strictly to all applicable laws, regulations, and industry standards. Compliance is non-negotiable in our commitment to responsible banking practices.",
-					"Image Alt": "Compliance & Legal Responsibility"
-				},
-				{
-					"Title": "Confidentiality & Data Protection",
-					"Description": "We safeguard customer information with the utmost care and confidentiality. Data protection and privacy are fundamental principles in our operations.",
-					"Image Alt": "Confidentiality & Data Protection"
-				},
-				{
-					"Title": "Customer Focus",
-					"Description": "We prioritize the needs and interests of our customers, striving to deliver exceptional service and innovative solutions that enhance their financial well-being.",
-					"Image Alt": "Customer Focus"
-				}
+					{
+						"Title": "Equality",
+						"Description": "We believe in providing equal opportunities and rights to everyone, ensuring fairness and inclusivity in all our endeavors.",
+						"Image Alt": "Equality"
+					},
+					{
+						"Title": "Inclusivity",
+						"Description": "No one is left behind. We strive to include and empower individuals from all walks of life, regardless of their background or circumstances.",
+						"Image Alt": "Inclusivity"
+					},
+					{
+						"Title": "Integrity",
+						"Description": "Our actions are guided by honesty, transparency, and loyalty. We uphold the highest ethical standards in all our interactions.",
+						"Image Alt": "Integrity"
+					},
+					{
+						"Title": "Excellence",
+						"Description": "We are dedicated to delivering exceptional quality in everything we offer, striving for excellence in service and innovation.",
+						"Image Alt": "Excellence"
+					},
+					{
+						"Title": "Commitment",
+						"Description": "True to our core values, we are unwavering in our dedication to serving our customers, partners, and communities with passion and integrity.",
+						"Image Alt": "Commitment"
+					},
+					{
+						"Title": "Professionalism",
+						"Description": "Operating with efficiency and responsibility, we uphold professional standards to ensure the trust and confidence of all those we serve.",
+						"Image Alt": "Professionalism"
+					},
+					{
+						"Title": "Compliance & Legal Responsibility",
+						"Description": "We adhere strictly to all applicable laws, regulations, and industry standards. Compliance is non-negotiable in our commitment to responsible banking practices.",
+						"Image Alt": "Compliance & Legal Responsibility"
+					},
+					{
+						"Title": "Confidentiality & Data Protection",
+						"Description": "We safeguard customer information with the utmost care and confidentiality. Data protection and privacy are fundamental principles in our operations.",
+						"Image Alt": "Confidentiality & Data Protection"
+					},
+					{
+						"Title": "Customer Focus",
+						"Description": "We prioritize the needs and interests of our customers, striving to deliver exceptional service and innovative solutions that enhance their financial well-being.",
+						"Image Alt": "Customer Focus"
+					}
 				]
 			},
-
 			"Seo": {
 				"Title": "Code Of Conduct",
 				"Description": "",
@@ -924,7 +876,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Careers": {
 			"Banner": {
 				"Sub Title": "Careers",
@@ -932,11 +883,9 @@
 				"Description": "Don't miss your chance! Check out our vacancies on <a href='' target='_blank' class='text-primary'>LinkedIn</a>&nbsp;now.",
 				"Image Alt": "Join our dream team"
 			},
-
 			"Section 2": {
 				"Title": "Embark on Your career journey with us",
 				"Description": "Our team is our biggest asset! We are dedicated to recognizing and cultivating talent from within, offering a transparent and well-defined career path for our valuable team members.<br />We heavily invest in employee training programs, workshops, and mentorship initiatives, ensuring our team is not only well-equipped for their current roles but also ready for future challenges.",
-
 				"Cards": [
 					{
 						"Title": "Always there for you",
@@ -946,11 +895,9 @@
 					}
 				]
 			},
-
 			"Section 3": {
 				"Title": "Fill out this form to reach us"
 			},
-
 			"Seo": {
 				"Title": "Careers",
 				"Description": "",
@@ -960,7 +907,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Board Of Directors": {
 			"Banner": {
 				"Sub Title": "Board of Directors",
@@ -968,7 +914,6 @@
 				"Description": "We believe in our people. By continually supporting and elevating their skills, we set the bar high and keep pushing it higher. We're dedicated to coaching and empowering our team to redefine the digital banking&nbsp;experience.",
 				"Image Alt": "Leadership team"
 			},
-
 			"Section 2": {
 				"Cards": [
 					{
@@ -1003,7 +948,6 @@
 					}
 				]
 			},
-
 			"Seo": {
 				"Title": "Board of Directors",
 				"Description": "",
@@ -1013,7 +957,6 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Blogs": {
 			"Banner": {
 				"Sub Title": "Blogs",
@@ -1021,7 +964,6 @@
 				"Description": "Explore our news for the latest updates and&nbsp;offerings.",
 				"Image Alt": "What is happening at mymonty blogs"
 			},
-
 			"Seo": {
 				"Title": "Blogs",
 				"Description": "",
@@ -1031,14 +973,13 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Terms And Conditions": {
 			"Banner": {
 				"Sub Title": "Terms & Conditions",
 				"Title": "Terms & Conditions",
-				"Description": "Terms & Conditions."
+				"Description": "Terms & Conditions.",
+				"Image Alt": "What is happening at mymonty blogs"
 			},
-
 			"Seo": {
 				"Title": "Terms & Conditions",
 				"Description": "",
@@ -1048,14 +989,13 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Privacy Policy": {
 			"Banner": {
 				"Sub Title": "Privacy Policy",
 				"Title": "Privacy Policy",
-				"Description": "Privacy Policy."
+				"Description": "Privacy Policy.",
+				"Image Alt": "What is happening at mymonty blogs"
 			},
-
 			"Seo": {
 				"Title": "Privacy Policy",
 				"Description": "",
@@ -1065,14 +1005,13 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Cookie Policy": {
 			"Banner": {
 				"Sub Title": "Cookie Policy",
 				"Title": "Cookie Policy",
-				"Description": "Cookie Policy."
+				"Description": "Cookie Policy.",
+				"Image Alt": "What is happening at mymonty blogs"
 			},
-
 			"Seo": {
 				"Title": "Cookie Policy",
 				"Description": "",
@@ -1082,14 +1021,13 @@
 				"Twitter Description": ""
 			}
 		},
-		
 		"Paynetics Terms And Conditions": {
 			"Banner": {
 				"Sub Title": "Paynetics Terms & Conditions",
 				"Title": "Paynetics Terms & Conditions",
-				"Description": "Paynetics Terms & Conditions."
+				"Description": "Paynetics Terms & Conditions.",
+				"Image Alt": "What is happening at mymonty blogs"
 			},
-
 			"Seo": {
 				"Title": "Paynetics Terms & Conditions",
 				"Description": "",
@@ -1099,14 +1037,13 @@
 				"Twitter Description": ""
 			}
 		},
-
 		"Paynetics Privacy Policy": {
 			"Banner": {
 				"Sub Title": "Paynetics Privacy Policy",
 				"Title": "Paynetics Privacy Policy",
-				"Description": "Paynetics Privacy Policy."
+				"Description": "Paynetics Privacy Policy.",
+				"Image Alt": "What is happening at mymonty blogs"
 			},
-
 			"Seo": {
 				"Title": "Paynetics Privacy Policy",
 				"Description": "",
@@ -1116,7 +1053,6 @@
 				"Twitter Description": ""
 			}
 		},
-		
 		"Error": {
 			"Section 1": {
 				"Image Alt": "Error 404",
@@ -1125,20 +1061,19 @@
 			},
 			"Seo": {
 				"Title": "Error {code}",
-				"Description": "An error occurred: {message}",
-				"Og Title": "Error {code} Occurred",
-				"Og Description": "An error occurred on our website: {message}",
-				"Twitter Title": "Error {code} Occurred",
-				"Twitter Description": "An error occurred on our website: {message}",
-				"Default Message": "An unknown error occurred"
+				"Description": "Ocurrió un error: {message}",
+				"Og Title": "Ocurrió un error {code}",
+				"Og Description": "Ocurrió un error en nuestro sitio web: {message}",
+				"Twitter Title": "Ocurrió un error {code}",
+				"Twitter Description": "Ocurrió un error en nuestro sitio web: {message}",
+				"Default Message": "Ocurrió un error desconocido"
 			}
 		}
 	},
-
 	"Footer": {
 		"Newsletter": {
-			"Title": "Subscribe to our newsletter",
-			"Description": "Subscribe to our newsletter"
+			"Title": "Suscríbete a nuestro boletín",
+			"Description": "Suscríbete a nuestro boletín"
 		}
 	}
 }

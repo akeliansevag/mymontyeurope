@@ -21,11 +21,17 @@
                             <!-- Location Dropdown (1.5padding, 1px border bottom) -->
                             <ul class="absolute top-[calc(100%+1.5rem+1px)] left-0 z-10 w-full rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                 <template v-for="(locale, index) in filteredRegions" :key="locale.index">
-                                    <li v-if="locale.native" @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4]', { 'border-b': index !== filteredRegions.length - 1 }]">
+                                    <li v-if="locale.native" @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4] border-b']">
                                         <img v-if="locale.native" :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" :alt="t(`General.Regions.${locale.region}`)" width="24" height="24" />
                                         <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.${locale.region}`) }}</span>
                                     </li>
                                 </template>    
+                                <a href="https://mymonty.com.lb" target="_blank" >    
+                                    <li class="flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4]">
+                                        <img src="`/images/flags/LB.svg`" :alt="t(`General.Regions.Lebanon`)" width="24" height="24" />
+                                        <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.Lebanon`) }}</span>
+                                    </li>
+                                </a>
                             </ul>
                         </div>
                     </div>
