@@ -1,46 +1,47 @@
 {
 	"General": {
 		"Regions": {
-			"United Kingdom": "United Kingdom",
-			"Europe": "Europe",
-			"Spain": "Spain",
-			"Italy": "Italy",
-			"France": "France",
-			"Bulgaria": "Bulgaria",
-			"Lebanon": "Lebanon"
+			"United Kingdom": "Обединено кралство",
+			"Europe": "Европа",
+			"Spain": "Испания",
+			"Italy": "Италия",
+			"France": "Франция",
+			"Bulgaria": "България",
+			"Lebanon": "Ливан"
 		},
 		"Languages": {
-			"English": "English",
-			"Spanish": "Spanish",
-			"Italian": "Italian",
-			"French": "French",
-			"Bulgarian": "Bulgarian"
+			"English": "Английски",
+			"Spanish": "Испански",
+			"Italian": "Италиански",
+			"French": "Френски",
+			"Bulgarian": "Български"
 		},
 		"Links": {
-			"Homepage": "Homepage",
-			"Company": "Company",
-			"Why MyMonty": "Why MyMonty",
-			"Who We Are": "Who We Are",
-			"Careers": "Careers",
-			"Code of Conduct": "Code of Conduct",
-			"News": "News",
-			"Blogs": "Blogs",
-			"Board of Directors": "Board of Directors",
-			"FAQs": "FAQs",
-			"Features": "Features",
-			"Accounts": "Accounts",
-			"Cards": "Cards",
-			"Transfers": "Transfers",
-			"Payments": "Payments",
-			"Plans": "Plans",
-			"Contact Us": "Contact Us",
-			"Terms & Conditions": "Terms & Conditions",
-			"Privacy Policy": "Privacy Policy",
-			"Paynetics Terms & Conditions": "Paynetics Terms & Conditions",
-			"Paynetics Privacy Policy": "Paynetics Privacy Policy",
-			"Cookie Policy": "Cookie Policy",
-			"Cookie Settings": "Cookie Settings"
-		},
+			"Homepage": "Начална страница",
+			"Company": "Компания",
+			"Why MyMonty": "Защо MyMonty",
+			"Who We Are": "Кои сме ние",
+			"Careers": "Кариера",
+			"Code of Conduct": "Етичен кодекс",
+			"News": "Новини",
+			"Blogs": "Блогове",
+			"Board of Directors": "Съвет на директорите",
+			"FAQs": "Често задавани въпроси",
+			"Features": "Характеристики",
+			"Accounts": "Сметки",
+			"Cards": "Карти",
+			"Transfers": "Прехвърляния",
+			"Payments": "Плащания",
+			"Plans": "Планове",
+			"Contact Us": "Контакти",
+			"Terms & Conditions": "Условия за ползване",
+			"Privacy Policy": "Политика за поверителност",
+			"Paynetics Terms & Conditions": "Условия за ползване на Paynetics",
+			"Paynetics Privacy Policy": "Политика за поверителност на Paynetics",
+			"Cookie Policy": "Политика за бисквитки",
+			"Cookie Settings": "Настройки на бисквитки"
+		}
+,
 		"Alts": {
 			"Logo": "MyMonty Logo",
 			"Chevron Up Gray": "Chevron Up Gray",
@@ -66,57 +67,57 @@
 			"Google Play": "Google Play"
 		},
 		"Buttons": {
-			"Download App": "Download App",
-			"Get Started": "Get Started",
-			"Subscribe": "Subscribe",
-			"Contact Us": "Contact Us",
-			"Payments": "Payments",
-			"View All Features": "View All Features",
-			"View all plans": "View all plans",
-			"Submit": "Submit",
-			"Choose Plan": "Choose Plan",
-			"Coming Soon": "Coming Soon",
-			"Read More": "Read More",
-			"View More": "View More",
-			"Back To News": "Back to news",
-			"Back To Blogs": "Back to blogs",
-			"Visit The Homepage": "Visit the homepage"
+			"Download App": "Изтеглете приложението",
+			"Get Started": "Започнете",
+			"Subscribe": "Абонирайте се",
+			"Contact Us": "Свържете се с нас",
+			"Payments": "Плащания",
+			"View All Features": "Преглед на всички функции",
+			"View all plans": "Преглед на всички планове",
+			"Submit": "Изпратете",
+			"Choose Plan": "Изберете план",
+			"Coming Soon": "Скоро ще бъде налично",
+			"Read More": "Прочетете повече",
+			"View More": "Прегледайте повече",
+			"Back To News": "Назад към новините",
+			"Back To Blogs": "Назад към блоговете",
+			"Visit The Homepage": "Посетете началната страница"
 		},
-		"Copyright": "Copyright MyMonty, 2024",
+		"Copyright": "Авторски права MyMonty, 2024",
 		"Labels": {
-			"Full Name": "Full Name",
-			"Email Address": "Email Address",
-			"Company Name": "Company Name",
-			"Position": "Position",
-			"Profession": "Profession",
-			"Mobile Number": "Mobile Number",
-			"Subject": "Subject",
-			"Message": "Your Message",
-			"Country": "Country",
-			"Upload your CV": "Upload your CV",
-			"Click to Upload": "Click to Upload",
-			"Files Accepted": "Files Accepted",
-			"Maximum file size": "Maximum file size",
-			"Uploaded File": "Uploaded File",
-			"File Size": "File Size",
+			"Full Name": "Пълно име",
+			"Email Address": "Имейл адрес",
+			"Company Name": "Име на компания",
+			"Position": "Длъжност",
+			"Profession": "Професия",
+			"Mobile Number": "Мобилен номер",
+			"Subject": "Тема",
+			"Message": "Вашето съобщение",
+			"Country": "Държава",
+			"Upload your CV": "Качете вашето CV",
+			"Click to Upload": "Кликнете, за да качите",
+			"Files Accepted": "Приемливи файлове",
+			"Maximum file size": "Максимален размер на файла",
+			"Uploaded File": "Качен файл",
+			"File Size": "Размер на файла",
 			"Acknowlegment": {
-				"Part 1": "By checking this box, you confirm that you've read and accepted our",
-				"Part 2": "for our website"
+				"Part 1": "Чрез отметката на това поле потвърждавате, че сте прочели и приели нашите",
+				"Part 2": "условия за ползване на нашия уебсайт"
 			},
-			"Select": "Select",
-			"Optional": "Optional"
+			"Select": "Изберете",
+			"Optional": "По избор"
 		},
 		"Placeholders": {
-			"Email": "Enter Your Email",
-			"Full Name": "Full Name",
-			"Email Address": "Email Address",
-			"Company Name": "Company Name",
-			"Position": "Position",
-			"Profession": "Profession",
-			"Mobile Number": "Mobile Number",
-			"Subject": "Subject",
-			"Message": "Your Message",
-			"Search": "Search"
+			"Email": "Въведете вашия имейл",
+			"Full Name": "Пълно име",
+			"Email Address": "Имейл адрес",
+			"Company Name": "Име на компания",
+			"Position": "Длъжност",
+			"Profession": "Професия",
+			"Mobile Number": "Мобилен номер",
+			"Subject": "Тема",
+			"Message": "Вашето съобщение",
+			"Search": "Търсене"
 		},
 		"Messages": {
 			"Errors": {
@@ -156,101 +157,101 @@
 			}
 		},
 		"Download": {
-			"Title": "Download the app now",
-			"Description": "Sign up and explore our endless benefits",
-			"Scan Qr": "Scan the QR to <br /> download the app"
+			"Title": "Изтеглете приложението сега",
+			"Description": "Регистрирайте се и открийте нашите безкрайни ползи",
+			"Scan Qr": "Сканирайте QR кода, за да <br /> изтеглите приложението"
 		},
-		"And": "and"
+		"And": "и"
 	},
 	"Pages": {
 		"Homepage": {
 			"Banner": {
-				"Title": "Simple &<br />Hassle-Free<br />Digital Payment",
-				"Description": "Empowering you with personalized financial&nbsp;solutions.",
-				"Image Alt": "Simple & Hassle-Free Digital Payment"
+				"Title": "Прост и<br />безпроблемен<br />цифрово плащане",
+				"Description": "Осигуряваме ви персонализирани финансови решения.",
+				"Image Alt": "Прост и безпроблемен цифрово плащане"
 			},
 			"Section 2": {
-				"Title": "Get on board with us",
+				"Title": "Присъединете се към нас",
 				"Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque accumsan tellus, id bibendum neque pellentesque pellentesque."
 			},
 			"Section 3": {
-				"Title": "We've got you covered worldwide",
-				"Description": "Send, receive and request money whenever and wherever you are.",
-				"Image Alt": "Get on Board With Us"
+				"Title": "Ние сме на ваше разположение по целия свят",
+				"Description": "Изпращайте, получавайте и искате пари по всяко време и навсякъде.",
+				"Image Alt": "Присъединете се към нас"
 			},
 			"Section 4": {
-				"Image Alt": "Manage Your Money",
-				"Title": "Manage your Money",
+				"Image Alt": "Управлявайте парите си",
+				"Title": "Управлявайте парите си",
 				"List Items": {
-					"Item 1": "Save & control your payments",
-					"Item 2": "Wire Transfers within the SEPA region",
-					"Item 3": "Global P2P Money Transfers"
+					"Item 1": "Запазвайте и контролирайте плащанията си",
+					"Item 2": "Парични преводи в SEPA региона",
+					"Item 3": "Глобални P2P парични преводи"
 				}
 			},
 			"Section 5": {
-				"Title": "Request money with ease",
-				"Description": "No more fuss-just send a link, and get paid quickly and effortlessly from anyone, anywhere in the world.",
-				"Image Alt": "Request Money With Ease"
+				"Title": "Искайте пари лесно",
+				"Description": "Без излишни усилия – просто изпратете линк и получете плащане бързо и безпроблемно от всеки, навсякъде по света.",
+				"Image Alt": "Искайте пари лесно"
 			},
 			"Section 6": {
-				"Title": "Stay protected",
+				"Title": "Останете защитени",
 				"List Items": {
-					"Item 1": "Biometric protection",
-					"Item 2": "Account safeguarded from hackers",
-					"Item 3": "No password needed"
+					"Item 1": "Биометрична защита",
+					"Item 2": "Акаунтът е защитен от хакери",
+					"Item 3": "Няма нужда от парола"
 				},
-				"Image Alt": "Stay Protected"
+				"Image Alt": "Останете защитени"
 			},
 			"Section 7": {
-				"Title": "Time to go digital",
-				"Description": "Manage your finances effortlessly with our intuitive mobile app. From account management to fund transfers and upcoming budget tracking, MyMonty offers a user-friendly interface tailored to your needs. Choose between EUR or GBP for seamless transactions in your preferred currency.",
-				"Image Alt": "Time to go digital"
+				"Title": "Време е да преминете към цифрови технологии",
+				"Description": "Управлявайте финансите си лесно с нашето интуитивно мобилно приложение. От управление на акаунт до парични преводи и проследяване на бъдещия бюджет, MyMonty предлага потребителски интерфейс, съобразен с вашите нужди. Изберете между EUR или GBP за безпроблемни транзакции в предпочитаната от вас валута.",
+				"Image Alt": "Време е да преминете към цифрови технологии"
 			},
 			"Section 8": {
-				"Title": "Get a look at our revolutionary features",
+				"Title": "Запознайте се с нашите революционни функции",
 				"Features": [
 					{
-						"Title": "Streamlined contactless payments",
-						"Description": "Enjoy the convenience of contactless payments with MyMonty EEA/UK's integration with Google Pay. Securely make purchases in-store, online, and at payment terminals with ease and speed.",
-						"Image Alt": "Streamlined Contactless Payments"
+						"Title": "Улеснени безконтактни плащания",
+						"Description": "Насладете се на удобството на безконтактните плащания с интеграцията на MyMonty EEA/UK с Google Pay. Безопасно извършвайте покупки в магазин, онлайн и на платежни терминали лесно и бързо.",
+						"Image Alt": "Улеснени безконтактни плащания"
 					},
 					{
-						"Title": "Support around the clock",
-						"Description": "Count on MyMonty for reliable customer support. Our dedicated team is available during business hours, backed by an in-app bot for 24/7 assistance. Whether you have questions or need help, we're here to ensure your experience is smooth and enjoyable.",
-						"Image Alt": "Support Around the Clock"
+						"Title": "Подкрепа 24/7",
+						"Description": "Разчитайте на MyMonty за надеждна клиентска подкрепа. Нашият отдаден екип е на разположение през работното време, с бот за 24/7 помощ в приложението. Независимо дали имате въпроси или нужда от помощ, ние сме тук, за да гарантираме, че вашето изживяване е гладко и приятно.",
+						"Image Alt": "Подкрепа 24/7"
 					}
 				]
 			},
 			"Section 9": {
-				"Title": "Choose your plan",
-				"Description": "We've got you covered with plans tailored to your needs. Just pick the one that suits you best or compare plans.",
+				"Title": "Изберете вашия план",
+				"Description": "Ние сме тук, за да ви помогнем с планове, съобразени с вашите нужди. Изберете този, който ви подхожда най-добре, или сравнете плановете.",
 				"Plans": [
 					{
-						"Title": "Starter",
-						"Description": "Looking to start that journey to financial freedom? <br/> Get our Starter plan and enjoy true freedom with low in-store fees and a virtual/physical card.",
-						"Button Label": "Free"
+						"Title": "Старт",
+						"Description": "Търсите ли начин да започнете пътуването си към финансовата свобода? <br/> Вземете нашия Старт план и се насладете на истинска свобода с ниски такси в магазините и виртуална/физическа карта.",
+						"Button Label": "Безплатно"
 					},
 					{
-						"Title": "Plus",
-						"Description": "If you're looking for true value, try our Classic plan with zero card fees, zero monthly charges and more.",
-						"Status": "Not Available Yet",
-						"Button Label": "COMING SOON"
+						"Title": "Плюс",
+						"Description": "Ако търсите истинска стойност, изберете нашия Класически план с нулеви такси за карта, нулеви месечни такси и още.",
+						"Status": "Не е налично още",
+						"Button Label": "СКОРО"
 					},
 					{
-						"Title": "Premium",
-						"Description": "Step up to a truly global level. Enjoy multi-currency features and added value such as investment, health and much more.",
-						"Status": "Not Available Yet",
-						"Button Label": "COMING SOON"
+						"Title": "Премиум",
+						"Description": "Издигнете се на истински глобално ниво. Насладете се на многовалутни функции и допълнителна стойност като инвестиции, здраве и много други.",
+						"Status": "Не е налично още",
+						"Button Label": "СКОРО"
 					}
 				]
 			},
 			"Seo": {
-				"Title": "Homepage",
-				"Description": "Welcome to the homepage of our website.",
-				"Og Title": "Homepage",
-				"Og Description": "Welcome to the homepage of our website.",
-				"Twitter Title": "Homepage",
-				"Twitter Description": "Welcome to the homepage of our website."
+				"Title": "Начална страница",
+				"Description": "Добре дошли на началната страница на нашия уебсайт.",
+				"Og Title": "Начална страница",
+				"Og Description": "Добре дошли на началната страница на нашия уебсайт.",
+				"Twitter Title": "Начална страница",
+				"Twitter Description": "Добре дошли на началната страница на нашия уебсайт."
 			}
 		},
 		"Why MyMonty": {
@@ -1072,8 +1073,8 @@
 	},
 	"Footer": {
 		"Newsletter": {
-			"Title": "Subscribe to our newsletter",
-			"Description": "Subscribe to our newsletter"
+			"Title": "Абонирайте се за нашия бюлетин",
+			"Description": "Абонирайте се за нашия бюлетин"
 		}
 	}
 }

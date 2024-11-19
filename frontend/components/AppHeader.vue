@@ -45,7 +45,7 @@
                             <div class="flex justify-between items-center gap-2">
                                 <!-- Link if clickable -->
                                 <template v-if="item.clickable">
-                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-8 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black hover:text-primary cursor-pointer select-none">
+                                    <NuxtLinkLocale :to="`/${item.path}`" class="link py-2 px-4 rounded-full transition-all duration-300 ease-in-out text-base font-AeonikMedium text-black hover:text-primary cursor-pointer select-none">
                                         {{ t(`General.Links.${item.title}`) }}
                                     </NuxtLinkLocale>
                                 </template>

@@ -66,7 +66,7 @@
     import ScrollButton from '~/components/ScrollButton.vue';
     import { faqsData } from '~/data/faqs'; // Adjust the path accordingly
     
-	const { t } = useLocale(); 
+	const { t, currentLocale } = useLocale(); 
 
     useSeoMeta({
         title: t('Pages.Frequently Asked Questions.Seo.Title'),
@@ -81,7 +81,14 @@
         twitterCard: 'summary_large_image',
     })
 
-	const faqsItems = useState('faqsItems', () => faqsData(t));
+	// const faqsItems = useState('faqsItems', () => faqsData(t));
+    // const faqsItems = useState('faqsItems', () => faqsData(t, currentLocale.value));
+
+    const faqsItems = ref([]);
+
+    watchEffect(async () => {
+    faqsItems.value = await faqsData(t, currentLocale.value);
+    });
 
     const selectedCategoryIndex = ref(0);
     const selectedFaqIndex = ref(null);

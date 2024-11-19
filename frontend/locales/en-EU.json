@@ -657,6 +657,14 @@
 								"Answer": "Your PIN is essential to safeguard your account from unauthorized access."
 							},
 							{
+								"Question": "Why am I asked to set a PIN during the onboarding?",
+								"Answer": "Your PIN is essential to safeguard your account from unauthorized access."
+							},
+							{
+								"Question": "Why am I asked to set a PIN during the onboarding?",
+								"Answer": "Your PIN is essential to safeguard your account from unauthorized access."
+							},
+							{
 								"Question": "How can I deactivate my MyMonty account?",
 								"Answer": "To deactivate your account, simply refrain from using it. After a period of inactivity, your account status will change to dormant."
 							},
