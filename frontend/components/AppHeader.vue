@@ -26,7 +26,7 @@
                                         <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.${locale.region}`) }}</span>
                                     </li>
                                 </template>    
-                                <a href="https://mymonty.com.lb" target="_blank" >    
+                                <a href="https://mymonty.com.lb">    
                                     <li class="flex items-center gap-2 w-full py-3 px-4 transition-all duration-300 ease-in-out font-AeonikRegular text-black cursor-pointer hover:bg-[#d4d4d4]">
                                         <img src="/images/flags/LB.svg" :alt="t(`General.Regions.Lebanon`)" width="24" height="24" />
                                         <span class="text-sm font-AeonikRegular">{{ t(`General.Regions.Lebanon`) }}</span>
@@ -63,7 +63,7 @@
                                     <div class="pointer absolute top-full left-0 h-[calc(1.5rem+1px)] w-full group-hover:block hidden before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-[#ECECEE] before:w-5 before:h-5"></div>
 
                                     <!-- Children Routes Dropdown -->
-                                    <div class="nav absolute top-[calc(100%+1.5rem+1px)] left-1/2 -translate-x-1/2 z-10 flex flex-col gap-4 w-max p-8 rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                    <div class="nav absolute top-[calc(100%+1.5rem+1px)] left-1/2 -translate-x-1/2 z-10 grid grid-cols-2 gap-4 w-max p-8 rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                         <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col w-full text-black cursor-pointer hover:text-primary transition-all duration-300 ease-in-out">
                                             <NuxtLinkLocale :to="`/${subItem.path}`" class="link flex items-center gap-2 group/item">
                                                 <span class="text-sm font-AeonikRegular">{{ t(`General.Links.${subItem.title}`) }}</span>
@@ -94,7 +94,7 @@
                                     <template v-if="filteredLocales.length > 0">
                                         <template v-for="(locale, index) in filteredLocales" :key="locale.index">
                                             <li @click.prevent.stop="setLocale(locale.code)" :class="['flex items-center gap-2 py-3 px-4 transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]', { 'border-b': index !== filteredLocales.length - 1 }]">
-                                                <!-- <img :src="`/images/flags/${ locale.icon }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
+                                                <!-- <img :src="`/images/flags/${ locale.code.split('-')[0].toUpperCase() }.svg`" :alt="{{ locale.language }}" width="24" height="24" /> -->
                                                 <span class="text-sm font-AeonikRegular">{{ t(`General.Languages.${locale.language}`) }}</span>
                                             </li>
                                         </template>

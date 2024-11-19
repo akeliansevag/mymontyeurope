@@ -253,12 +253,12 @@ export default defineNuxtConfig({
 		restructureDir: './',
 		langDir: './locales/', // Ensure this directory exists
 		// lazy: true, // If false, this will show the translation not yet translate.
-		defaultLocale: 'en-UK',
+		defaultLocale: 'en-EU',
 		detectBrowserLanguage: {
 			useCookie: true,  // Store the detected locale in a cookie
 			cookieKey: 'i18n_redirected', // Name of the cookie
 			alwaysRedirect: true, // Always redirect to the user's browser language if not set
-			fallbackLocale: 'en-UK'
+			fallbackLocale: 'en-EU'
 		},
 		compilation: {
 			strictMessage: false,
