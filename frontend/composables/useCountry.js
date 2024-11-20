@@ -55,7 +55,7 @@ export const useCountry = () => { // (manualSelection)
                         // if (i18nCookie.value) return;
 
                         const nearestLocale = findNearestLocale(detectedCountry.iso2);
-                        // console.log(nearestLocale)
+                        console.log(nearestLocale)
 
                         // Set the locale
                         await setLocale(nearestLocale);
