@@ -82,19 +82,17 @@ export default defineNuxtConfig({
 						"@type": "Organization",
 						"name": "MyMonty",
 						"url": "https://www.mymonty.com",
-						"description": "Revolut is a leading global fintech offering various products, from savings to credit, to millions of customers worldwide.",
+						"description": "MyMonty is a super digital wallet, setting the digital stage for your money to take the spotlight and dance like no one's watching!",
 						"logo": "https://assets.revolut.com/website/http://mymontyeurope.localhost/images/revolut-logo.png",
 						"sameAs": [
-							"https://www.facebook.com/revolutapp",
-							"https://www.instagram.com/revolutapp",
-							"https://twitter.com/RevolutApp",
-							"https://www.linkedin.com/company/revolut",
+							"https://www.facebook.com/mymonty",
+							"https://x.com/mymontyapp",
+							"https://www.instagram.com/mymonty",
+							"https://www.linkedin.com/company/my-monty",
 							"https://www.tiktok.com/@revolutapp",
-							"https://www.trustpilot.com/review/www.revolut.com",
-							"https://www.youtube.com/@RevolutApp",
-							"https://en.wikipedia.org/wiki/Revolut",
-							"https://play.google.com/store/apps/details?id=com.revolut.revolut&amp;hl=en&amp;gl=US",
-							"https://apps.apple.com/us/app/revolut-send-spend-and-save/id932493382"
+							"https://www.youtube.com/@mymonty4395",
+							"https://apps.apple.com/lb/app/mymonty-europe/id6451243007",
+							"https://play.google.com/store/apps/details?id=com.mymonty.wallet",
 						]
 					})
 				},

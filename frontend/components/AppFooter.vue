@@ -52,7 +52,7 @@
                     <a href="https://www.linkedin.com/company/my-monty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Linkedin">
                         <img src="/images/icons/linkedin.svg" alt="Linkedin" width="24" height="24" />
                     </a>
-                    <a href="https://www.youtube.com/channel/UCwDW4fXTnegDjn0FA_7c01w" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Youtube">
+                    <a href="https://www.youtube.com/@mymonty4395" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Youtube">
                         <img src="/images/icons/youtube.svg" alt="Youtube" width="24" height="24" />
                     </a>
                 </div>
