@@ -164,7 +164,7 @@ export default defineNuxtConfig({
 				iso: 'en-GB',
 				region: 'United Kingdom',
 				language: 'English',
-				icon: 'gb',
+				icon: 'uk',
 				file: 'en-GB.json',
 				native: true,
 				hideLanguages: true,

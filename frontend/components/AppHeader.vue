@@ -81,7 +81,7 @@
                     <div :class="['cursor-pointer relative group rounded-full', { 'hover:bg-[#ECECEE]': filteredLocales.length > 0 }]">
                         <div class="flex justify-between items-center gap-2 p-2">
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="28" height="28" /> -->
-                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="t(`General.Languages.${currentLocaleDetails.language}`)" width="28" height="28" />
+                            <img :src="`/images/flags/${ currentLocaleDetails.icon.toUpperCase() }.svg`" :alt="t(`General.Regions.${currentLocaleDetails.region}`)" width="28" height="28" />
                             <span class="text-xs font-AeonikMedium">{{ currentLocale.split('-')[0].toUpperCase() }}</span>
                             <!-- <span>{{currentLocale.split('-')[0]}}</span> -->
                             <img v-if="filteredLocales.length > 0" src="/images/icons/chevron-down-gray.svg" :alt="t(`General.Alts.Chevron Down Black`)" width="10" height="8" />
@@ -157,7 +157,7 @@
                 <div class="absolute bottom-[calc(93px)] flex flex-col gap-4 w-full left-1/2 -translate-x-1/2 z-50 py-4 text-sm bg-white text-center group">
                     <div class="relative w-full bg-white">
                         <div class="flex justify-center items-center gap-2 w-max py-1 px-2 rounded-full mx-auto bg-[#ECECEE]">
-                            <img :src="`/images/flags/${ currentLocale.split('-')[1].toUpperCase() }.svg`" :alt="t(`General.Languages.${currentLocaleDetails.language}`)" width="16" height="16" />
+                            <img :src="`/images/flags/${ currentLocaleDetails.icon.toUpperCase() }.svg`" :alt="t(`General.Regions.${currentLocaleDetails.region}`)" width="16" height="16" />
                             <span class="text-xs font-AeonikMedium">{{ currentLocale.split('-')[0].toUpperCase() }}</span>
 
                             <!-- <img src="/images/flags/uk.svg" alt="UK" width="16" height="16" /> -->
@@ -193,7 +193,7 @@
             { name: 'og:locale', content: currentLocale.value.replace('-', '_') }
         ],
         htmlAttrs: {
-            lang: currentLanguage,
+            lang: currentLocale.value,
         },
     }))
 
