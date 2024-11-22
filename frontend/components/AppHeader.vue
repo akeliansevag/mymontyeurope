@@ -169,7 +169,7 @@
                     <template v-if="filteredLocales.length > 0">
                         <ul class="languages-mobile absolute bottom-full left-1/2 -translate-x-1/2 z-50 grid grid-cols-2 gap-4 w-1/2 mx-auto py-4 px-2 rounded text-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                             <template v-for="(locale, index) in filteredLocales" :key="locale.index">
-                                <li @click.prevent.stop="changeLocale(locale.code)" class="flex gap-2 justify-start w-max transition-all duration-300 ease-in-out hover:bg-[#d4d4d4]">
+                                <li @click.prevent.stop="changeLocale(locale.code)" class="flex gap-2 justify-start w-max transition-all duration-300 ease-in-out">
                                     <!-- <img :src="`/images/flags/${ locale.icon.toUpperCase() }.svg`" alt="{{ locale.language }}" width="24" height="24" /> -->
                                     <span class="text-sm font-AeonikRegular">{{ t(`General.Languages.${locale.language}`) }}</span>
                                 </li>

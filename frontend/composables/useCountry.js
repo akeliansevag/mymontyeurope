@@ -45,26 +45,27 @@ export const useCountry = () => { // (manualSelection)
                         initialCode.value = detectedCountry.code;
                         console.log(selectedCountry.value)
 
-                        if (i18nCookie.value) {
-                            await setLocale(i18nCookie.value);
-                            // console.log("!!!!")
+                        if (!i18nCookie.value) {
+                            const nearestLocale = findNearestLocale(detectedCountry.iso2);
+                            i18nCookie.value = nearestLocale;
+                            await setLocale(nearestLocale);
                             return;
                         }
                     
-                        // // Check if the i18n_redirected cookie exists
-                        // if (i18nCookie.value) return;
+                        // // // Check if the i18n_redirected cookie exists
+                        // // if (i18nCookie.value) return;
 
-                        const nearestLocale = findNearestLocale(detectedCountry.iso2);
-                        // console.log(nearestLocale)
+                        // const nearestLocale = findNearestLocale(detectedCountry.iso2);
+                        // // console.log(nearestLocale)
 
-                        // Set the locale
-                        await setLocale(nearestLocale);
+                        // // Set the locale
+                        // await setLocale(nearestLocale);
 
-                        // Set the cookie
-                        i18nCookie.value = nearestLocale;
+                        // // Set the cookie
+                        // i18nCookie.value = nearestLocale;
 
-                        // // Redirect to the new locale
-                        await router.push(useLocalePath()('/'));
+                        // // // Redirect to the new locale
+                        // await router.push(useLocalePath()('/'));
                         
                     }
                 } else {

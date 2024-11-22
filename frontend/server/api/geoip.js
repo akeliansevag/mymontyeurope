@@ -10,11 +10,11 @@ export default defineEventHandler(async (event) => {
     const testIp4 = '109.120.192.1'; // Replace with an IP you want to test (Bulgaria)
     const testIp5 = '178.238.11.6'; // Replace with an IP you want to test (United Kingdom)
     
-    // const ip = getRequestHeader(event, 'x-forwarded-for') || event.node.req.connection.remoteAddress || '127.0.0.1';
-  
-    const forwarded = getRequestHeader(event, 'x-forwarded-for');
-    const ip = forwarded ? forwarded.split(',')[0].trim() : event.node.req.socket.remoteAddress || '127.0.0.1'; // Fallback to localhost
-    
+    const ip = process.env.NODE_ENV === 'development' ? testIp : getRequestHeader(event, 'x-forwarded-for') || event.node.req.connection.remoteAddress || '127.0.0.1';
+
+    // const forwarded = getRequestHeader(event, 'x-forwarded-for');
+    // const ip = forwarded ? forwarded.split(',')[0].trim() : event.node.req.socket.remoteAddress || '127.0.0.1'; // Fallback to localhost
+
     const geoDbPath = path.resolve('server/geoip/GeoLite2-Country.mmdb');
 
     try {
