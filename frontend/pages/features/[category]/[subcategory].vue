@@ -20,60 +20,74 @@
     import { featuresData } from '~/data/features'; // Adjust the path accordingly
     import slugify from '~/utils/slugify'; // Assuming you have a slugify utility
 
-    const { t } = useLocale(); 
+    const { t, currentLocale } = useLocale(); 
     const setError = useError();
     const router = useRouter();
     const route = useRoute();
 
     const currentSubCategorySlug = ref(route.params.subcategory);
     const currentCategorySlug = ref(route.params.category);
-    
-    const currentCategory = computed(() => {
-        const allFeatures = featuresData(t);
-        const flatFeatures = allFeatures.map(category => category.featuresItems).flat();
+    const currentCategory = ref(null);  // Store the category in a ref to reactively update
 
-        const feature = flatFeatures.find(feature => slugify(feature.title) === currentSubCategorySlug.value);
-        return feature ? allFeatures.find(category => category.featuresItems.includes(feature))?.category : null;
+    // Use watchEffect to fetch features and compute the current category
+    watchEffect(async () => {
+        try {
+            // Fetch all features data asynchronously
+            const allFeatures = await featuresData(t, currentLocale.value);
+
+            if (Array.isArray(allFeatures)) {
+                const flatFeatures = allFeatures.map(category => category.featuresItems).flat();
+
+                // Find the feature matching the subcategory slug
+                const feature = flatFeatures.find(feature => slugify(feature.title) === currentSubCategorySlug.value);
+
+                // If a feature is found, compute the category
+                currentCategory.value = feature 
+                    ? allFeatures.find(category => category.featuresItems.includes(feature))?.category 
+                    : null;
+            } else {
+                throw new Error("Features data is not an array");
+            }
+        } catch (err) {
+            setError({ statusCode: 500, message: err.message || 'An error occurred while fetching the features' });
+        }
     });
 
     const feature = ref(null);
 
-    // Fetch feature based on the subcategory slug
-    const fetchFeature = async (subcategory) => {
-        const feature = featuresData(t)
-            .map(category => category.featuresItems)
-            .flat()
-            .find(feature => slugify(feature.title) === subcategory); 
-
-        return feature;
-    };
-
-    // Update the feature and set SEO meta data
-    const updateFeatures = async () => {
+    // Fetch features and handle SEO meta updates in a watchEffect
+    watchEffect(async () => {
         try {
-            feature.value = await fetchFeature(currentSubCategorySlug.value);
+            // Fetch all features data asynchronously
+            const allFeatures = await featuresData(t, currentLocale.value);
 
-            if (feature.value) {
-                useSeoMeta({
-                    title: feature.value.title,
-                    description: feature.value.excerpt || 'Features',
-                    ogTitle: feature.value.title,
-                    ogDescription: feature.value.excerpt || 'Features',
-                    ogImage: `/images/${feature.value.image}.webp`,
-                    twitterTitle: feature.value.title,
-                    twitterDescription: feature.value.excerpt || 'Features',
-                    twitterCard: 'summary_large_image',
-                });
+            if (Array.isArray(allFeatures)) {
+                const flatFeatures = allFeatures.map(category => category.featuresItems).flat();
+
+                // Find the feature matching the subcategory slug
+                feature.value = flatFeatures.find(feature => slugify(feature.title) === currentSubCategorySlug.value);
+
+                if (feature.value) {
+                    useSeoMeta({
+                        title: feature.value.title,
+                        description: feature.value.excerpt || 'Features',
+                        ogTitle: feature.value.title,
+                        ogDescription: feature.value.excerpt || 'Features',
+                        ogImage: `/images/${feature.value.image}.webp`,
+                        twitterTitle: feature.value.title,
+                        twitterDescription: feature.value.excerpt || 'Features',
+                        twitterCard: 'summary_large_image',
+                    });
+                } else {
+                    setError({ statusCode: 404 });
+                }
             } else {
-                setError({ statusCode: 404 });
+                throw new Error("Features data is not an array");
             }
         } catch (err) {
-            setError({ statusCode: 500, message: 'An error occurred while fetching the feature' });
+            setError({ statusCode: 500, message: err.message || 'An error occurred while fetching the feature' });
         }
-    };
-
-    onMounted(updateFeatures);
-    watch(() => currentSubCategorySlug.value, updateFeatures);
+    });
 </script>
 
 <style lang="sass" scoped>

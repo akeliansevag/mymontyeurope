@@ -43,7 +43,7 @@ export const useCountry = () => { // (manualSelection)
                         countryIsEU.value = detectedCountry.is_eu;
                         selectedCountry.value = detectedCountry;
                         initialCode.value = detectedCountry.code;
-                        console.log(selectedCountry.value)
+                        // console.log(selectedCountry.value)
 
                         if (!i18nCookie.value) {
                             const nearestLocale = findNearestLocale(detectedCountry.iso2);

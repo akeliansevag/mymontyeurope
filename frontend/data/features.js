@@ -1,4 +1,4 @@
-// import featureData from '~/locales/en-UK.json' // import the JSON data
+// import featureData from '~/locales/en-EU.json' // import the JSON data
 
 // export const featuresData = (t) => {
 //     return featureData.Pages["Features"]["Section 3"].map((section, sectionIndex) => ({
