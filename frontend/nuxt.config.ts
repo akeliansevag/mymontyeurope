@@ -5,7 +5,12 @@ export default defineNuxtConfig({
 	// ssr: true,
 	css: ["~/assets/sass/app.sass"],
 	pages: true,
-	modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-aos', "@vueuse/nuxt", "@nuxtjs/i18n", "@nuxt/scripts"],
+	modules: ['@nuxtjs/tailwindcss', 'nuxt-gtag', '@nuxtjs/sitemap', 'nuxt-aos', "@vueuse/nuxt", "@nuxtjs/i18n", "@nuxt/scripts", '@nuxtjs/google-fonts'],
+	// googleFonts: {
+	// 	families: {
+	// 	  'Exo 2': '400..900'
+	// 	}
+	// },
 	site: {
 		url: 'https://mymonty.com',
 	},
@@ -158,16 +163,6 @@ export default defineNuxtConfig({
 		// baseUrl: 'http://mymontyeurope.localhost',
 		locales: [
 			{
-				code: 'en-GB',
-				iso: 'en-GB',
-				region: 'United Kingdom',
-				language: 'English',
-				icon: 'uk',
-				file: 'en-GB.json',
-				native: true,
-				hideLanguages: true,
-			},
-			{
 				code: 'en-EU',
 				iso: 'en-EU',
 				region: 'Europe',
@@ -207,46 +202,6 @@ export default defineNuxtConfig({
 				native: false,
 				hideLanguages: false,
 			},
-			{
-				code: 'en-BG',
-				iso: 'en-BG',
-				region: 'Bulgaria',
-				language: 'English',
-				icon: 'bg',
-				file: 'en-BG.json',
-				native: false,
-				hideLanguages: false,
-			},
-			{
-				code: 'bg-BG',
-				iso: 'bg-BG',
-				region: 'Bulgaria',
-				language: 'Bulgarian',
-				icon: 'bg',
-				file: 'bg-BG.json',
-				native: true,
-				hideLanguages: false,
-			},
-			// {
-			// 	code: 'en-IT',
-			// 	iso: 'en-IT',
-			// 	region: 'Italy',
-			// 	language: 'English',
-			// 	icon: 'it',
-			// 	file: 'en-IT.json',
-			// 	native: false,
-			// 	hideLanguages: false,
-			// },
-			// {
-			// 	code: 'it-IT',
-			// 	iso: 'it-IT',
-			// 	region: 'Italy',
-			// 	language: 'Italian',
-			// 	icon: 'it',
-			// 	file: 'it-IT.json',
-			// 	native: true,
-			// 	hideLanguages: false,
-			// },
 		],
 		restructureDir: './',
 		langDir: './locales/', // Ensure this directory exists

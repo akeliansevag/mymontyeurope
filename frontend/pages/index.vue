@@ -1,6 +1,6 @@
 <template>
     <div id="homepage" class="homepage">
-        <section id="section-1" class="w-screen lg:h-[calc(100vh-93px)] bg-[#ECECEE]">
+        <section id="section-1" class="w-full lg:h-[calc(100vh-93px)] bg-[#ECECEE]">
             <div class="relative container flex flex-col justify-center gap-14 h-full">
                 <div class="flex flex-col justify-center gap-8 lg:w-4/5 max-lg:mt-14">
                     <h1 class="font-AeonikBlack text-4xl md:text-6xl xl:text-[5.2rem] 4xl:text-8xl 5xl:text-9xl uppercase" v-html="t(`Pages.Homepage.Banner.Title`)"></h1>
