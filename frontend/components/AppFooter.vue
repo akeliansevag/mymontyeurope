@@ -9,6 +9,7 @@
                     <div v-if="errors.newsletter_email" class="text-xs text-red-500">{{ errors.newsletter_email }}</div>
                     <div v-if="submissionMessage" class="text-xs text-gray-500">{{ submissionMessage }}</div>
                     <button @click.prevent="handleSubmit" class="py-2 px-4 text-base text-white hover:text-black bg-primary hover:bg-white rounded-[30px] select-none font-AeonikMedium transition-all duration-300 ease-in-out">{{ t(`General.Buttons.Subscribe`) }}</button>
+                    <p class="text-[#D4D4D4] text-sm">By subscribing to our newsletter, you acknowledge that you have read and accepted our Terms & Conditions; read and understood our Privacy Notice.</p>
                 </div>
                 <ul class="lg:col-span-2 grid sm:grid-cols-4 sm:justify-between gap-6 sm:gap-3">
                     <li v-for="(item, index) in menuItems" :key="index" :class="{ 'active': activeIndices.includes(index) }" @click="toggleActive(index)" class="flex flex-col sm:gap-10 group">
@@ -39,22 +40,26 @@
             <hr class="border-[#D4D4D422]" />
 
             <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-8 md:gap-4 py-6 md:py-12 max-md:text-center">
-                <div class="flex max-md:justify-center items-center gap-8">
-                    <a href="https://www.facebook.com/mymonty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Facebook">
-                        <img src="/images/icons/facebook.svg" alt="Facebook" width="24" height="24" />
-                    </a>
-                    <a href="https://x.com/mymontyapp" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="X">
-                        <img src="/images/icons/x.svg" alt="X" width="24" height="24" />
-                    </a>
-                    <a href="https://www.instagram.com/mymonty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Instagram">
-                        <img src="/images/icons/instagram.svg" alt="instagram" width="24" height="24" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/my-monty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Linkedin">
-                        <img src="/images/icons/linkedin.svg" alt="Linkedin" width="24" height="24" />
-                    </a>
-                    <a href="https://www.youtube.com/@mymonty4395" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Youtube">
-                        <img src="/images/icons/youtube.svg" alt="Youtube" width="24" height="24" />
-                    </a>
+                <div class="flex flex-col gap-2">
+                    <div class="flex max-md:justify-center items-center gap-8">
+                        <a href="https://www.facebook.com/mymonty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Facebook">
+                            <img src="/images/icons/facebook.svg" alt="Facebook" width="24" height="24" />
+                        </a>
+                        <a href="https://x.com/mymontyapp" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="X">
+                            <img src="/images/icons/x.svg" alt="X" width="24" height="24" />
+                        </a>
+                        <a href="https://www.instagram.com/mymonty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Instagram">
+                            <img src="/images/icons/instagram.svg" alt="instagram" width="24" height="24" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/my-monty" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Linkedin">
+                            <img src="/images/icons/linkedin.svg" alt="Linkedin" width="24" height="24" />
+                        </a>
+                        <a href="https://www.youtube.com/@mymonty4395" class="cursor-pointer" target="_blank" rel="noopener noreferrer" aria-title="Youtube">
+                            <img src="/images/icons/youtube.svg" alt="Youtube" width="24" height="24" />
+                        </a>
+                    </div>
+                    <p class="text-[#D4D4D4] text-sm mt-2">{{ t(`Footer.Toll-Free Number`) }}: <a href="tel:+448082387522" class="underline underline-offset-4">+44 808 238 7522</a></p>
+                    <p class="text-[#D4D4D4] text-sm"><a href="mailto:support@mymonty.com" class="underline underline-offset-4">{{ t(`Footer.Email Us`) }}</a></p>
                 </div>
 
                 <div class="flex flex-col gap-2 md:ml-auto text-[#D4D4D4]">
@@ -73,8 +78,12 @@
                 </div>
             </div>
 
-            <p class="py-6 sm:py-12 text-center text-base text-[#D4D4D4]" v-html="t(`General.Copyright`)"></p>
+            <hr class="border-[#D4D4D422]" />
 
+            <div class="flex flex-col gap-6 py-6 sm:py-12">
+                <p class="text-base text-[#D4D4D4]" v-html="t(`Footer.Copyright`)"></p>
+                <p class="text-[#D4D4D4] text-sm mt-2" v-html="t(`Footer.Paynetics Agreement`)"></p>
+            </div>
         </div>
     </footer>
 </template>
