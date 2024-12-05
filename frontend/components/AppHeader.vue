@@ -60,10 +60,10 @@
                                 <!-- Dropdown if children exist -->
                                 <template v-if="item.links && item.links.length">
                                     <!-- Invisible hover buffer (1.5 padding, 1px border bottom) -->
-                                    <div class="pointer absolute top-full left-0 h-[calc(1.5rem+1px)] w-full group-hover:block hidden before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-[#ECECEE] before:w-5 before:h-5"></div>
+                                    <!-- <div class="pointer absolute top-full left-0 h-[calc(1.5rem+1px)] w-full group-hover:block hidden before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-[#ECECEE] before:w-5 before:h-5"></div> -->
 
                                     <!-- Children Routes Dropdown -->
-                                    <div class="nav absolute top-[calc(100%+1.5rem+1px)] left-1/2 -translate-x-1/2 z-10 grid grid-cols-2 gap-4 w-max p-8 rounded-b text-base bg-[#ECECEE] overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                                    <div class="nav absolute top-[calc(100%+1.5rem+1px)] left-1/2 -translate-x-1/2 z-10 grid grid-cols-2 gap-y-4 gap-x-12 w-max py-16 px-24 border-2 border-t border-[#D4D4D422] rounded-b-[30px] text-base bg-white overflow-hidden invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                         <div v-for="(subItem, subItemIndex) in item.links" :key="subItemIndex" class="flex flex-col w-full text-black cursor-pointer hover:text-primary transition-all duration-300 ease-in-out">
                                             <NuxtLinkLocale :to="`/${subItem.path}`" class="link flex items-center gap-2 group/item">
                                                 <span class="text-sm font-AeonikRegular">{{ t(`General.Links.${subItem.title}`) }}</span>
